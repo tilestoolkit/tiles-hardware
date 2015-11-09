@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2355,7 +2355,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="U$1" library="GeekAmmo" deviceset="RF22301" device=""/>
+<part name="RFDUINO" library="GeekAmmo" deviceset="RF22301" device=""/>
 <part name="D1" library="Seeed-OPL-Diode" deviceset="SMD-LED-RGB(6P-L6.0*W5.0*H4.0MM)" device="" value="CLP6C-FKB-CM1Q1H1BB7R3R3-5060"/>
 <part name="U1" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345BCCZ-RL"/>
 <part name="U2" library="Seeed-OPL-sensor" deviceset="TOUCH-MPR121QR2(QFN20)" device="" value="MPR121QR2"/>
@@ -2379,14 +2379,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R5" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="R6" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="R7" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
-<part name="MOTOR+" library="wirepad" deviceset="SMD2" device=""/>
-<part name="MOTOR-" library="wirepad" deviceset="SMD2" device=""/>
+<part name="M+" library="wirepad" deviceset="SMD2" device=""/>
+<part name="M-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="U$4" library="Seeed-OPL-Transistor" deviceset="SMD-TRANSISTORS-NPN-40V-200MA-MMBT3904LT1G(SOT-23)" device="" value="MMBT3904LT1G"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R8" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="J1" library="Seeed-OPL-Connector" deviceset="SMD-BLACK-FEMALE-HEADER(7P-2.54)" device="" value="7p-SMD-2.54"/>
 <part name="B+" library="wirepad" deviceset="SMD2" device=""/>
-<part name="-" library="wirepad" deviceset="SMD2" device=""/>
+<part name="B-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D2" library="Seeed-OPL-Diode" deviceset="SMD-DIODE-100V-200MA(SOD-123)" device="" value="MMSD4148-sod123"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -2434,7 +2434,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="2.54" y="-10.16"/>
-<instance part="U$1" gate="G$1" x="50.8" y="91.44"/>
+<instance part="RFDUINO" gate="G$1" x="50.8" y="91.44"/>
 <instance part="D1" gate="G$1" x="208.28" y="25.4"/>
 <instance part="U1" gate="G$1" x="213.36" y="133.35"/>
 <instance part="U2" gate="G$1" x="226.06" y="62.23"/>
@@ -2458,14 +2458,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R5" gate="G$1" x="187.96" y="85.09" rot="R90"/>
 <instance part="R6" gate="G$1" x="180.34" y="85.09" rot="R90"/>
 <instance part="R7" gate="G$1" x="172.72" y="85.09" rot="R90"/>
-<instance part="MOTOR+" gate="1" x="88.9" y="153.67"/>
-<instance part="MOTOR-" gate="1" x="88.9" y="148.59"/>
+<instance part="M+" gate="1" x="88.9" y="153.67"/>
+<instance part="M-" gate="1" x="88.9" y="148.59"/>
 <instance part="U$4" gate="G$1" x="105.41" y="140.97"/>
 <instance part="GND2" gate="1" x="107.95" y="123.19"/>
 <instance part="R8" gate="G$1" x="96.52" y="133.35" rot="R90"/>
 <instance part="J1" gate="G$1" x="158.75" y="152.4"/>
 <instance part="B+" gate="1" x="50.8" y="157.48" rot="R270"/>
-<instance part="-" gate="1" x="58.42" y="157.48" rot="R270"/>
+<instance part="B-" gate="1" x="58.42" y="157.48" rot="R270"/>
 <instance part="GND8" gate="1" x="67.31" y="151.13" rot="R90"/>
 <instance part="D2" gate="G$1" x="50.8" y="139.7" rot="R270"/>
 <instance part="SUPPLY5" gate="G$1" x="44.45" y="127" rot="R90"/>
@@ -2512,7 +2512,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <nets>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO5"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO5"/>
 <wire x1="71.12" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <label x="78.74" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -2544,7 +2544,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO6"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO6"/>
 <wire x1="71.12" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <label x="78.74" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -2576,7 +2576,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="LED_R" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO0/AREF"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO0/AREF"/>
 <wire x1="71.12" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <label x="76.2" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -2593,7 +2593,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="LED_G" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO1"/>
 <wire x1="71.12" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <label x="76.2" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -2610,7 +2610,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="LED_B" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO2"/>
 <wire x1="71.12" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <label x="76.2" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -2720,7 +2720,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="38.1" y1="119.38" x2="31.75" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="-" gate="1" pin="P"/>
+<pinref part="B-" gate="1" pin="P"/>
 <wire x1="58.42" y1="154.94" x2="58.42" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="58.42" y1="151.13" x2="64.77" y2="151.13" width="0.1524" layer="91"/>
@@ -2753,34 +2753,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="127" y1="16.51" x2="127" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND@9"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@9"/>
 <wire x1="45.72" y1="68.58" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@19"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@19"/>
 <wire x1="48.26" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="63.5" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="50.8" y1="63.5" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@10"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@10"/>
 <wire x1="48.26" y1="68.58" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@12"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@12"/>
 <wire x1="50.8" y1="68.58" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@18"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@18"/>
 <wire x1="53.34" y1="68.58" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <junction x="48.26" y="63.5"/>
 <junction x="50.8" y="63.5"/>
 <junction x="53.34" y="63.5"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND@1"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@1"/>
 <wire x1="30.48" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="88.9" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@8"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@8"/>
 <wire x1="25.4" y1="86.36" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="83.82" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<pinref part="RFDUINO" gate="G$1" pin="GND@2"/>
 <wire x1="30.48" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="25.4" y1="86.36" x2="16.51" y2="86.36" width="0.1524" layer="91"/>
@@ -2808,7 +2808,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="MOTOR+" gate="1" pin="P"/>
+<pinref part="M+" gate="1" pin="P"/>
 <wire x1="91.44" y1="153.67" x2="111.76" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 <wire x1="111.76" y1="153.67" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
@@ -2820,7 +2820,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="-"/>
-<pinref part="U$1" gate="G$1" pin="3V"/>
+<pinref part="RFDUINO" gate="G$1" pin="3V"/>
 <wire x1="50.8" y1="135.89" x2="50.8" y2="127" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <wire x1="50.8" y1="127" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
@@ -2851,7 +2851,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="HAPTIC" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO3"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO3"/>
 <wire x1="71.12" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
 <label x="76.2" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -2867,7 +2867,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="INT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO4"/>
+<pinref part="RFDUINO" gate="G$1" pin="GPIO4"/>
 <wire x1="71.12" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <label x="78.74" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -2899,7 +2899,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="MOTOR-" gate="1" pin="P"/>
+<pinref part="M-" gate="1" pin="P"/>
 <wire x1="91.44" y1="148.59" x2="107.95" y2="148.59" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="C"/>
 <wire x1="107.95" y1="148.59" x2="107.95" y2="146.05" width="0.1524" layer="91"/>
@@ -2912,7 +2912,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="135.89" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="RESET"/>
+<pinref part="RFDUINO" gate="G$1" pin="RESET"/>
 <wire x1="30.48" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
 <label x="12.7" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -2924,7 +2924,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="135.89" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="FACT"/>
+<pinref part="RFDUINO" gate="G$1" pin="FACT"/>
 <wire x1="30.48" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
 <label x="12.7" y="93.98" size="1.778" layer="95"/>
 </segment>
