@@ -1,0 +1,57 @@
+Partlist
+
+Exported from Tiles_Proto2.brd at 06/11/15 15:21
+
+EAGLE Version 7.4.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value                         Package                           Library              Position (mm)         Orientation
+
+B+                                     SMD1,27-2,54                      wirepad              (5.08 42.545)         R90
+B-                                     SMD1,27-2,54                      wirepad              (5.08 40.005)         R90
+C1       100NF 10V                     C0402                             Seeed-OPL-Capacitor  (21.59 63.5)          R0
+C2       100NF 10V                     C0402                             Seeed-OPL-Capacitor  (39.37 66.04)         R90
+C3       100NF 10V                     C0402                             Seeed-OPL-Capacitor  (38.1 68.58)          R180
+C4       10uf                          C0402                             Seeed-OPL-Capacitor  (11.43 60.96)         R90
+C5       4.7uf                         C0402                             Seeed-OPL-Capacitor  (6.35 72.39)          R90
+C6       4.7uf                         C0402                             Seeed-OPL-Capacitor  (12.7 64.77)          R180
+CAP7                                   SMD1,27-2,54                      wirepad              (74.93 76.2)          R0
+CAP8                                   SMD1,27-2,54                      wirepad              (78.74 71.12)         R0
+CAP9                                   SMD1,27-2,54                      wirepad              (80.01 66.04)         R0
+CAPB                                   SMD2,54-5,08                      wirepad              (73.66 66.04)         R0
+CAPL                                   SMD2,54-5,08                      wirepad              (62.23 59.69)         R90
+CAPR                                   SMD2,54-5,08                      wirepad              (80.01 58.42)         R0
+CAPT                                   SMD2,54-5,08                      wirepad              (68.58 59.69)         R90
+D1       CLP6C-FKB-CM1Q1H1BB7R3R3-5060 LED6-SMD-5060                     Seeed-OPL-Diode      (30.48 53.34)         R0
+D2       MMSD4148-sod123               SOD-123                           Seeed-OPL-Diode      (15.24 69.85)         R270
+D3       RED-0603                      LED-0603                          Seeed-OPL-Diode      (6.35 64.135)         R0
+J1       7p-SMD-2.54                   H7-SMD-2.54                       Seeed-OPL-Connector  (34.29 76.2)          R270
+JP1                                    1X04                              SparkFun-Connectors  (5.08 28.575)         R90
+M+                                     SMD1,27-2,54                      wirepad              (43.18 48.26)         R90
+M-                                     SMD1,27-2,54                      wirepad              (39.37 48.26)         R90
+R1       270R                          R0805                             Seeed-OPL-Resistor   (24.13 57.15)         R90
+R2       270R                          R0805                             Seeed-OPL-Resistor   (24.13 53.34)         R90
+R3       270R                          R0805                             Seeed-OPL-Resistor   (24.13 49.53)         R90
+R4       75K 1/10W                     R0603                             Seeed-OPL-Resistor   (43.18 66.04)         R180
+R5       10K                           R0603                             Seeed-OPL-Resistor   (39.37 62.23)         R90
+R6       10K                           R0603                             Seeed-OPL-Resistor   (34.925 62.865)       R90
+R7       10K                           R0603                             Seeed-OPL-Resistor   (44.45 62.23)         R270
+R8       10K                           R0603                             Seeed-OPL-Resistor   (33.02 44.45)         R90
+R9       330R                          R0603                             Seeed-OPL-Resistor   (5.715 68.58)         R0
+R10      2K                            R0603                             Seeed-OPL-Resistor   (9.525 64.77)         R270
+R11      10K                           R0603                             Seeed-OPL-Resistor   (31.75 71.12)         R180
+R12      10K                           R0603                             Seeed-OPL-Resistor   (35.56 71.12)         R180
+RFDUINO  RF22301                       RFD22301                          GeekAmmo             (5.08 58.42)          R0
+SJ1      JUMPER-PAD-2-NC_BY_TRACE      PAD-JUMPER-2-NC_BY_TRACE_YES_SILK SparkFun-Passives    (34.29 66.04)         R0
+SJ2      JUMPER-PAD-2-NC_BY_TRACE      PAD-JUMPER-2-NC_BY_TRACE_YES_SILK SparkFun-Passives    (26.67 71.12)         R90
+SJ3      JUMPER-PAD-2-NO               PAD-JUMPER-2-NO_NO_SILK           SparkFun-Passives    (20.32 31.75)         R90
+SJ4      JUMPER-PAD-2-NO               PAD-JUMPER-2-NO_NO_SILK           SparkFun-Passives    (22.86 31.75)         R90
+SJ5      JUMPER-PAD-2-NO               PAD-JUMPER-2-NO_NO_SILK           SparkFun-Passives    (25.4 31.75)          R90
+SJ6      JUMPER-PAD-2-NO               PAD-JUMPER-2-NO_NO_SILK           SparkFun-Passives    (27.94 31.75)         R90
+SW1                                    SW7-SMD-L6.7X2.7X3.2MM            Seeed-OPL-Switch     (19.05 76.2)          R270
+U$4      MMBT3904LT1G                  SOT-23                            Seeed-OPL-Transistor (30.48 46.99)         R270
+U1       ADXL345BCCZ-RL                LGA14-0.8-5.0X3.0MM               Seeed-OPL-sensor     (30.48 64.77)         R0
+U2       MPR121QR2                     QFN20-0.4-3X3M                    Seeed-OPL-sensor     (40.64 71.12)         R0
+U3       MCP73832T-2ACI/OT-SOT23-5     SOT-23-5                          Seeed-OPL-ic         (10.16 68.58)         R0
+USB1     10118193-0001LF               MICRO-USB5+6P-SMD-0.65-B          Seeed-OPL-Connector  (8.89 74.93)          R180
