@@ -2379,14 +2379,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R5" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="R6" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="R7" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
-<part name="MOTOR+" library="wirepad" deviceset="SMD2" device=""/>
-<part name="MOTOR-" library="wirepad" deviceset="SMD2" device=""/>
+<part name="M+" library="wirepad" deviceset="SMD2" device=""/>
+<part name="M-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="U$4" library="Seeed-OPL-Transistor" deviceset="SMD-TRANSISTORS-NPN-40V-200MA-MMBT3904LT1G(SOT-23)" device="" value="MMBT3904LT1G"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R8" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="J1" library="Seeed-OPL-Connector" deviceset="SMD-BLACK-FEMALE-HEADER(7P-2.54)" device="" value="7p-SMD-2.54"/>
 <part name="B+" library="wirepad" deviceset="SMD2" device=""/>
-<part name="-" library="wirepad" deviceset="SMD2" device=""/>
+<part name="B-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D2" library="Seeed-OPL-Diode" deviceset="SMD-DIODE-100V-200MA(SOD-123)" device="" value="MMSD4148-sod123"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -2458,14 +2458,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R5" gate="G$1" x="187.96" y="85.09" rot="R90"/>
 <instance part="R6" gate="G$1" x="180.34" y="85.09" rot="R90"/>
 <instance part="R7" gate="G$1" x="172.72" y="85.09" rot="R90"/>
-<instance part="MOTOR+" gate="1" x="88.9" y="153.67"/>
-<instance part="MOTOR-" gate="1" x="88.9" y="148.59"/>
+<instance part="M+" gate="1" x="88.9" y="153.67"/>
+<instance part="M-" gate="1" x="88.9" y="148.59"/>
 <instance part="U$4" gate="G$1" x="105.41" y="140.97"/>
 <instance part="GND2" gate="1" x="107.95" y="123.19"/>
 <instance part="R8" gate="G$1" x="96.52" y="133.35" rot="R90"/>
 <instance part="J1" gate="G$1" x="158.75" y="152.4"/>
 <instance part="B+" gate="1" x="50.8" y="157.48" rot="R270"/>
-<instance part="-" gate="1" x="58.42" y="157.48" rot="R270"/>
+<instance part="B-" gate="1" x="58.42" y="157.48" rot="R270"/>
 <instance part="GND8" gate="1" x="67.31" y="151.13" rot="R90"/>
 <instance part="D2" gate="G$1" x="50.8" y="139.7" rot="R270"/>
 <instance part="SUPPLY5" gate="G$1" x="44.45" y="127" rot="R90"/>
@@ -2720,7 +2720,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="38.1" y1="119.38" x2="31.75" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="-" gate="1" pin="P"/>
+<pinref part="B-" gate="1" pin="P"/>
 <wire x1="58.42" y1="154.94" x2="58.42" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="58.42" y1="151.13" x2="64.77" y2="151.13" width="0.1524" layer="91"/>
@@ -2808,7 +2808,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="MOTOR+" gate="1" pin="P"/>
+<pinref part="M+" gate="1" pin="P"/>
 <wire x1="91.44" y1="153.67" x2="111.76" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 <wire x1="111.76" y1="153.67" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
@@ -2899,7 +2899,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="MOTOR-" gate="1" pin="P"/>
+<pinref part="M-" gate="1" pin="P"/>
 <wire x1="91.44" y1="148.59" x2="107.95" y2="148.59" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="C"/>
 <wire x1="107.95" y1="148.59" x2="107.95" y2="146.05" width="0.1524" layer="91"/>

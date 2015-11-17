@@ -2413,10 +2413,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R11" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
 <part name="R12" library="Seeed-OPL-Resistor" deviceset="SMD-RES-10K-1%-1/10W(0603)" device="" value="10K"/>
-<part name="CAPL" library="wirepad" deviceset="SMD5" device=""/>
-<part name="CAPR" library="wirepad" deviceset="SMD5" device=""/>
-<part name="CAPT" library="wirepad" deviceset="SMD5" device=""/>
-<part name="CAPB" library="wirepad" deviceset="SMD5" device=""/>
+<part name="LEFT" library="wirepad" deviceset="SMD5" device=""/>
+<part name="RIGHT" library="wirepad" deviceset="SMD5" device=""/>
+<part name="TOP" library="wirepad" deviceset="SMD5" device=""/>
+<part name="BOTTOM" library="wirepad" deviceset="SMD5" device=""/>
 <part name="CP7" library="wirepad" deviceset="SMD2" device=""/>
 <part name="CP8" library="wirepad" deviceset="SMD2" device=""/>
 <part name="CP9" library="wirepad" deviceset="SMD2" device=""/>
@@ -2492,10 +2492,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND17" gate="1" x="104.14" y="87.63"/>
 <instance part="R11" gate="G$1" x="241.3" y="149.86" rot="R90"/>
 <instance part="R12" gate="G$1" x="251.46" y="149.86" rot="R90"/>
-<instance part="CAPL" gate="1" x="220.98" y="36.83" rot="R90"/>
-<instance part="CAPR" gate="1" x="229.87" y="36.83" rot="R90"/>
-<instance part="CAPT" gate="1" x="240.03" y="36.83" rot="R90"/>
-<instance part="CAPB" gate="1" x="248.92" y="36.83" rot="R90"/>
+<instance part="LEFT" gate="1" x="220.98" y="36.83" rot="R90"/>
+<instance part="RIGHT" gate="1" x="229.87" y="36.83" rot="R90"/>
+<instance part="TOP" gate="1" x="240.03" y="36.83" rot="R90"/>
+<instance part="BOTTOM" gate="1" x="248.92" y="36.83" rot="R90"/>
 <instance part="CP7" gate="1" x="255.27" y="58.42" rot="R180"/>
 <instance part="CP8" gate="1" x="255.27" y="66.04" rot="R180"/>
 <instance part="CP9" gate="1" x="255.27" y="72.39" rot="R180"/>
@@ -3021,7 +3021,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="213.36" y1="55.88" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="55.88" x2="210.82" y2="44.45" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="44.45" x2="220.98" y2="44.45" width="0.1524" layer="91"/>
-<pinref part="CAPL" gate="1" pin="P"/>
+<pinref part="LEFT" gate="1" pin="P"/>
 <wire x1="220.98" y1="44.45" x2="220.98" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3031,7 +3031,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="213.36" y1="53.34" x2="212.09" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="212.09" y1="53.34" x2="212.09" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="212.09" y1="46.99" x2="229.87" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="CAPR" gate="1" pin="P"/>
+<pinref part="RIGHT" gate="1" pin="P"/>
 <wire x1="229.87" y1="46.99" x2="229.87" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3040,14 +3040,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U2" gate="G$1" pin="ELE2"/>
 <wire x1="213.36" y1="50.8" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="48.26" x2="240.03" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="CAPT" gate="1" pin="P"/>
+<pinref part="TOP" gate="1" pin="P"/>
 <wire x1="240.03" y1="48.26" x2="240.03" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="ELE3"/>
-<pinref part="CAPB" gate="1" pin="P"/>
+<pinref part="BOTTOM" gate="1" pin="P"/>
 <wire x1="237.49" y1="50.8" x2="248.92" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="50.8" x2="248.92" y2="39.37" width="0.1524" layer="91"/>
 </segment>

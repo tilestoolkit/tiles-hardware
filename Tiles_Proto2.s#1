@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2505,7 +2505,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SJ4" gate="G$1" x="121.92" y="99.06"/>
 <instance part="SJ5" gate="G$1" x="121.92" y="96.52"/>
 <instance part="SJ6" gate="G$1" x="121.92" y="93.98"/>
-<instance part="USB1" gate="G$1" x="17.78" y="30.48"/>
+<instance part="USB1" gate="G$1" x="20.32" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -2769,8 +2769,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="38.1" y1="20.32" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="25.4" x2="34.29" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="25.4" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="USB1" gate="G$1" pin="GND@5"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2920,8 +2922,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="59.69" y1="31.75" x2="59.69" y2="25.4" width="0.1524" layer="91"/>
 <junction x="45.72" y="31.75"/>
 <junction x="59.69" y="31.75"/>
-<wire x1="30.48" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="34.29" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="35.56" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="USB1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="N$10" class="0">

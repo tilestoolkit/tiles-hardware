@@ -147,12 +147,20 @@
 </layers>
 <board>
 <plain>
-<rectangle x1="7.825" y1="35.925" x2="43.385" y2="51.165" layer="21" rot="R180"/>
-<circle x="38.195" y="58.69" radius="5.23634375" width="0.4064" layer="21"/>
-<wire x1="-0.54" y1="34.54" x2="-0.54" y2="83.905" width="0.2" layer="20"/>
-<wire x1="-0.54" y1="83.905" x2="48.19" y2="83.905" width="0.2" layer="20"/>
-<wire x1="48.19" y1="83.905" x2="48.19" y2="34.54" width="0.2" layer="20"/>
-<wire x1="48.19" y1="34.54" x2="-0.54" y2="34.54" width="0.2" layer="20"/>
+<circle x="38.3855" y="58.6265" radius="5.23634375" width="0.4064" layer="21"/>
+<wire x1="0.095" y1="34.54" x2="0.095" y2="82.635" width="0.254" layer="20"/>
+<wire x1="0.095" y1="82.635" x2="46.285" y2="82.635" width="0.254" layer="20"/>
+<wire x1="46.285" y1="82.635" x2="46.285" y2="34.54" width="0.254" layer="20"/>
+<wire x1="46.285" y1="34.54" x2="0.095" y2="34.54" width="0.3048" layer="20"/>
+<wire x1="7.8105" y1="51.181" x2="43.18" y2="51.181" width="0.4064" layer="21"/>
+<wire x1="43.18" y1="51.181" x2="43.18" y2="50.8" width="0.4064" layer="21"/>
+<wire x1="43.18" y1="50.8" x2="43.18" y2="36.195" width="0.4064" layer="21"/>
+<wire x1="7.747" y1="36.195" x2="7.747" y2="51.181" width="0.4064" layer="21"/>
+<wire x1="43.18" y1="36.195" x2="7.8105" y2="36.195" width="0.4064" layer="21"/>
+<wire x1="7.8105" y1="36.195" x2="7.8105" y2="36.1315" width="0.4064" layer="21"/>
+<text x="20.32" y="42.545" size="1.778" layer="21">BATTERY</text>
+<text x="34.7345" y="58.1025" size="1.4224" layer="21">MOTOR</text>
+<text x="2.413" y="57.0865" size="1.27" layer="21">CHG</text>
 </plain>
 <libraries>
 <library name="wirepad">
@@ -849,17 +857,25 @@ design rules under a new name.</description>
 <elements>
 <element name="B-" library="wirepad" package="SMD1,27-2,54" value="" x="27.305" y="52.705" rot="R270"/>
 <element name="B+" library="wirepad" package="SMD1,27-2,54" value="" x="24.13" y="52.705" rot="R270"/>
-<element name="C1" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="22.225" y="67.437" rot="R270">
+<element name="C1" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="22.225" y="67.437" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="22.225" y="67.437" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.971" y="66.802" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="23.622" y="68.961" size="0.635" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="C2" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="40.005" y="65.405" rot="R90">
+<element name="C2" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="40.005" y="65.405" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="40.005" y="65.405" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="42.037" y="64.516" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="38.608" y="63.881" size="0.635" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="C3" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="35.56" y="71.755">
+<element name="C3" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="35.56" y="71.755" smashed="yes">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="35.56" y="71.755" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.9725" y="71.628" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="34.036" y="73.152" size="0.635" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="C4" library="Seeed-OPL-Capacitor" package="C0402" value="10uf" x="15.875" y="57.785" rot="R270">
+<element name="C4" library="Seeed-OPL-Capacitor" package="C0402" value="10uf" x="15.875" y="57.785" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0402MRX5R5BB106" x="15.875" y="57.785" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="15.875" y="57.15" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="17.272" y="59.309" size="0.635" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C5" library="Seeed-OPL-Capacitor" package="C0402" value="4.7uf" x="23.495" y="56.515">
 <attribute name="MPN" value="CC0402MRX5R5BB475" x="23.495" y="56.515" size="1.778" layer="27" display="off"/>
@@ -867,26 +883,45 @@ design rules under a new name.</description>
 <element name="C6" library="Seeed-OPL-Capacitor" package="C0402" value="4.7uf" x="26.035" y="56.515">
 <attribute name="MPN" value="CC0402MRX5R5BB475" x="26.035" y="56.515" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CP7" library="wirepad" package="SMD1,27-2,54" value="" x="41.91" y="79.375"/>
-<element name="CP8" library="wirepad" package="SMD1,27-2,54" value="" x="38.735" y="80.01" rot="R90"/>
-<element name="CP9" library="wirepad" package="SMD1,27-2,54" value="" x="34.925" y="80.01" rot="R90"/>
+<element name="CP7" library="wirepad" package="SMD1,27-2,54" value="" x="41.91" y="79.375" smashed="yes">
+<attribute name="VALUE" x="41.91" y="79.375" size="0.0254" layer="27"/>
+<attribute name="NAME" x="44.285" y="76.975" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="CP8" library="wirepad" package="SMD1,27-2,54" value="" x="38.735" y="80.01" smashed="yes" rot="R90">
+<attribute name="VALUE" x="38.735" y="80.01" size="0.0254" layer="27" rot="R90"/>
+<attribute name="NAME" x="40.8175" y="79.21" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="CP9" library="wirepad" package="SMD1,27-2,54" value="" x="34.925" y="80.01" smashed="yes" rot="R90">
+<attribute name="VALUE" x="34.925" y="80.01" size="0.0254" layer="27" rot="R90"/>
+<attribute name="NAME" x="36.69" y="79.21" size="1.27" layer="25" rot="R180"/>
+</element>
 <element name="CAPB" library="wirepad" package="SMD2,54-5,08" value="" x="34.925" y="37.465" rot="MR270"/>
 <element name="CAPL" library="wirepad" package="SMD2,54-5,08" value="" x="2.54" y="58.42" rot="MR0"/>
 <element name="CAPR" library="wirepad" package="SMD2,54-5,08" value="" x="42.545" y="65.405" rot="MR0"/>
 <element name="CAPT" library="wirepad" package="SMD2,54-5,08" value="" x="16.51" y="80.01" rot="MR90"/>
-<element name="D1" library="Seeed-OPL-Diode" package="LED6-SMD-5060" value="CLP6C-FKB-CM1Q1H1BB7R3R3-5060" x="25.4" y="62.23">
+<element name="D1" library="Seeed-OPL-Diode" package="LED6-SMD-5060" value="CLP6C-FKB-CM1Q1H1BB7R3R3-5060" x="25.4" y="62.23" smashed="yes">
 <attribute name="MPN" value="CLP6C-FKB-CM1Q1H1BB7R3R3" x="25.4" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.4155" y="65.4525" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="22.86" y="57.547" size="0.889" layer="27" ratio="11"/>
 </element>
-<element name="D2" library="Seeed-OPL-Diode" package="SOD-123" value="MMSD4148-sod123" x="8.255" y="57.785">
+<element name="D2" library="Seeed-OPL-Diode" package="SOD-123" value="MMSD4148-sod123" x="8.255" y="57.785" smashed="yes">
 <attribute name="MPN" value="MMSD4148" x="8.255" y="57.785" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.985" y="55.753" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="6.35" y="55.753" size="0.889" layer="27" font="vector" ratio="11"/>
+<attribute name="NAME" x="7.366" y="57.15" size="0.381" layer="33" ratio="10"/>
 </element>
-<element name="D3" library="Seeed-OPL-Diode" package="LED-0603" value="RED-0603" x="20.955" y="53.34" rot="R90">
+<element name="D3" library="Seeed-OPL-Diode" package="LED-0603" value="RED-0603" x="20.955" y="53.34" smashed="yes" rot="R90">
 <attribute name="MPN" value="19-217-R6C-AL1M2VY-3T" x="20.955" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="20.066" y="52.705" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="22.5425" y="52.197" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="J1" library="Seeed-OPL-Connector" package="H7-SMD-2.54" value="7p-SMD-2.54" x="12.065" y="78.645" rot="R90">
 <attribute name="MPN" value="F171-1107A0BMU01" x="12.065" y="78.645" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="1X04" value="" x="23.495" y="80.01"/>
+<element name="JP1" library="SparkFun-Connectors" package="1X04" value="" x="23.495" y="80.01" smashed="yes">
+<attribute name="NAME" x="20.8788" y="81.3562" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="22.225" y="76.835" size="1.27" layer="27"/>
+</element>
 <element name="M+" library="wirepad" package="SMD1,27-2,54" value="" x="31.115" y="52.705" rot="R270"/>
 <element name="M-" library="wirepad" package="SMD1,27-2,54" value="" x="34.29" y="52.705" rot="R270"/>
 <element name="R1" library="Seeed-OPL-Resistor" package="R0805" value="270R" x="31.115" y="63.5" rot="R90">
@@ -907,26 +942,42 @@ design rules under a new name.</description>
 <element name="R3" library="Seeed-OPL-Resistor" package="R0805" value="270R" x="31.115" y="60.325" rot="R90">
 <attribute name="MPN" value="RC1206JR-07270RL" x="31.115" y="60.325" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R4" library="Seeed-OPL-Resistor" package="R0603" value="75K 1/10W" x="35.56" y="65.405" rot="R90">
+<element name="R4" library="Seeed-OPL-Resistor" package="R0603" value="75K 1/10W" x="35.56" y="65.405" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-0775KL" x="35.56" y="65.405" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="35.6235" y="64.5795" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="36.83" y="67.31" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R5" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="38.1" y="68.58" rot="R90">
+<element name="R5" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="38.1" y="68.58" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-0710KL" x="38.1" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.989" y="67.691" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="39.37" y="70.485" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R6" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="34.925" y="67.31" rot="R90">
+<element name="R6" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="34.925" y="67.31" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-0710KL" x="34.925" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="34.9885" y="69.0245" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="36.195" y="69.215" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R7" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="41.275" y="68.58" rot="R270">
+<element name="R7" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="41.275" y="68.58" smashed="yes" rot="R270">
 <attribute name="MPN" value="RC0603FR-0710KL" x="41.275" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="40.8305" y="66.802" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="40.005" y="66.675" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="R8" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="21.59" y="57.785" rot="R270">
 <attribute name="MPN" value="RC0603FR-0710KL" x="21.59" y="57.785" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R9" library="Seeed-OPL-Resistor" package="R0603" value="330R" x="17.145" y="52.705" rot="R90">
+<element name="R9" library="Seeed-OPL-Resistor" package="R0603" value="330R" x="17.145" y="52.705" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-07330RL" x="17.145" y="52.705" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.4145" y="53.467" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="18.415" y="54.61" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="34.29" y="76.835"/>
-<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="20.955" y="74.295" rot="R90"/>
+<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="34.29" y="76.835" smashed="yes">
+<attribute name="NAME" x="32.7025" y="77.0255" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="33.3375" y="75.184" size="0.4064" layer="27"/>
+</element>
+<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="20.955" y="74.295" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="74.6125" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="22.606" y="73.3425" size="0.4064" layer="27" rot="R90"/>
+</element>
 <element name="SW1" library="Seeed-OPL-Switch" package="SW7-SMD-L6.7X2.7X3.2MM" value="" x="4.985" y="52.07"/>
 <element name="RFDUINO" library="GeekAmmo" package="RFD22301" value="RF22301" x="4.445" y="73.025" smashed="yes">
 <attribute name="NAME" x="6.985" y="72.39" size="1.27" layer="25"/>
@@ -935,11 +986,15 @@ design rules under a new name.</description>
 <element name="Q1" library="Seeed-OPL-Transistor" package="SOT-23" value="MMBT3904LT1G" x="29.48" y="57.055" rot="R270">
 <attribute name="MPN" value="MMBT3904LT1G" x="29.48" y="57.055" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U1" library="Seeed-OPL-sensor" package="LGA14-0.8-5.0X3.0MM" value="ADXL345BCCZ-RL" x="26.035" y="70.485">
+<element name="U1" library="Seeed-OPL-sensor" package="LGA14-0.8-5.0X3.0MM" value="ADXL345BCCZ-RL" x="26.035" y="70.485" smashed="yes">
 <attribute name="MPN" value="ADXL345BCCZ-RL" x="26.035" y="70.485" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="26.873" y="74.2" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="28.962" y="68.612" size="0.889" layer="27" ratio="11" rot="R90"/>
 </element>
-<element name="U2" library="Seeed-OPL-sensor" package="QFN20-0.4-3X3M" value="MPR121QR2" x="38.1" y="73.66">
+<element name="U2" library="Seeed-OPL-sensor" package="QFN20-0.4-3X3M" value="MPR121QR2" x="38.1" y="73.66" smashed="yes">
 <attribute name="MPN" value="MPR121QR2" x="38.1" y="73.66" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="38.6715" y="75.692" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="36.195" y="70.485" size="0.889" layer="27" ratio="11"/>
 </element>
 <element name="U3" library="Seeed-OPL-ic" package="SOT-23-5" value="MCP73832T-2ACI/OT-SOT23-5" x="12.4" y="53.97" rot="R270">
 <attribute name="MPN" value="MCP73832T-2ACI/OT" x="12.4" y="53.97" size="1.778" layer="27" rot="R270" display="off"/>
@@ -948,8 +1003,10 @@ design rules under a new name.</description>
 <element name="SJ4" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="26.035" y="77.47" rot="R90"/>
 <element name="SJ5" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="28.575" y="77.47" rot="R90"/>
 <element name="SJ6" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="31.115" y="77.47" rot="R90"/>
-<element name="USB1" library="Seeed-OPL-Connector" package="MICRO-USB5+6P-SMD-0.65-B" value="10118193-0001LF" x="6.985" y="41.91" rot="R270">
-<attribute name="MPN" value="10118193-0001LF" x="6.985" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="USB1" library="Seeed-OPL-Connector" package="MICRO-USB5+6P-SMD-0.65-B" value="10118193-0001LF" x="6.985" y="39.9415" smashed="yes" rot="R270">
+<attribute name="MPN" value="10118193-0001LF" x="6.985" y="39.9415" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="3.175" y="44.3865" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="2.54" y="45.0215" size="0.889" layer="27" ratio="11"/>
 </element>
 </elements>
 <signals>
@@ -1233,8 +1290,6 @@ design rules under a new name.</description>
 <wire x1="8.89" y1="53.975" x2="11.0949" y2="53.975" width="0.254" layer="1"/>
 <wire x1="11.0949" y1="53.975" x2="11.0999" y2="53.97" width="0.254" layer="1"/>
 <contactref element="USB1" pad="5"/>
-<wire x1="11.43" y1="40.64" x2="6.735" y2="40.64" width="0.4064" layer="1"/>
-<wire x1="6.735" y1="40.64" x2="6.735" y2="40.61" width="0.4064" layer="1"/>
 <wire x1="11.0999" y1="53.97" x2="10.165" y2="53.97" width="0.254" layer="1"/>
 <wire x1="10.165" y1="53.97" x2="9.525" y2="54.61" width="0.254" layer="1"/>
 <wire x1="9.525" y1="54.61" x2="9.525" y2="55.88" width="0.254" layer="1"/>
@@ -1252,6 +1307,9 @@ design rules under a new name.</description>
 <wire x1="24.9555" y1="71.5645" x2="24.835" y2="71.685" width="0.2032" layer="1"/>
 <wire x1="20.6375" y1="70.8025" x2="21.9075" y2="70.8025" width="0.2032" layer="16"/>
 <wire x1="21.9075" y1="70.8025" x2="22.86" y2="71.12" width="0.2032" layer="16"/>
+<wire x1="6.735" y1="38.6415" x2="9.4315" y2="38.6415" width="0.4064" layer="1"/>
+<wire x1="9.4315" y1="38.6415" x2="9.525" y2="38.735" width="0.4064" layer="1"/>
+<wire x1="9.525" y1="38.735" x2="11.43" y2="40.64" width="0.4064" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R12" pad="2"/>
@@ -1417,8 +1475,6 @@ design rules under a new name.</description>
 <wire x1="14.605" y1="51.435" x2="15.113" y2="51.435" width="0.254" layer="1"/>
 <wire x1="15.113" y1="51.435" x2="16.383" y2="52.705" width="0.254" layer="1"/>
 <contactref element="USB1" pad="1"/>
-<wire x1="16.51" y1="43.18" x2="6.735" y2="43.18" width="0.4064" layer="1"/>
-<wire x1="6.735" y1="43.18" x2="6.735" y2="43.21" width="0.4064" layer="1"/>
 <via x="19.685" y="50.8" extent="1-16" drill="0.5"/>
 <wire x1="19.685" y1="50.8" x2="19.685" y2="53.975" width="0.254" layer="16"/>
 <wire x1="19.685" y1="53.975" x2="21.59" y2="55.6895" width="0.254" layer="16"/>
@@ -1427,6 +1483,10 @@ design rules under a new name.</description>
 <wire x1="23.3045" y1="55.88" x2="23.495" y2="56.0705" width="0.254" layer="1"/>
 <wire x1="19.685" y1="50.8" x2="18.288" y2="50.8" width="0.2032" layer="1"/>
 <wire x1="18.288" y1="50.8" x2="16.383" y2="52.705" width="0.2032" layer="1"/>
+<wire x1="6.735" y1="41.2415" x2="9.4915" y2="41.2415" width="0.4064" layer="1"/>
+<wire x1="9.4915" y1="41.2415" x2="9.525" y2="41.275" width="0.4064" layer="1"/>
+<wire x1="9.525" y1="41.275" x2="11.43" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="11.43" y1="43.18" x2="16.51" y2="43.18" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R9" pad="2"/>
