@@ -9,17 +9,17 @@
 <grid distance="0.025" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -30,22 +30,22 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="6" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -63,64 +63,64 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -129,30 +129,30 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
 <rectangle x1="7.825" y1="35.925" x2="43.385" y2="51.165" layer="21" rot="R180"/>
 <circle x="38.195" y="58.69" radius="5.23634375" width="0.4064" layer="21"/>
-<wire x1="1.365" y1="32" x2="1.365" y2="82" width="0.2" layer="20"/>
-<wire x1="1.365" y1="82" x2="52" y2="82" width="0.2" layer="20"/>
-<wire x1="52" y1="82" x2="52" y2="32" width="0.2" layer="20"/>
-<wire x1="52" y1="32" x2="1.365" y2="32" width="0.2" layer="20"/>
+<wire x1="-0.54" y1="34.54" x2="-0.54" y2="83.905" width="0.2" layer="20"/>
+<wire x1="-0.54" y1="83.905" x2="48.19" y2="83.905" width="0.2" layer="20"/>
+<wire x1="48.19" y1="83.905" x2="48.19" y2="34.54" width="0.2" layer="20"/>
+<wire x1="48.19" y1="34.54" x2="-0.54" y2="34.54" width="0.2" layer="20"/>
 </plain>
 <libraries>
 <library name="wirepad">
@@ -849,17 +849,25 @@ design rules under a new name.</description>
 <elements>
 <element name="B-" library="wirepad" package="SMD1,27-2,54" value="" x="27.305" y="52.705" rot="R270"/>
 <element name="B+" library="wirepad" package="SMD1,27-2,54" value="" x="24.13" y="52.705" rot="R270"/>
-<element name="C1" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="22.225" y="67.437" rot="R270">
+<element name="C1" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="22.225" y="67.437" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="22.225" y="67.437" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.971" y="66.802" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="23.622" y="68.961" size="0.635" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="C2" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="40.005" y="65.405" rot="R90">
+<element name="C2" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="40.005" y="65.405" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="40.005" y="65.405" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="42.037" y="64.516" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="38.608" y="63.881" size="0.635" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="C3" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="35.56" y="71.755">
+<element name="C3" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="35.56" y="71.755" smashed="yes">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="35.56" y="71.755" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.9725" y="71.628" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="34.036" y="73.152" size="0.635" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="C4" library="Seeed-OPL-Capacitor" package="C0402" value="10uf" x="15.875" y="57.785" rot="R270">
+<element name="C4" library="Seeed-OPL-Capacitor" package="C0402" value="10uf" x="15.875" y="57.785" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0402MRX5R5BB106" x="15.875" y="57.785" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="15.875" y="57.15" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="17.272" y="59.309" size="0.635" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C5" library="Seeed-OPL-Capacitor" package="C0402" value="4.7uf" x="23.495" y="56.515">
 <attribute name="MPN" value="CC0402MRX5R5BB475" x="23.495" y="56.515" size="1.778" layer="27" display="off"/>
@@ -867,18 +875,32 @@ design rules under a new name.</description>
 <element name="C6" library="Seeed-OPL-Capacitor" package="C0402" value="4.7uf" x="26.035" y="56.515">
 <attribute name="MPN" value="CC0402MRX5R5BB475" x="26.035" y="56.515" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CP7" library="wirepad" package="SMD1,27-2,54" value="" x="41.275" y="76.2"/>
-<element name="CP8" library="wirepad" package="SMD1,27-2,54" value="" x="40.005" y="80.01" rot="R90"/>
-<element name="CP9" library="wirepad" package="SMD1,27-2,54" value="" x="34.925" y="80.01" rot="R90"/>
-<element name="CAPB" library="wirepad" package="SMD2,54-5,08" value="" x="59.69" y="74.295" rot="MR0"/>
-<element name="CAPL" library="wirepad" package="SMD2,54-5,08" value="" x="64.77" y="80.645" rot="MR90"/>
-<element name="CAPR" library="wirepad" package="SMD2,54-5,08" value="" x="75.565" y="76.2" rot="MR0"/>
-<element name="CAPT" library="wirepad" package="SMD2,54-5,08" value="" x="70.485" y="67.945" rot="MR90"/>
-<element name="D1" library="Seeed-OPL-Diode" package="LED6-SMD-5060" value="CLP6C-FKB-CM1Q1H1BB7R3R3-5060" x="25.4" y="62.23">
-<attribute name="MPN" value="CLP6C-FKB-CM1Q1H1BB7R3R3" x="25.4" y="62.23" size="1.778" layer="27" display="off"/>
+<element name="CP7" library="wirepad" package="SMD1,27-2,54" value="" x="41.91" y="79.375" smashed="yes">
+<attribute name="VALUE" x="41.91" y="79.375" size="0.0254" layer="27"/>
+<attribute name="NAME" x="44.285" y="76.975" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="D2" library="Seeed-OPL-Diode" package="SOD-123" value="MMSD4148-sod123" x="8.255" y="57.785">
+<element name="CP8" library="wirepad" package="SMD1,27-2,54" value="" x="38.735" y="80.01" smashed="yes" rot="R90">
+<attribute name="VALUE" x="38.735" y="80.01" size="0.0254" layer="27" rot="R90"/>
+<attribute name="NAME" x="40.8175" y="79.21" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="CP9" library="wirepad" package="SMD1,27-2,54" value="" x="34.925" y="80.01" smashed="yes" rot="R90">
+<attribute name="VALUE" x="34.925" y="80.01" size="0.0254" layer="27" rot="R90"/>
+<attribute name="NAME" x="36.69" y="79.21" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="CAPB" library="wirepad" package="SMD2,54-5,08" value="" x="34.925" y="37.465" rot="MR270"/>
+<element name="CAPL" library="wirepad" package="SMD2,54-5,08" value="" x="2.54" y="58.42" rot="MR0"/>
+<element name="CAPR" library="wirepad" package="SMD2,54-5,08" value="" x="42.545" y="65.405" rot="MR0"/>
+<element name="CAPT" library="wirepad" package="SMD2,54-5,08" value="" x="16.51" y="80.01" rot="MR90"/>
+<element name="D1" library="Seeed-OPL-Diode" package="LED6-SMD-5060" value="CLP6C-FKB-CM1Q1H1BB7R3R3-5060" x="25.4" y="62.23" smashed="yes">
+<attribute name="MPN" value="CLP6C-FKB-CM1Q1H1BB7R3R3" x="25.4" y="62.23" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.4155" y="65.4525" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="22.86" y="57.547" size="0.889" layer="27" ratio="11"/>
+</element>
+<element name="D2" library="Seeed-OPL-Diode" package="SOD-123" value="MMSD4148-sod123" x="8.255" y="57.785" smashed="yes">
 <attribute name="MPN" value="MMSD4148" x="8.255" y="57.785" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.985" y="55.753" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="6.35" y="55.753" size="0.889" layer="27" font="vector" ratio="11"/>
+<attribute name="NAME" x="7.366" y="57.15" size="0.381" layer="33" ratio="10"/>
 </element>
 <element name="D3" library="Seeed-OPL-Diode" package="LED-0603" value="RED-0603" x="20.955" y="53.34" rot="R90">
 <attribute name="MPN" value="19-217-R6C-AL1M2VY-3T" x="20.955" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
@@ -886,7 +908,10 @@ design rules under a new name.</description>
 <element name="J1" library="Seeed-OPL-Connector" package="H7-SMD-2.54" value="7p-SMD-2.54" x="12.065" y="78.645" rot="R90">
 <attribute name="MPN" value="F171-1107A0BMU01" x="12.065" y="78.645" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="1X04" value="" x="23.495" y="80.01"/>
+<element name="JP1" library="SparkFun-Connectors" package="1X04" value="" x="23.495" y="80.01" smashed="yes">
+<attribute name="NAME" x="20.8788" y="81.3562" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="22.225" y="76.835" size="1.27" layer="27"/>
+</element>
 <element name="M+" library="wirepad" package="SMD1,27-2,54" value="" x="31.115" y="52.705" rot="R270"/>
 <element name="M-" library="wirepad" package="SMD1,27-2,54" value="" x="34.29" y="52.705" rot="R270"/>
 <element name="R1" library="Seeed-OPL-Resistor" package="R0805" value="270R" x="31.115" y="63.5" rot="R90">
@@ -907,17 +932,25 @@ design rules under a new name.</description>
 <element name="R3" library="Seeed-OPL-Resistor" package="R0805" value="270R" x="31.115" y="60.325" rot="R90">
 <attribute name="MPN" value="RC1206JR-07270RL" x="31.115" y="60.325" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R4" library="Seeed-OPL-Resistor" package="R0603" value="75K 1/10W" x="35.56" y="65.405" rot="R90">
+<element name="R4" library="Seeed-OPL-Resistor" package="R0603" value="75K 1/10W" x="35.56" y="65.405" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-0775KL" x="35.56" y="65.405" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="35.6235" y="64.5795" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="36.83" y="67.31" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R5" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="38.1" y="68.58" rot="R90">
+<element name="R5" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="38.1" y="68.58" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-0710KL" x="38.1" y="68.58" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.989" y="67.691" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="39.37" y="70.485" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R6" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="34.925" y="67.31" rot="R90">
+<element name="R6" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="34.925" y="67.31" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603FR-0710KL" x="34.925" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="34.9885" y="69.0245" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="36.195" y="69.215" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R7" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="41.275" y="68.58" rot="R270">
+<element name="R7" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="41.275" y="68.58" smashed="yes" rot="R270">
 <attribute name="MPN" value="RC0603FR-0710KL" x="41.275" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="40.8305" y="66.802" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="40.005" y="66.675" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="R8" library="Seeed-OPL-Resistor" package="R0603" value="10K" x="21.59" y="57.785" rot="R270">
 <attribute name="MPN" value="RC0603FR-0710KL" x="21.59" y="57.785" size="1.778" layer="27" rot="R270" display="off"/>
@@ -925,8 +958,14 @@ design rules under a new name.</description>
 <element name="R9" library="Seeed-OPL-Resistor" package="R0603" value="330R" x="17.145" y="52.705" rot="R90">
 <attribute name="MPN" value="RC0603FR-07330RL" x="17.145" y="52.705" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="34.29" y="76.835"/>
-<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="20.955" y="74.295" rot="R90"/>
+<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="34.29" y="76.835" smashed="yes">
+<attribute name="NAME" x="32.7025" y="77.0255" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="33.3375" y="75.184" size="0.4064" layer="27"/>
+</element>
+<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="20.955" y="74.295" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="74.6125" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="22.606" y="73.3425" size="0.4064" layer="27" rot="R90"/>
+</element>
 <element name="SW1" library="Seeed-OPL-Switch" package="SW7-SMD-L6.7X2.7X3.2MM" value="" x="4.985" y="52.07"/>
 <element name="RFDUINO" library="GeekAmmo" package="RFD22301" value="RF22301" x="4.445" y="73.025" smashed="yes">
 <attribute name="NAME" x="6.985" y="72.39" size="1.27" layer="25"/>
@@ -935,11 +974,15 @@ design rules under a new name.</description>
 <element name="Q1" library="Seeed-OPL-Transistor" package="SOT-23" value="MMBT3904LT1G" x="29.48" y="57.055" rot="R270">
 <attribute name="MPN" value="MMBT3904LT1G" x="29.48" y="57.055" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U1" library="Seeed-OPL-sensor" package="LGA14-0.8-5.0X3.0MM" value="ADXL345BCCZ-RL" x="26.035" y="70.485">
+<element name="U1" library="Seeed-OPL-sensor" package="LGA14-0.8-5.0X3.0MM" value="ADXL345BCCZ-RL" x="26.035" y="70.485" smashed="yes">
 <attribute name="MPN" value="ADXL345BCCZ-RL" x="26.035" y="70.485" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="26.873" y="74.2" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="28.962" y="68.612" size="0.889" layer="27" ratio="11" rot="R90"/>
 </element>
-<element name="U2" library="Seeed-OPL-sensor" package="QFN20-0.4-3X3M" value="MPR121QR2" x="38.1" y="73.66">
+<element name="U2" library="Seeed-OPL-sensor" package="QFN20-0.4-3X3M" value="MPR121QR2" x="38.1" y="73.66" smashed="yes">
 <attribute name="MPN" value="MPR121QR2" x="38.1" y="73.66" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="38.6715" y="75.692" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="36.195" y="70.485" size="0.889" layer="27" ratio="11"/>
 </element>
 <element name="U3" library="Seeed-OPL-ic" package="SOT-23-5" value="MCP73832T-2ACI/OT-SOT23-5" x="12.4" y="53.97" rot="R270">
 <attribute name="MPN" value="MCP73832T-2ACI/OT" x="12.4" y="53.97" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1024,8 +1067,8 @@ design rules under a new name.</description>
 <wire x1="33.782" y1="81.2165" x2="42.6085" y2="81.2165" width="0.1778" layer="1"/>
 <wire x1="42.6085" y1="81.2165" x2="43.18" y2="80.645" width="0.1778" layer="1"/>
 <wire x1="43.18" y1="80.645" x2="43.18" y2="74.295" width="0.1778" layer="1"/>
-<wire x1="43.18" y1="74.295" x2="39.37" y2="70.485" width="0.1778" layer="1"/>
-<wire x1="39.37" y1="70.485" x2="39.37" y2="69.85" width="0.1778" layer="1"/>
+<wire x1="43.18" y1="74.295" x2="40.64" y2="69.85" width="0.1778" layer="1"/>
+<wire x1="40.64" y1="69.85" x2="39.37" y2="69.85" width="0.1778" layer="1"/>
 <wire x1="39.37" y1="69.85" x2="38.1" y2="69.85" width="0.1778" layer="1"/>
 <wire x1="38.1" y1="69.85" x2="38.1" y2="69.342" width="0.1778" layer="1"/>
 <wire x1="38.1" y1="69.342" x2="37.338" y2="68.58" width="0.1778" layer="1"/>
@@ -1372,10 +1415,10 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <wire x1="36.322" y1="65.405" x2="38.1" y2="65.405" width="0.1778" layer="1"/>
 <via x="38.1" y="65.405" extent="1-16" drill="0.5"/>
-<wire x1="38.1" y1="65.405" x2="38.1" y2="71.12" width="0.1778" layer="16"/>
-<via x="38.1" y="71.12" extent="1-16" drill="0.5"/>
-<wire x1="38.1" y1="71.12" x2="37.719" y2="71.12" width="0.1778" layer="1"/>
-<wire x1="37.719" y1="71.12" x2="37.719" y2="72.241" width="0.1778" layer="1"/>
+<wire x1="38.1" y1="65.405" x2="36.83" y2="70.485" width="0.1778" layer="16"/>
+<via x="36.83" y="70.485" extent="1-16" drill="0.5"/>
+<wire x1="36.83" y1="70.485" x2="37.719" y2="71.755" width="0.1778" layer="1"/>
+<wire x1="37.719" y1="71.755" x2="37.719" y2="72.241" width="0.1778" layer="1"/>
 <wire x1="37.719" y1="72.241" x2="37.7" y2="72.26" width="0.1778" layer="1"/>
 </signal>
 <signal name="N$7">
@@ -1501,37 +1544,80 @@ design rules under a new name.</description>
 <signal name="N$16">
 <contactref element="U2" pad="8"/>
 <contactref element="CAPL" pad="1"/>
-<wire x1="38.1" y1="72.26" x2="64.77" y2="80.645" width="0" layer="19" extent="1-16"/>
+<wire x1="38.1" y1="72.26" x2="38.1" y2="70.8025" width="0.2032" layer="1"/>
+<via x="38.1" y="70.8025" extent="1-16" drill="0.5" shape="octagon"/>
+<wire x1="38.1" y1="70.8025" x2="38.1" y2="67.945" width="0.2032" layer="16"/>
+<wire x1="38.1" y1="67.945" x2="39.37" y2="66.675" width="0.2032" layer="16"/>
+<wire x1="39.37" y1="66.675" x2="39.37" y2="60.96" width="0.2032" layer="16"/>
+<wire x1="39.37" y1="60.96" x2="39.37" y2="60.3885" width="0.2032" layer="16"/>
+<wire x1="39.37" y1="60.3885" x2="37.4015" y2="58.42" width="0.2032" layer="16"/>
+<wire x1="37.4015" y1="58.42" x2="2.54" y2="58.42" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$17">
 <contactref element="U2" pad="9"/>
 <contactref element="CAPR" pad="1"/>
-<wire x1="38.5" y1="72.26" x2="75.565" y2="76.2" width="0" layer="19" extent="1-16"/>
+<wire x1="38.5" y1="72.26" x2="38.5" y2="71.774" width="0.2032" layer="1"/>
+<wire x1="38.5" y1="71.774" x2="38.481" y2="71.755" width="0.2032" layer="1"/>
+<wire x1="38.481" y1="71.755" x2="38.481" y2="71.6915" width="0.2032" layer="1"/>
+<wire x1="38.481" y1="71.6915" x2="38.735" y2="71.4375" width="0.2032" layer="1"/>
+<wire x1="38.735" y1="71.4375" x2="39.0525" y2="71.4375" width="0.2032" layer="1"/>
+<wire x1="39.0525" y1="71.4375" x2="39.37" y2="71.12" width="0.2032" layer="1"/>
+<via x="39.37" y="71.12" extent="1-16" drill="0.5" shape="octagon"/>
+<wire x1="39.37" y1="71.12" x2="39.37" y2="68.58" width="0.2032" layer="16"/>
+<wire x1="39.37" y1="68.58" x2="42.545" y2="65.405" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$18">
 <contactref element="U2" pad="10"/>
 <contactref element="CAPT" pad="1"/>
-<wire x1="38.9" y1="72.26" x2="70.485" y2="67.945" width="0" layer="19" extent="1-16"/>
+<wire x1="38.9" y1="72.26" x2="40.51" y2="72.26" width="0.2032" layer="1"/>
+<wire x1="40.51" y1="72.26" x2="40.64" y2="72.39" width="0.2032" layer="1"/>
+<wire x1="40.64" y1="72.39" x2="41.275" y2="73.025" width="0.2032" layer="1"/>
+<wire x1="41.275" y1="73.025" x2="41.275" y2="74.93" width="0.2032" layer="1"/>
+<via x="41.275" y="74.93" extent="1-16" drill="0.5" shape="octagon"/>
+<wire x1="41.275" y1="74.93" x2="40.005" y2="76.2" width="0.2032" layer="16"/>
+<wire x1="40.005" y1="76.2" x2="40.005" y2="77.47" width="0.2032" layer="16"/>
+<wire x1="40.005" y1="77.47" x2="39.37" y2="78.105" width="0.2032" layer="16"/>
+<wire x1="39.37" y1="78.105" x2="19.685" y2="78.105" width="0.2032" layer="16"/>
+<wire x1="19.685" y1="78.105" x2="18.415" y2="78.105" width="0.2032" layer="16"/>
+<wire x1="18.415" y1="78.105" x2="16.51" y2="80.01" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="U2" pad="11"/>
 <contactref element="CAPB" pad="1"/>
-<wire x1="39.5" y1="72.86" x2="59.69" y2="74.295" width="0" layer="19" extent="1-16"/>
+<wire x1="39.5" y1="72.86" x2="40.1575" y2="72.86" width="0.2032" layer="1"/>
+<wire x1="40.1575" y1="72.86" x2="40.4495" y2="73.152" width="0.2032" layer="1"/>
+<wire x1="40.4495" y1="73.152" x2="40.4495" y2="75.3745" width="0.2032" layer="1"/>
+<wire x1="40.4495" y1="75.3745" x2="41.275" y2="76.2" width="0.2032" layer="1"/>
+<via x="41.275" y="76.2" extent="1-16" drill="0.5" shape="octagon"/>
+<wire x1="41.275" y1="76.2" x2="43.815" y2="76.2" width="0.2032" layer="16"/>
+<wire x1="43.815" y1="76.2" x2="44.45" y2="75.565" width="0.2032" layer="16"/>
+<wire x1="44.45" y1="75.565" x2="44.45" y2="62.23" width="0.2032" layer="16"/>
+<wire x1="44.45" y1="62.23" x2="42.545" y2="60.325" width="0.2032" layer="16"/>
+<wire x1="42.545" y1="60.325" x2="42.545" y2="45.085" width="0.2032" layer="16"/>
+<wire x1="42.545" y1="45.085" x2="34.925" y2="37.465" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$20">
 <contactref element="U2" pad="15"/>
 <contactref element="CP7" pad="1"/>
-<wire x1="39.5" y1="74.46" x2="41.275" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="39.5" y1="74.46" x2="39.5" y2="76.33" width="0.2032" layer="1"/>
+<wire x1="39.5" y1="76.33" x2="40.005" y2="76.835" width="0.2032" layer="1"/>
+<wire x1="40.005" y1="76.835" x2="40.005" y2="77.47" width="0.2032" layer="1"/>
+<wire x1="40.005" y1="77.47" x2="41.91" y2="79.375" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="U2" pad="16"/>
 <contactref element="CP8" pad="1"/>
-<wire x1="38.9" y1="75.06" x2="40.005" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="38.9" y1="75.06" x2="38.9" y2="79.845" width="0.2032" layer="1"/>
+<wire x1="38.9" y1="79.845" x2="38.735" y2="80.01" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="U2" pad="17"/>
 <contactref element="CP9" pad="1"/>
-<wire x1="34.925" y1="80.01" x2="38.5" y2="75.06" width="0" layer="19" extent="1-1"/>
+<wire x1="38.5" y1="75.06" x2="38.5" y2="77.07" width="0.2032" layer="1"/>
+<wire x1="38.5" y1="77.07" x2="38.1" y2="77.47" width="0.2032" layer="1"/>
+<wire x1="38.1" y1="77.47" x2="37.465" y2="78.105" width="0.2032" layer="1"/>
+<wire x1="37.465" y1="78.105" x2="36.83" y2="78.105" width="0.2032" layer="1"/>
+<wire x1="36.83" y1="78.105" x2="34.925" y2="80.01" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="C2" pad="2"/>
