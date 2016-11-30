@@ -51,7 +51,7 @@ Number=0
 
 [Win_2]
 Type="Board Editor"
-Loc="861 1116 2651 2511"
+Loc="769 22 2559 1417"
 State=2
 Number=2
 File="/Users/Simone/Documents/eagle/Tiles/Prototoype 2 RevB/Tiles_Proto2.brd"
@@ -140,6 +140,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: -7.1954 -18.2478 285.325 188.6"
 Sheet="1"
 
 [Desktop]
