@@ -1,4 +1,10 @@
-# Tiles Hardware Schematics Repository
+# IoT Squares 
+
+Squares are tiny stickers with electronics that give superpowers to everyday objects. They implement a set of physical interaction primitives.
+
+![Squares modules](imgs/squares.png)
+
+Squares are part of Tiles, an inventor toolbox to support the design and making of interactive objects for learning and play. For more information tilestoolkit.io
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
