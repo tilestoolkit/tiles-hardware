@@ -1,7 +1,8 @@
 # Tiles DEVICE
 
 ## Notes
-When programming a Squre Prototype 2 Rev D (RED Square) the ON/OFF switch must be put on OFF.
+- When programming a Square Prototype 2 Rev D (RED Square) the ON/OFF switch must be put on OFF.
+- Set in the code the type of Square module you have. For RFDUINO-shield-based modules set the *IS_SHIELD* variable on *TRUE*. For Prot#2 RevD module set the *COMMON_ANODE* to *true*
 
 ## API for Tiles DEVICE
 <table>
