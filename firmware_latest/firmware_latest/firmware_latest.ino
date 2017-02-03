@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 /*
   TILES Test Led Button
   Example of how Bluetooth 4.0 communication. It works with custom-made button, red led, green led shield.
@@ -29,7 +31,8 @@ int shake = 0;
 int inactivity = 0;
 bool tilt = false;
 
-#define is_shield true  // Used to define pins for RFduino shield or TILES Square
+#define COMMON_ANODE
+#define is_shield false  // Used to define pins for RFduino shield or TILES Square
 
 #if is_shield
 #define RED_LED_PIN 2
@@ -50,7 +53,6 @@ String event_name;
 String payload;
 char c_payload[19];
 
-#define COMMON_ANODE
 
 #define FADE_TIME 2000
 #define DIR_UP 1
@@ -99,7 +101,6 @@ int acc_event(uint32_t ulPin){
     RFduinoBLE.send((char*) c_payload, 19);
     return 0;
   }
-
 }
 
 void setup() {
