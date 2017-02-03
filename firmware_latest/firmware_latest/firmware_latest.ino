@@ -9,7 +9,7 @@
 
   V.01 - 150915 - Simone Mora (simonem@ntnu.no)
   V.02 - 050215 - Simone Mora (simonem@ntnu.no)
-  - added multiple event and command handling
+  - added multiple event and command handlinggg
   -RFDUINO LED BUTTON SHIELD VERSION-
 */
 
@@ -78,31 +78,6 @@ String blinkingColor;
 String fadingColor;
 
 
-int acc_event(uint32_t ulPin){
-  uint8_t data = tokenSolo.accel.readRegister(ADXL345_REG_INT_SOURCE);
-
-  if((data >> ADXL345_FREE_FALL) & 1){
-    payload = adv_name + ",drop";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
-    return 0;
-  }
-
-  if((data >> ADXL345_DOUBLE_TAP) & 1){
-    payload = adv_name + ",tap,double";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
-    return 0;
-  }
-
-  if((data >> ADXL345_SINGLE_TAP) & 1){
-    payload = adv_name + ",tap,single";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
-    return 0;
-  }
-}
-
 void setup() {
   // Config of the accelerometer
   tokenSolo.accelConfig();
@@ -151,21 +126,17 @@ void setup() {
 
 void loop() {
   /************************************************************/
-
   if (abs(tokenSolo.accelGetX()) > 7 || abs(tokenSolo.accelGetY()) > 7){
     payload = adv_name + ",tilt";
     payload.toCharArray(c_payload, 19);
     RFduinoBLE.send((char*) c_payload, 19);
   }
-
   if (inactivity)
   {
     //tokenConstraint.rgb_sensor.getData();
   }
-
   if (blinking)
     blink(blinkingColor);
-
   if (fading) {
     fade(fadingColor);
   }
@@ -202,6 +173,38 @@ void RFduinoBLE_onReceive(char *data, int len)
 //  Serial.print("Packet lenght: "); Serial.println(len);
 //  Serial.print("Payload: "); Serial.println(data);
 
+  parse(data,len);
+
+
+}
+
+
+int acc_event(uint32_t ulPin){
+  uint8_t data = tokenSolo.accel.readRegister(ADXL345_REG_INT_SOURCE);
+
+  if((data >> ADXL345_FREE_FALL) & 1){
+    payload = adv_name + ",drop";
+    payload.toCharArray(c_payload, 19);
+    RFduinoBLE.send((char*) c_payload, 19);
+    return 0;
+  }
+
+  if((data >> ADXL345_DOUBLE_TAP) & 1){
+    payload = adv_name + ",tap,double";
+    payload.toCharArray(c_payload, 19);
+    RFduinoBLE.send((char*) c_payload, 19);
+    return 0;
+  }
+
+  if((data >> ADXL345_SINGLE_TAP) & 1){
+    payload = adv_name + ",tap,single";
+    payload.toCharArray(c_payload, 19);
+    RFduinoBLE.send((char*) c_payload, 19);
+    return 0;
+  }
+}
+
+void parse(char *data,int len){
   String command;
   command = data;
   command = command.substring(0, len);
@@ -213,11 +216,10 @@ void RFduinoBLE_onReceive(char *data, int len)
   String firstValue = command.substring(0, commaIndex);
   String secondValue = command.substring(commaIndex + 1, secondCommaIndex);
   String thirdValue = command.substring(secondCommaIndex + 1);
-
-//  Serial.print("Command: "); Serial.println(command);
-//  Serial.print("FirstValue: "); Serial.println(firstValue);
-//  Serial.print("SecondValue: "); Serial.println(secondValue);
-//  Serial.print("ThirdValue: "); Serial.println(thirdValue);
+  //  Serial.print("Command: "); Serial.println(command);
+  //  Serial.print("FirstValue: "); Serial.println(firstValue);
+  //  Serial.print("SecondValue: "); Serial.println(secondValue);
+  //  Serial.print("ThirdValue: "); Serial.println(thirdValue);
 
   if (firstValue == "led") {
     if (secondValue == "off") {
@@ -250,6 +252,7 @@ void RFduinoBLE_onReceive(char *data, int len)
       haptic("burst");
     }
   }
+
 }
 
 // LED Functions
@@ -278,7 +281,6 @@ void parseColorString(String color, int& red, int& green, int& blue) {
   green = (int)((colorHex >> 8) & 0xFF); // Extract the GG byte
   blue = (int)((colorHex) & 0xFF);       // Extract the BB byte
 }
-
 
 void setColorRGB(int red, int green, int blue)
 {
@@ -312,6 +314,23 @@ void blink(String color)
   }
 }
 
+void fade(String color) {
+  fade_blue.update();
+  // LED no longer fading, switch direction
+  if (!fade_blue.is_fading()) {
+    // Fade down
+    if (direction == DIR_UP) {
+      fade_blue.fade(0, FADE_TIME);
+      direction = DIR_DOWN;
+    }
+    // Fade up
+    else {
+      fade_blue.fade(255, FADE_TIME);
+      direction = DIR_UP;
+    }
+  }
+}
+
 void haptic(String pattern)
 {
   if (pattern == "long")
@@ -327,23 +346,6 @@ void haptic(String pattern)
       delay(150);
       digitalWrite(VIBRO_PIN, LOW);
       delay(150);
-    }
-  }
-}
-
-void fade(String color) {
-  fade_blue.update();
-  // LED no longer fading, switch direction
-  if (!fade_blue.is_fading()) {
-    // Fade down
-    if (direction == DIR_UP) {
-      fade_blue.fade(0, FADE_TIME);
-      direction = DIR_DOWN;
-    }
-    // Fade up
-    else {
-      fade_blue.fade(255, FADE_TIME);
-      direction = DIR_UP;
     }
   }
 }
