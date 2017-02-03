@@ -1,5 +1,8 @@
 # Tiles DEVICE
 
+## Notes
+When programming a Squre Prototype 2 Rev D (RED Square) the ON/OFF switch must be put on OFF.
+
 ## API for Tiles DEVICE
 <table>
     <tr>
