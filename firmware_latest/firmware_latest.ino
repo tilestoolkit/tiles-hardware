@@ -78,7 +78,7 @@ String fadingColor;
 
 int acc_event(uint32_t ulPin){
   uint8_t data = tokenSolo.accel.readRegister(ADXL345_REG_INT_SOURCE);
-   
+
   if((data >> ADXL345_FREE_FALL) & 1){
     payload = adv_name + ",drop";
     payload.toCharArray(c_payload, 19);
@@ -99,7 +99,7 @@ int acc_event(uint32_t ulPin){
     RFduinoBLE.send((char*) c_payload, 19);
     return 0;
   }
-  
+
 }
 
 void setup() {
@@ -150,13 +150,13 @@ void setup() {
 
 void loop() {
   /************************************************************/
- 
+
   if (abs(tokenSolo.accelGetX()) > 7 || abs(tokenSolo.accelGetY()) > 7){
     payload = adv_name + ",tilt";
     payload.toCharArray(c_payload, 19);
     RFduinoBLE.send((char*) c_payload, 19);
   }
-  
+
   if (inactivity)
   {
     //tokenConstraint.rgb_sensor.getData();
@@ -250,9 +250,6 @@ void RFduinoBLE_onReceive(char *data, int len)
     }
   }
 }
-
-
-
 
 // LED Functions
 void setColor(String color)
