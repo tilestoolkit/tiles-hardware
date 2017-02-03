@@ -31,10 +31,10 @@ int shake = 0;
 int inactivity = 0;
 bool tilt = false;
 
-#define COMMON_ANODE
-#define is_shield false  // Used to define pins for RFduino shield or TILES Square
+#define COMMON_ANODE true
+#define IS_SHIELD false  // Used to define pins for RFduino shield or TILES Square
 
-#if is_shield
+#if IS_SHIELD
 #define RED_LED_PIN 2
 #define GREEN_LED_PIN 3
 #define BLUE_LED_PIN 4
@@ -167,15 +167,11 @@ void RFduinoBLE_onReceive(char *data, int len)
   //TODO verify whether the payload variable has to be deallocated to avoid memory leaks
   // char payload[6];
   // strncpy(payload,data,len);
-
   //debugging data packet received
 //  Serial.println("Data received");
 //  Serial.print("Packet lenght: "); Serial.println(len);
 //  Serial.print("Payload: "); Serial.println(data);
-
-  parse(data,len);
-
-
+  parseCommand(data,len);
 }
 
 
@@ -204,7 +200,7 @@ int acc_event(uint32_t ulPin){
   }
 }
 
-void parse(char *data,int len){
+void parseCommand(char *data,int len){
   String command;
   command = data;
   command = command.substring(0, len);
