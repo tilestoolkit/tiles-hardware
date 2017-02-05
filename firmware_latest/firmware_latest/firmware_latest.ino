@@ -11,9 +11,14 @@
 #include <Wire.h>
 //#include <WInterrupts.h>
 #include <stdlib.h>
-
- #include <TokenSoloEvent.h>
+#include <TokenSoloEvent.h>
 //#include "libs/TS/TokenSoloEvent.h"
+
+//GLOBAL SETTINGS
+#define BRIGHTNESS_DIVIDER 20 // defines LED bringhness divider works only with common anode led
+#define COMMON_ANODE true
+#define IS_SHIELD false  // Used to define pins for RFduino shield or TILES Square
+
 // Variables for Token Solo Event
 volatile uint8_t intSource = 0; // byte with interrupt informations
 adxl345_activity_t event;
@@ -23,11 +28,6 @@ int double_tap = 0;
 int shake = 0;
 int inactivity = 0;
 bool tilt = false;
-
-#define BRIGHTNESS_DIVIDER 20 // defines LED bringhness divider works only with common anode led
-#define COMMON_ANODE true
-#define IS_SHIELD false  // Used to define pins for RFduino shield or TILES Square
-
 #if IS_SHIELD
 #define RED_LED_PIN 2
 #define GREEN_LED_PIN 3
@@ -41,12 +41,10 @@ bool tilt = false;
 #define VIBRO_PIN 3
 #define ACC_INT1_PIN 4 // Pin where the acceleromter interrupt1 is connected
 #endif
-
 TokenSoloEvent tokenSolo = TokenSoloEvent(ACC_INT1_PIN); // Connected on pin 4
 String event_name;
 String payload;
 char c_payload[19];
-
 #define FADE_TIME 2000
 #define DIR_UP 1
 #define DIR_DOWN -1
@@ -55,21 +53,17 @@ LEDFader fade_green;
 LEDFader fade_blue;
 int direction = DIR_UP;
 bool fading = 0;
-
 String adv_name;
 String mac;
 uint8_t *deviceADDR0 = (uint8_t *)0x100000a4; // location of MAC address last byte
 char adv_name_c[8];
-
 int interrupt_count = 0;
-
 //COMMANDS
 int ledState = LOW;                       // ledState used to set the LED
 unsigned long previousMillis = 0;        // will store last time LED was updated
 bool blinking = 0;
 String blinkingColor;
 String fadingColor;
-
 
 void setup() {
   // Config of the accelerometer
@@ -90,18 +84,12 @@ void setup() {
 
   //blink the LEDS to test they are actually working
   setColor("green");
-  //digitalWrite(GREEN_LED_PIN, LOW);
   delay(250);
-  //digitalWrite(RED_LED_PIN, LOW);
   setColor("red");
   delay(250);
   setColor("blue");
-  //digitalWrite(BLUE_LED_PIN, LOW);
   delay(500);
   setColor("off");
-  //digitalWrite(GREEN_LED_PIN, HIGH);
-  //digitalWrite(RED_LED_PIN, HIGH);
-  //digitalWrite(BLUE_LED_PIN, HIGH);
 
   //Setup Bluetooth Connectivity
   //set the device name
@@ -126,8 +114,7 @@ void loop() {
   //Computes Tilt event,TODO: move to library
   if (abs(tokenSolo.accelGetX()) > 7 || abs(tokenSolo.accelGetY()) > 7){
     payload = adv_name + ",tilt";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
+    generateEvent(payload);
   }
   if (inactivity) //Do something when the accelerometer detects inactivity
   {
@@ -180,24 +167,27 @@ int acc_event(uint32_t ulPin){
 
   if((data >> ADXL345_FREE_FALL) & 1){
     payload = adv_name + ",drop";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
+    generateEvent(payload);
     return 0;
   }
 
   if((data >> ADXL345_DOUBLE_TAP) & 1){
     payload = adv_name + ",tap,double";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
+    generateEvent(payload);
     return 0;
   }
 
   if((data >> ADXL345_SINGLE_TAP) & 1){
     payload = adv_name + ",tap,single";
-    payload.toCharArray(c_payload, 19);
-    RFduinoBLE.send((char*) c_payload, 19);
+    generateEvent(payload);
     return 0;
   }
+}
+
+void generateEvent(String payload)
+{
+  payload.toCharArray(c_payload, 19);
+  RFduinoBLE.send((char*) c_payload, 19);
 }
 
 void parseCommand(char *data,int len){
