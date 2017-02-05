@@ -1,16 +1,9 @@
 #include <Arduino.h>
 
 /*
-  TILES Test Led Button
-  Example of how Bluetooth 4.0 communication. It works with custom-made button, red led, green led shield.
-  HOWTOV01: Use a BT client to subscribe to characteristic 2221 events btnON, btnOFF. (tested with lightblue client on mac https://itunes.apple.com/us/app/lightblue)
-  Green LED turns on when TILE is connecteed to a BT client.
-  Red LED can be controlled by the client by sending the events "ledON" (or the HEX 0x01 as alternative) and "ledOFF" (or the HEX 0x00 as alternative).
-
-  V.01 - 150915 - Simone Mora (simonem@ntnu.no)
-  V.02 - 050215 - Simone Mora (simonem@ntnu.no)
-  - added multiple event and command handlinggg
-  -RFDUINO LED BUTTON SHIELD VERSION-
+  Tiles Squares modules working firmware. Support Square modules prototype 2 Rev B,C.
+  Apache 2.0 license.
+  Authors: Simone Mora, Francesco Gianni
 */
 
 #include <RFduinoBLE.h>
