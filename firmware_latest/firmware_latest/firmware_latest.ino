@@ -31,6 +31,7 @@ int shake = 0;
 int inactivity = 0;
 bool tilt = false;
 
+#define BRIGHTNESS_DIVIDER 20 // defines LED bringhness divider works only with common anode led
 #define COMMON_ANODE true
 #define IS_SHIELD false  // Used to define pins for RFduino shield or TILES Square
 
@@ -52,7 +53,6 @@ TokenSoloEvent tokenSolo = TokenSoloEvent(ACC_INT1_PIN); // Connected on pin 4
 String event_name;
 String payload;
 char c_payload[19];
-
 
 #define FADE_TIME 2000
 #define DIR_UP 1
@@ -96,15 +96,19 @@ void setup() {
   RFduino_pinWakeCallback(ACC_INT1_PIN, HIGH, acc_event);
 
   //blink the LEDS to test they are actually working
-  digitalWrite(GREEN_LED_PIN, LOW);
+  setColor("green");
+  //digitalWrite(GREEN_LED_PIN, LOW);
   delay(250);
-  digitalWrite(RED_LED_PIN, LOW);
+  //digitalWrite(RED_LED_PIN, LOW);
+  setColor("red");
   delay(250);
-  digitalWrite(BLUE_LED_PIN, LOW);
+  setColor("blue");
+  //digitalWrite(BLUE_LED_PIN, LOW);
   delay(500);
-  digitalWrite(GREEN_LED_PIN, HIGH);
-  digitalWrite(RED_LED_PIN, HIGH);
-  digitalWrite(BLUE_LED_PIN, HIGH);
+  setColor("off");
+  //digitalWrite(GREEN_LED_PIN, HIGH);
+  //digitalWrite(RED_LED_PIN, HIGH);
+  //digitalWrite(BLUE_LED_PIN, HIGH);
 
   //Setup Bluetooth Connectivity
   //set the device name
@@ -126,39 +130,42 @@ void setup() {
 
 void loop() {
   /************************************************************/
+  //Computes Tilt event,TODO: move to library
   if (abs(tokenSolo.accelGetX()) > 7 || abs(tokenSolo.accelGetY()) > 7){
     payload = adv_name + ",tilt";
     payload.toCharArray(c_payload, 19);
     RFduinoBLE.send((char*) c_payload, 19);
   }
-  if (inactivity)
+  if (inactivity) //Do something when the accelerometer detects inactivity
   {
-    //tokenConstraint.rgb_sensor.getData();
   }
   if (blinking)
     blink(blinkingColor);
   if (fading) {
     fade(fadingColor);
   }
-
-//  delay(500); // Important delay, do not delete it !
+  //delay(500); // Important delay for correct accelerometer functions, do not delete it !
   RFduino_ULPDelay(1000);
 }
 
 void RFduinoBLE_onConnect()
 {
-  digitalWrite(GREEN_LED_PIN, HIGH);
+  //digitalWrite(GREEN_LED_PIN, HIGH);
+  setColor("green");
   delay(500);
-  digitalWrite(GREEN_LED_PIN, LOW);
+  //digitalWrite(GREEN_LED_PIN, LOW);
+  setColor("off");
 }
 
 void RFduinoBLE_onDisconnect()
 {
-  digitalWrite(GREEN_LED_PIN, LOW);
+  setColor("off");
+  //digitalWrite(GREEN_LED_PIN, LOW);
 }
 
 void RFduinoBLE_onAdvertisement() {
-  digitalWrite(RED_LED_PIN, HIGH);
+  setColor("red");
+  //digitalWrite(RED_LED_PIN, HIGH);
 }
 
 //Callback when a data chunk is received. OBS! Data chunks must be 20KB (=20 ASCII characters) maximum!
@@ -168,9 +175,9 @@ void RFduinoBLE_onReceive(char *data, int len)
   // char payload[6];
   // strncpy(payload,data,len);
   //debugging data packet received
-//  Serial.println("Data received");
-//  Serial.print("Packet lenght: "); Serial.println(len);
-//  Serial.print("Payload: "); Serial.println(data);
+  //Serial.println("Data received");
+  //Serial.print("Packet lenght: "); Serial.println(len);
+  //Serial.print("Payload: "); Serial.println(data);
   parseCommand(data,len);
 }
 
@@ -248,7 +255,6 @@ void parseCommand(char *data,int len){
       haptic("burst");
     }
   }
-
 }
 
 // LED Functions
@@ -281,9 +287,9 @@ void parseColorString(String color, int& red, int& green, int& blue) {
 void setColorRGB(int red, int green, int blue)
 {
 #ifdef COMMON_ANODE
-  red = 255 - red;
-  green = 255 - green;
-  blue = 255 - blue;
+  red = (255 - red/BRIGHTNESS_DIVIDER);
+  green = (255 - green/BRIGHTNESS_DIVIDER);
+  blue = (255 - blue/BRIGHTNESS_DIVIDER);
 #endif
   analogWrite(RED_LED_PIN, red);
   analogWrite(GREEN_LED_PIN, green);
