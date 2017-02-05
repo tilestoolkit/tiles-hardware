@@ -79,7 +79,6 @@ void setup() {
   pinMode(RED_LED_PIN, OUTPUT);
   pinMode(BLUE_LED_PIN, OUTPUT);
   pinMode(VIBRO_PIN, OUTPUT);
-
   RFduino_pinWakeCallback(ACC_INT1_PIN, HIGH, acc_event);
 
   //blink the LEDS to test they are actually working
@@ -90,7 +89,6 @@ void setup() {
   setColor("blue");
   delay(500);
   setColor("off");
-
   //Setup Bluetooth Connectivity
   //set the device name
   RFduinoBLE.deviceName = adv_name_c;
@@ -102,7 +100,7 @@ void setup() {
   RFduinoBLE.txPowerLevel = -20;
   //start the BLE stack
   RFduinoBLE.begin();
-
+  //Setup Led fader
   fade_red = LEDFader(RED_LED_PIN);
   fade_green = LEDFader(GREEN_LED_PIN);
   fade_blue = LEDFader(BLUE_LED_PIN);
@@ -130,22 +128,18 @@ void loop() {
 
 void RFduinoBLE_onConnect()
 {
-  //digitalWrite(GREEN_LED_PIN, HIGH);
   setColor("green");
   delay(500);
-  //digitalWrite(GREEN_LED_PIN, LOW);
   setColor("off");
 }
 
 void RFduinoBLE_onDisconnect()
 {
   setColor("off");
-  //digitalWrite(GREEN_LED_PIN, LOW);
 }
 
 void RFduinoBLE_onAdvertisement() {
   setColor("red");
-  //digitalWrite(RED_LED_PIN, HIGH);
 }
 
 //Callback when a data chunk is received. OBS! Data chunks must be 20KB (=20 ASCII characters) maximum!
@@ -160,7 +154,6 @@ void RFduinoBLE_onReceive(char *data, int len)
   //Serial.print("Payload: "); Serial.println(data);
   parseCommand(data,len);
 }
-
 
 int acc_event(uint32_t ulPin){
   uint8_t data = tokenSolo.accel.readRegister(ADXL345_REG_INT_SOURCE);
