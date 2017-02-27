@@ -15,7 +15,7 @@
 //#include "libs/TS/TokenSoloEvent.h"
 
 //GLOBAL SETTINGS
-#define BRIGHTNESS_DIVIDER 20 // defines LED bringhness divider works only with common anode led
+#define BRIGHTNESS_DIVIDER 1 // defines LED bringhness divider works only with common anode led
 #define COMMON_ANODE true
 #define IS_SHIELD false  // Used to define pins for RFduino shield or TILES Square
 
