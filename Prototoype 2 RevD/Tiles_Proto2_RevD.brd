@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -881,12 +881,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </autorouter>
 <elements>
 <element name="B-" library="wirepad" package="SMD1,27-2,54" value="" x="27.305" y="55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="27.305" y="55.88" size="0.0254" layer="27" rot="R270"/>
 <attribute name="NAME" x="26.175" y="54.14" size="0.889" layer="25"/>
+<attribute name="VALUE" x="27.305" y="55.88" size="0.0254" layer="27" rot="R270"/>
 </element>
 <element name="B+" library="wirepad" package="SMD1,27-2,54" value="" x="24.13" y="55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="24.13" y="55.88" size="0.0254" layer="27" rot="R270"/>
 <attribute name="NAME" x="23" y="54.14" size="0.889" layer="25"/>
+<attribute name="VALUE" x="24.13" y="55.88" size="0.0254" layer="27" rot="R270"/>
 </element>
 <element name="C1" library="Seeed-OPL-Capacitor" package="C0402" value="100NF 10V" x="22.225" y="67.437" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0402KRX5R6BB104" x="22.225" y="67.437" size="1.778" layer="27" rot="R270" display="off"/>
@@ -909,12 +909,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="22.225" y="76.835" size="1.27" layer="27"/>
 </element>
 <element name="M+" library="wirepad" package="SMD1,27-2,54" value="" x="31.115" y="55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="31.115" y="55.88" size="0.0254" layer="27" rot="R270"/>
 <attribute name="NAME" x="29.985" y="54.14" size="0.889" layer="25"/>
+<attribute name="VALUE" x="31.115" y="55.88" size="0.0254" layer="27" rot="R270"/>
 </element>
 <element name="M-" library="wirepad" package="SMD1,27-2,54" value="" x="34.29" y="55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="34.29" y="55.88" size="0.0254" layer="27" rot="R270"/>
 <attribute name="NAME" x="33.795" y="54.14" size="0.889" layer="25"/>
+<attribute name="VALUE" x="34.29" y="55.88" size="0.0254" layer="27" rot="R270"/>
 </element>
 <element name="R10" library="Seeed-OPL-Resistor" package="R0603" value="2K" x="19.05" y="58.42" smashed="yes">
 <attribute name="MPN" value="RC0603JR-072KL" x="19.05" y="58.42" size="1.778" layer="27" display="off"/>
@@ -969,74 +969,74 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="JP2" library="SparkFun-Connectors" package="1X05" value="" x="12.7" y="37.465"/>
 <element name="J2" library="MF_Connectors" package="PTH_2.54MM_01X07" value="MF-CON-2.54mm-01x07" x="12.065" y="80.01">
-<attribute name="LABEL04" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MF-CON-2.54mm-01x07" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL05" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL06" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL07" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-CON-2.54mm-01x07" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL01" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL02" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL03" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="LABEL04" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="LABEL05" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="LABEL06" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="LABEL07" value="" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MF-CON-2.54mm-01x07" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="POPULATE" value="1" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-CON-2.54mm-01x07" x="12.065" y="80.01" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D3" library="MF_LEDs" package="PLCC4" value="MF-LED-3228-RGB" x="24.765" y="63.5" rot="R180">
-<attribute name="MPN" value="MF-LED-3228-RGB" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-3228-RGB" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MF-LED-3228-RGB" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULATE" value="1" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-3228-RGB" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R4" library="MF_Passives" package="R0603" value="" x="29.845" y="64.77" smashed="yes">
-<attribute name="MPN" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="MF-RES-0603-27" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.62" y="64.6" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="POPULATE" value="1" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="31.62" y="64.6" size="1.016" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R5" library="MF_Passives" package="R0603" value="" x="29.845" y="66.675" smashed="yes">
-<attribute name="MPN" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="MF-RES-0603-22" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.62" y="66.505" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="POPULATE" value="1" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="31.62" y="66.505" size="1.016" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R6" library="MF_Passives" package="R0603" value="" x="29.845" y="62.865" smashed="yes">
-<attribute name="MPN" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="MF-RES-0603-22" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.62" y="62.568" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="POPULATE" value="1" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="31.62" y="62.568" size="1.016" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="D1" library="MF_LEDs" package="LED0603" value="MF-LED-0603-RED" x="19.8755" y="55.3085" rot="R270">
-<attribute name="MPN" value="MF-LED-0603-RED" x="19.8755" y="55.3085" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="19.8755" y="55.3085" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="19.8755" y="55.3085" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MF-LED-0603-RED" x="19.8755" y="55.3085" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="POPULATE" value="1" x="19.8755" y="55.3085" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="19.8755" y="55.3085" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D4" library="MF_Discrete_Semiconductor" package="SOD-123" value="MF-DIO-SOD123-1N4148" x="5.715" y="59.69" rot="R180">
-<attribute name="MPN" value="MF-DIO-SOD123-1N4148" x="5.715" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="5.715" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SOD123-1N4148" x="5.715" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MF-DIO-SOD123-1N4148" x="5.715" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULATE" value="1" x="5.715" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SOD123-1N4148" x="5.715" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="S2" library="MLL1200S" package="SW_MLL1200S" value="MLL1200S" x="3.937" y="53.34" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="Good" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
-<attribute name="MP" value="MLL1200S" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
-<attribute name="PACKAGE" value="None" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="Switch Slide SPDT Side Slide 0.3A 4VDC Gull Wing SMD Box" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
-<attribute name="PRICE" value="1.59 USD" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="TE Connectivity" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="MLL1200S" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="6.937" y="56.82" size="1.27" layer="25" rot="R270"/>
+<attribute name="PACKAGE" value="None" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="1.59 USD" x="3.937" y="53.34" size="0.762" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-0.563" y="58.09" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="J1" library="Seeed-OPL-Connector" package="HW4-2.0-90D" value="4P-2.0-90D" x="35.814" y="72.517" rot="R270"/>
@@ -1373,12 +1373,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="28.575" y1="75.692" x2="30.48" y2="73.787" width="0.254" layer="1"/>
 <wire x1="30.988" y1="75.3745" x2="30.988" y2="74.295" width="0.254" layer="1"/>
 <wire x1="30.988" y1="74.295" x2="30.48" y2="73.787" width="0.254" layer="1"/>
-<wire x1="18.415" y1="67.31" x2="17.8562" y2="67.3354" width="0" layer="19" extent="1-1"/>
 <wire x1="30.988" y1="69.85" x2="34.147" y2="69.85" width="0.254" layer="1"/>
 <wire x1="34.147" y1="69.85" x2="35.814" y2="71.517" width="0.254" layer="1"/>
 <wire x1="24.384" y1="75.819" x2="24.384" y2="75.946" width="0.254" layer="1"/>
 <wire x1="24.384" y1="75.946" x2="23.495" y2="76.835" width="0.254" layer="1"/>
 <wire x1="23.495" y1="76.835" x2="23.495" y2="80.01" width="0.254" layer="1"/>
+<wire x1="17.8562" y1="67.3354" x2="18.415" y2="67.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HAPTIC">
 <contactref element="RFDUINO" pad="4"/>
