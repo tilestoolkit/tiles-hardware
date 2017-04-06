@@ -5,6 +5,25 @@
 - Set in the code the type of Square module you have. For RFDUINO-shield-based modules set the *IS_SHIELD* variable on *TRUE*. For Prot#2 RevD module set the *COMMON_ANODE* to *true*
 
 ## API for Tiles DEVICE
+### Events
+| ID | Name | Parameter 1 | Parameter 2 | Implemented | Comments |
+|----|------|-------------|-------------|-------------|----------|
+|Tile_XX | tap    | single, double |  | yes | |
+|        | tilt   | | | yes| |
+|        | shake  | | | yes| |
+|        | rotate | clock, c_clock | | yes | clockwise and counter clockwise |
+|        | drop | | | no | free fall event |
+|        | lift | | | no |  |
+|        | proximity | | | no | to be implemented with capacitive touch |
+
+#### Example
+
+Event generated when one Tiles is tapped twice
+```javascript
+"Tile_XX,tap,double"
+```
+
+### Commands
 <table>
     <tr>
         <th>ID</th>
@@ -56,8 +75,6 @@
         <td>only blue color implemented</td>
         <td></td>
     </tr><tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr><tr>
          <td></td>
          <td>haptic,</td>
          <td>long</td>
@@ -74,7 +91,7 @@
      </tr>
 </table>
 
-##Example
+#### Example
 Turn on LED with color RED on 'Tile_XX' send command:
 ```javascript
 "Tile_XX,led,on,red"
