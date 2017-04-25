@@ -1,0 +1,5 @@
+{
+    "board": "Simblee:Simblee:Simblee",
+    "sketch": "firmware_latest_simblee.ino",
+    "port": "/dev/cu.usbserial-DO00BUBW"
+}

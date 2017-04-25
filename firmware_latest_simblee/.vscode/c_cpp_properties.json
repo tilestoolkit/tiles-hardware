@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/Simone/Library/Arduino15/packages/Simblee/hardware/Simblee/1.1.2/cores/arduino"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false
+            }
+        }
+    ]
+}

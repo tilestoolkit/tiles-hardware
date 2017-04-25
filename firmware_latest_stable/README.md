@@ -89,6 +89,9 @@ Event generated when one Tiles is tapped twice
          <td>yes</td>
          <td>short vibration</td>
      </tr>
+     <tr></tr>
+     <tr><td></td><td>sound</td></tr>
+     
 </table>
 
 #### Example
