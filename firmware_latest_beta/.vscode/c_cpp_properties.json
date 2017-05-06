@@ -7,7 +7,10 @@
             ],
             "arduino.additionalUrls": "./libraries",
             "browse": {
-                "limitSymbolsToIncludedHeaders": false
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "/Users/Simone/Library/Arduino15/packages/RFduino/hardware/RFduino/2.3.3/cores/arduino"
+                ]
             }
         }
     ]
