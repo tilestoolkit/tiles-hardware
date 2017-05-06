@@ -40,11 +40,11 @@ String TokenSoloEvent_Handler::pollEvent()    // If an event has occured returns
         else if (_Accelerometer->isDoubleTapped())
             AccEvent = String("doubletap");
         
-        else if (_Accelerometer->isShaked())
-            AccEvent = String("shake");
+       // else if (_Accelerometer->isShaked())
+        //    AccEvent = String("shake");
         
-        else if (_Accelerometer->isTilted())
-            AccEvent = String("tilt");
+        //else if (_Accelerometer->isTilted())
+        //    AccEvent = String("tilt");
     }
 
     if(_InertialCentralAvailable == true && InertialCentral_Timing >= ACCELEROMETER_UPDATE)
