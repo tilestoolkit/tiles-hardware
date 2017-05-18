@@ -8,11 +8,13 @@ Feedbacks_Handler::Feedbacks_Handler()
 
 String Feedbacks_Handler::UpdateFeedback()
 {
+  if(HapticAvailable)
     HapticMotor->RefreshValues();
 }
 
 void Feedbacks_Handler::HandleTime(unsigned int ElapsedTime)
 {
+  if(HapticAvailable)
     HapticMotor->HandleTime(ElapsedTime);
 } 
 
@@ -25,8 +27,7 @@ void Feedbacks_Handler::setHapticMotor(Haptic *pHapticMotor)
 void Feedbacks_Handler::Vibrate(unsigned int Time)
 {  
     if(HapticAvailable == false)
-      return;
-      
+      return;     
     HapticMotor->Vibrate(Time);
 }
 
@@ -46,6 +47,12 @@ void Feedbacks_Handler::setRGB_LED(RGB_LED *pLED)
     LED = pLED;
     RGB_LEDAvailable = true;
 }
+
+void Feedbacks_Handler::setColor(String color)
+{
+  LED->setColor(color);
+}
+
 
 void Feedbacks_Handler::parseColorString(String color, int& red, int& green, int& blue)
 {

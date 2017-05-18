@@ -68,7 +68,7 @@ void setup(void)
 void loop(void)
 {
     sensor_handle.pollEvent();
-    //feedback_handle.UpdateFeedback();
+    feedback_handle.UpdateFeedback();
     BLE.ProcessEvents();
     delay(10); // Important delay, do not delete it ! Why ?? I want to delete this one !!
 }
@@ -106,7 +106,7 @@ void TIMER1_Interrupt(void)
     if (NRF_TIMER1->EVENTS_COMPARE[0] != 0)
     {        
        sensor_handle.HandleTime(number_of_ms);
-       // feedback_handle.HandleTime(number_of_ms);
+       feedback_handle.HandleTime(number_of_ms);
         
         NRF_TIMER1->EVENTS_COMPARE[0] = 0;
     }

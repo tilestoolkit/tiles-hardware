@@ -1,13 +1,3 @@
-/**************************************************************************
-# 	NAME: TokenFeedback.h
-# 	AUTHOR: Matthias Monnier (matthias.monnier@gmail.com)
-# 	DATE: 16/12/2015
-# 	LICENSE: Apache V2.0(cf. file license.txt in the main repository)
-#
-# 	Header of the library which manages the Token feedbacks
-#
-**************************************************************************/
-
 #ifndef RGB_LED_h
 #define RGB_LED_h
 
