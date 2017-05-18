@@ -1,5 +1,5 @@
-//#ifndef TokenFeedback_h
-//#define TokenFeedback_h
+#ifndef Feedbacks_Handler_h
+#define Feedbacks_Handler_h
 
 #include "Haptic.h"
 #include "RGB_LED.h"
@@ -18,7 +18,7 @@ class Feedbacks_Handler
       void Vibrate(String Type);
 
       // RGB Led
-      void setRGB_LED(RGB_LED *pLED);
+     void setRGB_LED(RGB_LED *pLED);
       void setColor(String color);
       
     private:
@@ -27,8 +27,8 @@ class Feedbacks_Handler
 
       RGB_LED *LED;
       bool RGB_LEDAvailable;
-      void parseColorString(String color, int& red, int& green, int& blue);
+ 
       
 };
 
-//#endif
+#endif

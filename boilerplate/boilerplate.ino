@@ -105,9 +105,8 @@ void TIMER1_Interrupt(void)
 {
     if (NRF_TIMER1->EVENTS_COMPARE[0] != 0)
     {        
-       sensor_handle.HandleTime(number_of_ms);
-       feedback_handle.HandleTime(number_of_ms);
-        
+        sensor_handle.HandleTime(number_of_ms);
+        feedback_handle.HandleTime(number_of_ms);      
         NRF_TIMER1->EVENTS_COMPARE[0] = 0;
     }
 }

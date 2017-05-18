@@ -4,7 +4,8 @@ BLE_Handler::BLE_Handler()//  Default constructor
 {
     Connected = false;
     String MAC = String(*(uint8_t *)0x100000a4, HEX);
-    AdvertiseName = SUFFIX + MAC;    
+    String suffix = SUFFIX;
+    AdvertiseName = suffix + MAC;    
 }
 
 // Code that executes everytime token is being connected to

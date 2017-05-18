@@ -18,6 +18,36 @@ RGB_LED::RGB_LED(int R, int G, int B)
     State = LED_OFF;
 }
 
+
+void RGB_LED::parseColorString(String color, int& red, int& green, int& blue)
+{
+  unsigned int colorHex = strtol(&color[0], NULL, 16);
+  red = (int)((colorHex >> 16) & 0xFF);  // Extract the RR byte
+  green = (int)((colorHex >> 8) & 0xFF); // Extract the GG byte
+  blue = (int)((colorHex) & 0xFF);       // Extract the BB byte
+}
+
+void RGB_LED::setColor(String color)
+{
+  if (color == "off")
+    setRGBaColor(0, 0, 0);
+  else if (color == "red")
+    setRGBaColor(255, 0, 0);
+  else if (color == "green")
+    setRGBaColor(0, 255, 0);
+  else if (color == "blue")
+    setRGBaColor(0, 0, 255);
+  else if (color == "white")
+    setRGBaColor(255, 255, 255);
+  else if (color.length() == 6)
+  {
+    int red, green, blue;
+    parseColorString(color, red, green, blue);
+    setRGBaColor(red, green, blue);
+  }
+}
+
+
 void RGB_LED::setRGBaColor(uint8_t R, uint8_t G, uint8_t B, float a)
 {
     #if LED_TYPE == COMMON_ANODE

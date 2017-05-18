@@ -2,6 +2,14 @@
 #define CONFIG_h
 
 #define SUFFIX "TestDevice_"
+#define RFDUINO 1
+#define SIMBLEE 2
+#define UC RFDUINO
+
+//#define COMMON_ANODE  1
+//#define COMMON_CATHODE  2
+//#define LED_TYPE COMMON_CATHODE
+
 // TOKEN FIRMWARE METADATA
 #define NAME    "AnyBoard Pawn"
 #define VERSION "0.1"

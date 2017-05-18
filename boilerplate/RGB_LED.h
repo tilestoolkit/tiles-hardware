@@ -26,7 +26,8 @@ class RGB_LED
 
         void RefreshValues();
         void HandleTime(unsigned int ElapsedTime);
-        
+        void parseColorString(String color, int& red, int& green, int& blue);
+        void setColor(String color);
         void setRGBaColor(uint8_t R, uint8_t G, uint8_t B, float a = 1.0);
 		
 	  private:
