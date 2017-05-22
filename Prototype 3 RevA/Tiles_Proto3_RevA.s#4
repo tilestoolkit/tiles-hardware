@@ -6135,11 +6135,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="BTN" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="P0.25"/>
-<wire x1="73.66" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
-<label x="76.2" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SW2" gate="G$1" pin="P$3"/>
 <wire x1="203.2" y1="129.54" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="124.46" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
