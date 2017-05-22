@@ -6154,8 +6154,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C8" library="Seeed-OPL-Capacitor" deviceset="CERAMIC-1UF-25V-10%-X7R(0603)" device="" value="1uf"/>
 <part name="P+11" library="microbuilder" deviceset="VCC" device=""/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
-<part name="SW1" library="MF_Switches" deviceset="TACT" device="_4.2MM" value="MF-SW-TACT-4.2MM"/>
-<part name="U$20" library="microbuilder" deviceset="GND" device=""/>
 <part name="J1" library="tiles" deviceset="CONN_07_SIM" device="NO_SILK"/>
 <part name="IO-2" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5"/>
 <part name="IO-3" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5"/>
@@ -6248,8 +6246,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C8" gate="G$1" x="137.16" y="160.02" rot="R90"/>
 <instance part="P+11" gate="VCC" x="127" y="170.18"/>
 <instance part="U$19" gate="G$1" x="121.92" y="129.54"/>
-<instance part="SW1" gate="G$1" x="220.98" y="132.08" rot="R90"/>
-<instance part="U$20" gate="G$1" x="218.44" y="121.92"/>
 <instance part="J1" gate="G$1" x="233.68" y="160.02" rot="R180"/>
 <instance part="IO-2" gate="G$1" x="160.02" y="101.6" smashed="yes">
 <attribute name="NAME" x="162.814" y="102.1842" size="1.778" layer="95"/>
@@ -6418,11 +6414,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="LED1" gate="G$1" pin="GND"/>
 <pinref part="U$19" gate="G$1" pin="GND"/>
 <wire x1="121.92" y1="137.16" x2="121.92" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SW1" gate="G$1" pin="P$1"/>
-<pinref part="U$20" gate="G$1" pin="GND"/>
-<wire x1="218.44" y1="129.54" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -6811,12 +6802,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U1" gate="G$1" pin="P0.17"/>
 <wire x1="10.16" y1="119.38" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="-2.54" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SW1" gate="G$1" pin="P$3"/>
-<wire x1="223.52" y1="129.54" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
-<label x="228.6" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STATLED" class="0">
