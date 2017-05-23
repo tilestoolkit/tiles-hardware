@@ -176,11 +176,6 @@
 <wire x1="95" y1="40" x2="95" y2="25" width="0.15" layer="21"/>
 <wire x1="95" y1="25" x2="60" y2="25" width="0.15" layer="21"/>
 <wire x1="60" y1="25" x2="60" y2="40" width="0.15" layer="21"/>
-<wire x1="101" y1="21" x2="101" y2="40" width="0.15" layer="21"/>
-<wire x1="101" y1="40" x2="102" y2="40" width="0.15" layer="21"/>
-<wire x1="102" y1="40" x2="122" y2="40" width="0.15" layer="21"/>
-<wire x1="122" y1="40" x2="122" y2="21" width="0.15" layer="21"/>
-<wire x1="122" y1="21" x2="101" y2="21" width="0.15" layer="21"/>
 <text x="64.8258" y="81.5848" size="1" layer="22" font="vector" ratio="20" rot="MR0">T-A</text>
 <text x="64.8258" y="57.658" size="1" layer="22" font="vector" ratio="20" rot="MR0">T-B</text>
 <text x="98.7298" y="81.6356" size="1" layer="22" font="vector" ratio="20" rot="MR0">IO-2</text>
@@ -188,7 +183,6 @@
 <text x="73.4872" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">RST</text>
 <text x="76.0018" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">VCC</text>
 <text x="78.5672" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">GND</text>
-<text x="81.158" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">BAT</text>
 <text x="83.4186" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">RX</text>
 <text x="85.9078" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">TX</text>
 <text x="89.2098" y="83.947" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">IO-2</text>
@@ -200,10 +194,10 @@
 <text x="86.2076" y="78.7654" size="0.8" layer="21" font="vector" ratio="12">MOTOR</text>
 <text x="62.6922" y="72.1082" size="0.8" layer="22" font="vector" ratio="12" rot="SMR270">T-A</text>
 <text x="62.8192" y="69.469" size="0.8" layer="22" font="vector" ratio="12" rot="SMR270">T-B</text>
-<text x="77.1448" y="52.705" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">GND</text>
-<text x="79.7864" y="52.705" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">VCC</text>
-<text x="82.2756" y="52.705" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SDA</text>
-<text x="84.841" y="52.705" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SCL</text>
+<text x="77.1956" y="56.3118" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">GND</text>
+<text x="79.8372" y="56.3118" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">VCC</text>
+<text x="82.3264" y="56.3118" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SDA</text>
+<text x="84.8918" y="56.3118" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SCL</text>
 <text x="60.96" y="81.0514" size="1" layer="21" font="vector" ratio="20">T-A</text>
 <text x="60.8076" y="57.7342" size="1" layer="21" font="vector" ratio="20">T-B</text>
 <text x="96.4692" y="81.153" size="1" layer="21" font="vector" ratio="20">IO-2</text>
@@ -227,8 +221,10 @@
 <text x="82.931" y="55.8546" size="0.8" layer="21" font="vector" ratio="12">SCL</text>
 <circle x="80.5238" y="68.3518" radius="10" width="0.1" layer="22"/>
 <text x="72.0254" y="79.4732" size="1" layer="22" font="vector" ratio="15" rot="MR0">tilestoolkit.io</text>
-<text x="72.0254" y="77.508" size="0.75" layer="22" font="vector" ratio="12" rot="MR0">P#3 RevA (2017)</text>
-<text x="72.0254" y="76.508" size="0.75" layer="22" font="vector" ratio="12" rot="MR0">Simone Mora</text>
+<text x="72.0254" y="77.6604" size="0.75" layer="22" font="vector" ratio="12" rot="MR0">P#3 RevA (2017)</text>
+<text x="72.0254" y="76.5842" size="0.75" layer="22" font="vector" ratio="12" rot="MR0">Simone Mora</text>
+<wire x1="72" y1="79" x2="61.2588" y2="79" width="0.1" layer="22"/>
+<wire x1="61.2588" y1="79" x2="61.2394" y2="79.0194" width="0.1" layer="22" curve="-90"/>
 </plain>
 <libraries>
 <library name="Seeed-OPL-Capacitor">
@@ -1180,44 +1176,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="C1" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="67.94" y="70.66" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="67.94" y="70.66" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="69.21" y="70.914" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="NAME" x="69.4386" y="69.771" size="0.8" layer="25" ratio="11" rot="R180"/>
+<attribute name="NAME" x="69.21" y="70.914" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="69.21" y="72.2475" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C2" library="Seeed-OPL-Capacitor" package="C0603" value="100nf" x="93.11" y="62.63" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R9BB104" x="93.11" y="62.63" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="91.84" y="62.376" size="0.635" layer="33" ratio="10"/>
 <attribute name="NAME" x="91.84" y="63.519" size="0.8" layer="25" ratio="11"/>
+<attribute name="NAME" x="91.84" y="62.376" size="0.635" layer="33" ratio="10"/>
 <attribute name="VALUE" x="91.84" y="61.0425" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C3" library="Seeed-OPL-Capacitor" package="C0603" value="10uf" x="93.04" y="65.29" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="93.04" y="65.29" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="91.77" y="65.036" size="0.635" layer="33" ratio="10"/>
 <attribute name="NAME" x="91.77" y="66.179" size="0.8" layer="25" ratio="11"/>
+<attribute name="NAME" x="91.77" y="65.036" size="0.635" layer="33" ratio="10"/>
 <attribute name="VALUE" x="91.77" y="63.7025" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C4" library="Seeed-OPL-Capacitor" package="C0603" value="220nf" x="92.99" y="68.05" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R8BB224" x="92.99" y="68.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="91.72" y="67.796" size="0.635" layer="33" ratio="10"/>
 <attribute name="NAME" x="91.72" y="68.939" size="0.8" layer="25" ratio="11"/>
+<attribute name="NAME" x="91.72" y="67.796" size="0.635" layer="33" ratio="10"/>
 <attribute name="VALUE" x="91.72" y="66.4625" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C5" library="Seeed-OPL-Capacitor" package="C0603" value="10uf" x="68.1" y="66.84" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="68.1" y="66.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="66.83" y="66.586" size="0.635" layer="33" ratio="10"/>
 <attribute name="NAME" x="68.5572" y="65.0874" size="0.8" layer="25" ratio="11"/>
+<attribute name="NAME" x="66.83" y="66.586" size="0.635" layer="33" ratio="10"/>
 <attribute name="VALUE" x="66.83" y="65.2525" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C6" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="93.95" y="77.26" smashed="yes">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="93.95" y="77.26" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="93.696" y="78.53" size="0.635" layer="33" ratio="10" rot="R270"/>
 <attribute name="NAME" x="94.9152" y="77.6918" size="0.8" layer="25" ratio="11" rot="R270"/>
+<attribute name="NAME" x="93.696" y="78.53" size="0.635" layer="33" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="92.3625" y="78.53" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C7" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="92.308075" y="73.06464375" smashed="yes" rot="R315">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="92.308075" y="73.06464375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="93.02649375" y="74.142271875" size="0.635" layer="33" ratio="10" rot="R225"/>
 <attribute name="NAME" x="92.945715625" y="72.39425" size="0.8" layer="25" ratio="11" rot="R225"/>
+<attribute name="NAME" x="93.02649375" y="74.142271875" size="0.635" layer="33" ratio="10" rot="R225"/>
 <attribute name="VALUE" x="92.083565625" y="75.0852" size="0.635" layer="27" ratio="10" rot="R225"/>
 </element>
 <element name="D1" library="Seeed-OPL-2017-01-Diode-james" package="SOD-123" value="40V-500MA" x="72.82" y="70.67" smashed="yes" rot="R180">
@@ -1282,8 +1278,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="C8" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="79.9088" y="63.3136" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="79.9088" y="63.3136" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="81.1788" y="63.5676" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="NAME" x="80.6454" y="64.9646" size="0.8" layer="25" ratio="11" rot="R180"/>
+<attribute name="NAME" x="81.1788" y="63.5676" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="81.1788" y="64.9011" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="J1" library="tiles" package="1X07_NO_SILK_SQUAREPADS" value="" x="72.4" y="86" smashed="yes">
@@ -1356,8 +1352,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="POPULATE" value="1" x="80.5604" y="68.9106" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="URL" value="http://www.mouser.com/ds/2/238/bat-hld-001-220194.pdf" x="80.5604" y="68.9106" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-SMT_2_NO_NO-SILK" x="79.9944" y="83.8524" smashed="yes" rot="MR90">
-<attribute name="NAME" x="81.1374" y="83.8524" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<element name="BATT_CHG" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-SMT_2_NO_NO-SILK" x="79.9944" y="83.8524" smashed="yes" rot="MR90">
+<attribute name="NAME" x="80.985" y="82.4554" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -1591,7 +1587,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="V_BATT">
 <contactref element="B+" pad="1"/>
 <contactref element="D1" pad="+"/>
-<contactref element="JP1" pad="1"/>
+<contactref element="BATT_CHG" pad="1"/>
 <contactref element="BATT1" pad="POS_1"/>
 <contactref element="BATT1" pad="POS_0"/>
 <wire x1="91.9904" y1="68.9106" x2="91.9904" y2="66.4888" width="0.254" layer="16"/>
@@ -2107,11 +2103,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="84.52625" y1="58.547" x2="84.582" y2="57.785" width="0.1524" layer="16"/>
 <via x="84.582" y="57.785" extent="1-16" drill="0.3048"/>
 <wire x1="84.582" y1="57.785" x2="84.6074" y2="56.3626" width="0.1524" layer="1"/>
-<wire x1="84.6074" y1="56.3626" x2="85.6996" y2="55.2704" width="0.1524" layer="1"/>
-<wire x1="85.6996" y1="55.2704" x2="90.0176" y2="55.3212" width="0.1524" layer="1"/>
-<wire x1="90.0176" y1="55.3212" x2="91.6516" y2="55.2874" width="0.1524" layer="1"/>
-<wire x1="91.6516" y1="55.2874" x2="91.6516" y2="55.1942" width="0.1524" layer="1"/>
-<wire x1="91.6516" y1="55.1942" x2="91.562" y2="56.4" width="0.1524" layer="1"/>
+<wire x1="84.6074" y1="56.3626" x2="85.6996" y2="55.1688" width="0.1524" layer="1"/>
+<wire x1="85.6996" y1="55.1688" x2="90.0176" y2="55.1688" width="0.1524" layer="1"/>
+<wire x1="90.0176" y1="55.1688" x2="91.55" y2="55.1604" width="0.1524" layer="1"/>
+<wire x1="91.55" y1="55.1604" x2="91.55" y2="55.1942" width="0.1524" layer="1"/>
+<wire x1="91.55" y1="55.1942" x2="91.562" y2="56.4" width="0.1524" layer="1"/>
 </signal>
 <signal name="BTN">
 <contactref element="SW" pad="P$3"/>
@@ -2145,7 +2141,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="87.8078" y1="56.7542" x2="88.162" y2="56.4" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$6">
-<contactref element="JP1" pad="2"/>
+<contactref element="BATT_CHG" pad="2"/>
 <contactref element="J1" pad="4"/>
 <wire x1="80.02" y1="86" x2="80.02" y2="84.2844" width="0.1524" layer="16"/>
 <wire x1="80.02" y1="84.2844" x2="79.9944" y2="84.2588" width="0.1524" layer="16"/>
