@@ -5562,7 +5562,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value=""/>
 </part>
 <part name="BATT1" library="tiles" deviceset="BATTERY-SMALL" device="_BAT-HLD-001" value="BAT-HLD-001"/>
-<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
+<part name="BATT_CHG" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
 </parts>
@@ -5658,7 +5658,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R7" gate="G$1" x="198.12" y="77.47" rot="R90"/>
 <instance part="R8" gate="G$1" x="218.44" y="96.774" rot="R90"/>
 <instance part="BATT1" gate="G$1" x="50.8" y="160.02" rot="R90"/>
-<instance part="JP1" gate="G$1" x="220.98" y="157.48" smashed="yes">
+<instance part="BATT_CHG" gate="G$1" x="220.98" y="157.48" smashed="yes">
 <attribute name="NAME" x="218.44" y="160.02" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="35.56" y="160.02" rot="R90"/>
@@ -5859,7 +5859,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-10.16" y="154.94"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="BATT_CHG" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
 <label x="203.2" y="157.48" size="1.778" layer="95"/>
 </segment>
@@ -6243,7 +6243,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="BATT_CHG" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="226.06" y1="157.48" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
 </segment>

@@ -8,7 +8,7 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,13 +28,13 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -200,7 +200,7 @@
 <text x="24.8918" y="-33.6882" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SCL</text>
 <text x="0.96" y="-8.9486" size="1" layer="21" font="vector" ratio="20">T-A</text>
 <text x="0.8076" y="-32.2658" size="1" layer="21" font="vector" ratio="20">T-B</text>
-<text x="36.4692" y="-8.847" size="1" layer="21" font="vector" ratio="20">IO-2</text>
+<text x="35.8342" y="-8.7708" size="1" layer="21" font="vector" ratio="20">IO-2</text>
 <text x="39.187" y="-32.5452" size="1" layer="21" font="vector" ratio="20" rot="R90">IO-3</text>
 <text x="11.4248" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">RST</text>
 <text x="13.9394" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">VCC</text>
@@ -3015,6 +3015,22 @@
 <rectangle x1="19.8281" y1="-15.6683" x2="19.8981" y2="-15.6613" layer="21"/>
 <rectangle x1="19.8491" y1="-15.6613" x2="19.8771" y2="-15.6543" layer="21"/>
 <text x="18.3336" y="-19.3468" size="0.014" layer="21" font="vector">/Users/Simone/Desktop/noun_143916_cc.bmp</text>
+<wire x1="37.5" y1="-40" x2="2.5" y2="-40" width="1" layer="21"/>
+<wire x1="2.5" y1="-40" x2="0" y2="-37.5" width="1" layer="21" curve="-90"/>
+<wire x1="0" y1="-37.5" x2="0" y2="-2.5" width="1" layer="21"/>
+<wire x1="0" y1="-2.5" x2="2.5" y2="0" width="1" layer="21" curve="-90"/>
+<wire x1="2.5" y1="0" x2="37.5" y2="0" width="1" layer="21"/>
+<wire x1="37.5" y1="0" x2="40" y2="-2.5" width="1" layer="21" curve="-90"/>
+<wire x1="40" y1="-2.5" x2="40" y2="-37.5" width="1" layer="21"/>
+<wire x1="40" y1="-37.5" x2="37.5" y2="-40" width="1" layer="21" curve="-90"/>
+<wire x1="37.5" y1="-40" x2="2.5" y2="-40" width="1" layer="22"/>
+<wire x1="2.5" y1="-40" x2="0" y2="-37.5" width="1" layer="22" curve="-90"/>
+<wire x1="0" y1="-37.5" x2="0" y2="-2.5" width="1" layer="22"/>
+<wire x1="0" y1="-2.5" x2="2.5" y2="0" width="1" layer="22" curve="-90"/>
+<wire x1="2.5" y1="0" x2="37.5" y2="0" width="1" layer="22"/>
+<wire x1="37.5" y1="0" x2="40" y2="-2.5" width="1" layer="22" curve="-90"/>
+<wire x1="40" y1="-2.5" x2="40" y2="-37.5" width="1" layer="22"/>
+<wire x1="40" y1="-37.5" x2="37.5" y2="-40" width="1" layer="22" curve="-90"/>
 </plain>
 <libraries>
 <library name="Seeed-OPL-Capacitor">
@@ -4057,7 +4073,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="23.7496" y="-23.875" size="1.27" layer="27"/>
 </element>
 <element name="SIMBLEE" library="SparkFun-RF" package="RFD77101" value="RFD77101" x="7.2" y="-16.325" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.438" y="-13.15" size="0.8" layer="25" font="vector" ratio="11" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="8.1906" y="-12.2356" size="0.8" layer="25" font="vector" ratio="11" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="COMP-13237" x="7.2" y="-16.325" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_ID" value="WRL-13808" x="7.2" y="-16.325" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="17.36" y="-13.15" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
@@ -4072,8 +4088,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="20.6454" y="-25.0354" size="0.8" layer="25" ratio="11" rot="R180"/>
 <attribute name="VALUE" x="21.1788" y="-25.0989" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="J1" library="tiles" package="1X07_NO_SILK_SQUAREPADS" value="" x="12.4" y="-4" smashed="yes">
-<attribute name="VALUE" x="11.13" y="-6.032" size="0.6096" layer="27" font="vector" ratio="20"/>
+<element name="J1" library="tiles" package="1X07_NO_SILK_SQUAREPADS" value="" x="12" y="-4" smashed="yes">
+<attribute name="VALUE" x="10.73" y="-6.032" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="IO-2" library="tiles" package="2,5-PAD-SIM" value="MOUNT-PAD-ROUND2.5" x="36" y="-4"/>
 <element name="IO-3" library="tiles" package="2,5-PAD-SIM" value="MOUNT-PAD-ROUND2.5" x="36" y="-36"/>
@@ -4089,7 +4105,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="CONN-09696" x="16.2254" y="-35.2872" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TOUCH" library="SparkFun-Connectors" package="1X02_NO_SILK" value="" x="4.0414" y="-18.9492" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.3622" y="-17.6792" size="0.85" layer="25" font="vector" ratio="20" rot="SR270"/>
+<attribute name="NAME" x="3.6604" y="-12.904" size="0.85" layer="25" font="vector" ratio="20" rot="SR270"/>
 <attribute name="VALUE" x="2.0094" y="-17.6792" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="SW" library="MF_Switches" package="TACT4.2MM" value="MF-SW-TACT-4.2MM" x="20" y="-31.4" smashed="yes">
@@ -4356,7 +4372,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.2" y1="-9.715" x2="17.724" y2="-7.704" width="0.1524" layer="1"/>
 <via x="17.724" y="-7.704" extent="1-16" drill="0.3048"/>
 <wire x1="17.724" y1="-7.704" x2="17.724" y2="-5.418" width="0.1524" layer="16"/>
-<wire x1="17.724" y1="-5.418" x2="17.48" y2="-4" width="0.1524" layer="16"/>
+<wire x1="17.724" y1="-5.418" x2="17.08" y2="-4" width="0.1524" layer="16"/>
 <wire x1="28.1126" y1="-20.4548" x2="28.4682" y2="-20.4548" width="0.1524" layer="16"/>
 <wire x1="28.4682" y1="-20.4548" x2="28.9127" y2="-20.8993" width="0.1524" layer="16"/>
 <wire x1="28.9127" y1="-20.8993" x2="29.0016" y2="-20.9882" width="0.1524" layer="16"/>
@@ -4373,6 +4389,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="30.043" y1="-28.659" x2="30.678" y2="-28.024" width="0.1524" layer="16"/>
 <wire x1="30.678" y1="-28.024" x2="30.678" y2="-25.5094" width="0.1524" layer="16"/>
 <wire x1="30.678" y1="-25.5094" x2="30.7542" y2="-25.4332" width="0.1524" layer="16"/>
+<polygon width="0.1524" layer="1">
+<vertex x="11" y="0"/>
+<vertex x="40" y="0"/>
+<vertex x="40" y="-40"/>
+<vertex x="11" y="-40"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="11" y="0"/>
+<vertex x="40" y="0"/>
+<vertex x="40" y="-40"/>
+<vertex x="11" y="-40"/>
+</polygon>
 </signal>
 <signal name="V_BATT">
 <contactref element="B+" pad="1"/>
@@ -4448,7 +4476,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R8" pad="2"/>
 <contactref element="GPIO" pad="3"/>
 <contactref element="I2C" pad="2"/>
-<wire x1="14.94" y1="-4" x2="14.94" y2="-4.7476" width="0.3048" layer="1"/>
+<wire x1="14.54" y1="-4" x2="14.94" y2="-4.7476" width="0.3048" layer="1"/>
 <wire x1="14.94" y1="-4.7476" x2="13.9648" y2="-5.7228" width="0.3048" layer="1"/>
 <wire x1="13.9648" y1="-5.7228" x2="8.9864" y2="-5.7228" width="0.3048" layer="1"/>
 <wire x1="8.9864" y1="-5.7228" x2="7.3354" y2="-7.3738" width="0.3048" layer="1"/>
@@ -4595,7 +4623,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.7" y1="-15.1598" x2="11.0184" y2="-14.8414" width="0.1524" layer="1"/>
 <via x="11.0184" y="-14.8414" extent="1-16" drill="0.3048"/>
 <wire x1="11.0184" y1="-14.8414" x2="11.0184" y2="-5.3816" width="0.1524" layer="16"/>
-<wire x1="11.0184" y1="-5.3816" x2="12.4" y2="-4" width="0.1524" layer="16"/>
+<wire x1="11.0184" y1="-5.3816" x2="12" y2="-4" width="0.1524" layer="16"/>
 </signal>
 <signal name="FACTORY">
 <contactref element="SIMBLEE" pad="9"/>
@@ -4605,7 +4633,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J1" pad="6"/>
 <wire x1="21.7912" y1="-8.9708" x2="20.3656" y2="-8.085" width="0.1524" layer="16"/>
 <wire x1="22.7775875" y1="-8.9454" x2="21.7912" y2="-8.9708" width="0.1524" layer="16"/>
-<wire x1="25.1" y1="-4" x2="25.1" y2="-8.9597875" width="0.1524" layer="16"/>
+<wire x1="24.7" y1="-4" x2="25.1" y2="-8.9597875" width="0.1524" layer="16"/>
 <wire x1="25.1" y1="-8.9597875" x2="22.7775875" y2="-8.9454" width="0.1524" layer="16"/>
 <via x="20.3656" y="-8.085" extent="1-16" drill="0.3048"/>
 <wire x1="20.3656" y1="-8.085" x2="20.3656" y2="-8.7454" width="0.1524" layer="1"/>
@@ -4618,7 +4646,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="GPIO1(RX)">
 <contactref element="SIMBLEE" pad="23"/>
 <contactref element="J1" pad="5"/>
-<wire x1="22.56" y1="-4" x2="22.4838" y2="-7.2622" width="0.1524" layer="16"/>
+<wire x1="22.16" y1="-4" x2="22.4838" y2="-7.2622" width="0.1524" layer="16"/>
 <wire x1="22.4838" y1="-7.2622" x2="22.4992" y2="-8.0342" width="0.1524" layer="16"/>
 <via x="22.4992" y="-8.0342" extent="1-16" drill="0.3048"/>
 <wire x1="22.4992" y1="-8.0342" x2="22.55" y2="-11.7426" width="0.1524" layer="1"/>
@@ -4933,7 +4961,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="N$6">
 <contactref element="BATT_CHG" pad="2"/>
 <contactref element="J1" pad="4"/>
-<wire x1="20.02" y1="-4" x2="20.02" y2="-5.7156" width="0.1524" layer="16"/>
+<wire x1="19.62" y1="-4" x2="20.02" y2="-5.7156" width="0.1524" layer="16"/>
 <wire x1="20.02" y1="-5.7156" x2="19.9944" y2="-5.7412" width="0.1524" layer="16"/>
 </signal>
 <signal name="IO-2">
@@ -4941,11 +4969,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="SIMBLEE" pad="24"/>
 <contactref element="IO-2" pad="B2,8"/>
 <contactref element="J1" pad="7"/>
-<wire x1="27.64" y1="-4" x2="36" y2="-4" width="0.1524" layer="1"/>
+<wire x1="27.24" y1="-4" x2="36" y2="-4" width="0.1524" layer="1"/>
 <wire x1="21.8166" y1="-11.5616" x2="20.0608" y2="-13.3174" width="0.1524" layer="1"/>
 <wire x1="21.8166" y1="-10.1688125" x2="21.8166" y2="-10.244" width="0.1524" layer="1"/>
 <wire x1="21.8166" y1="-10.244" x2="21.8166" y2="-11.5616" width="0.1524" layer="1"/>
-<wire x1="27.64" y1="-4" x2="27.64" y2="-4.3454125" width="0.1524" layer="1"/>
+<wire x1="27.24" y1="-4" x2="27.64" y2="-4.3454125" width="0.1524" layer="1"/>
 <wire x1="27.64" y1="-4.3454125" x2="27.6357875" y2="-4.3454125" width="0.1524" layer="1"/>
 <wire x1="20.0608" y1="-13.3174" x2="17.131375" y2="-13.3174" width="0.1524" layer="1"/>
 <wire x1="17.131375" y1="-13.3174" x2="17.126775" y2="-13.3128" width="0.1524" layer="1"/>
@@ -4959,7 +4987,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="25.598" y1="-7.196" x2="26.106" y2="-7.704" width="0.1524" layer="1"/>
 <via x="26.106" y="-7.704" extent="1-16" drill="0.3048"/>
 <wire x1="26.106" y1="-7.704" x2="26.106" y2="-5.534" width="0.1524" layer="16"/>
-<wire x1="26.106" y1="-5.534" x2="27.64" y2="-4" width="0.1524" layer="16"/>
+<wire x1="26.106" y1="-5.534" x2="27.24" y2="-4" width="0.1524" layer="16"/>
 </signal>
 <signal name="IO-3">
 <contactref element="GPIO" pad="2"/>
