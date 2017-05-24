@@ -694,44 +694,44 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="microbuilder" package="0805" value="10µF" x="7.25" y="-10.98"/>
-<element name="C2" library="microbuilder" package="0805" value="10µF" x="8.49" y="-7.9"/>
+<element name="C1" library="microbuilder" package="0805" value="10µF" x="9.25" y="-22.98"/>
+<element name="C2" library="microbuilder" package="0805" value="10µF" x="10.49" y="-19.9"/>
 <element name="CN1" library="microbuilder" package="USBA_PCB" value="" x="-6.01" y="-20.05"/>
 <element name="J1" library="tiles" package="1X07_SQUAREPADS_TOP" value="" x="35.99" y="-28" rot="R90"/>
-<element name="J2" library="MF_Connectors" package="PTH_2.54MM_01X07" value="MF-CON-2.54mm-01x07" x="18.14" y="-29.14">
-<attribute name="HOUSEPART" value="YES" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL01" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL02" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL03" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL04" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL05" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL06" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL07" value="" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MF-CON-2.54mm-01x07" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-CON-2.54mm-01x07" x="18.14" y="-29.14" size="1.778" layer="27" display="off"/>
+<element name="J2" library="MF_Connectors" package="PTH_2.54MM_01X07" value="MF-CON-2.54mm-01x07" x="17.46" y="-9.8" rot="R180">
+<attribute name="HOUSEPART" value="YES" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL01" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL02" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL03" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL04" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL05" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL06" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL07" value="" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MF-CON-2.54mm-01x07" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POPULATE" value="1" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-CON-2.54mm-01x07" x="17.46" y="-9.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J3" library="MF_Connectors" package="PTH_2.54MM_01X05" value="MF-CON-2.54mm-01x05" x="15.68" y="-15.06">
-<attribute name="HOUSEPART" value="YES" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL01" value="" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL02" value="" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL03" value="" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL04" value="" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL05" value="" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MF-CON-2.54mm-01x05" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-CON-2.54mm-01x05" x="15.68" y="-15.06" size="1.778" layer="27" display="off"/>
+<element name="J3" library="MF_Connectors" package="PTH_2.54MM_01X05" value="MF-CON-2.54mm-01x05" x="15" y="-30" rot="R180">
+<attribute name="HOUSEPART" value="YES" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL01" value="" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL02" value="" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL03" value="" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL04" value="" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LABEL05" value="" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MF-CON-2.54mm-01x05" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POPULATE" value="1" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-CON-2.54mm-01x05" x="15" y="-30" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LED1" library="microbuilder" package="CHIPLED_0805" value="RED" x="21.52" y="-10.79"/>
-<element name="LED2" library="microbuilder" package="CHIPLED_0805" value="GREEN" x="16.44" y="-10.79"/>
-<element name="R1" library="microbuilder" package="0805" value="470" x="21.14" y="-2.9"/>
-<element name="R2" library="microbuilder" package="0805" value="470" x="13.79" y="-1.9"/>
-<element name="R3" library="microbuilder" package="0805" value="10K\" x="7.44" y="-2.9"/>
-<element name="R4" library="microbuilder" package="0805" value="2K" x="9.49" y="-4.36"/>
-<element name="SJ1" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="12.6" y="-5.98">
-<attribute name="BOM" value="EXCLUDE" x="12.6" y="-5.98" size="1.778" layer="27" display="off"/>
+<element name="LED1" library="microbuilder" package="CHIPLED_0805" value="RED" x="23.52" y="-22.79"/>
+<element name="LED2" library="microbuilder" package="CHIPLED_0805" value="GREEN" x="18.44" y="-22.79"/>
+<element name="R1" library="microbuilder" package="0805" value="470" x="23.14" y="-14.9"/>
+<element name="R2" library="microbuilder" package="0805" value="470" x="15.79" y="-13.9"/>
+<element name="R3" library="microbuilder" package="0805" value="10K\" x="9.44" y="-14.9"/>
+<element name="R4" library="microbuilder" package="0805" value="2K" x="11.49" y="-16.36"/>
+<element name="SJ1" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="14.6" y="-17.98">
+<attribute name="BOM" value="EXCLUDE" x="14.6" y="-17.98" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U1" library="microbuilder" package="SOT23-5" value="MCP73831T-2ACI/OT" x="21.41" y="-6.71"/>
+<element name="U1" library="microbuilder" package="SOT23-5" value="MCP73831T-2ACI/OT" x="23.41" y="-18.71"/>
 <element name="H1" library="tiles" package="2,5-PAD-SIM" value="MOUNT-PAD-ROUND2.5" x="36" y="-4"/>
 <element name="H2" library="tiles" package="2,5-PAD-SIM" value="MOUNT-PAD-ROUND2.5" x="36" y="-36"/>
 </elements>
@@ -746,79 +746,79 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="C"/>
 <contactref element="J1" pad="3"/>
 <contactref element="J2" pad="P$1"/>
-<wire x1="9.44" y1="-7.9" x2="10.44" y2="-4.36" width="0" layer="19" extent="1-1"/>
-<wire x1="21.41" y1="-8.0101" x2="9.44" y2="-7.9" width="0" layer="19" extent="1-1"/>
-<wire x1="8.2" y1="-10.98" x2="21.41" y2="-8.0101" width="0" layer="19" extent="1-1"/>
-<wire x1="16.44" y1="-9.74" x2="8.2" y2="-10.98" width="0" layer="19" extent="1-1"/>
-<wire x1="8.39" y1="-2.9" x2="8.2" y2="-10.98" width="0" layer="19" extent="1-1"/>
-<wire x1="10.52" y1="-29.14" x2="16.44" y2="-9.74" width="0" layer="19" extent="1-1"/>
-<wire x1="35.99" y1="-22.92" x2="10.52" y2="-29.14" width="0" layer="19" extent="1-1"/>
+<wire x1="11.44" y1="-19.9" x2="12.44" y2="-16.36" width="0" layer="19" extent="1-1"/>
+<wire x1="23.41" y1="-20.0101" x2="11.44" y2="-19.9" width="0" layer="19" extent="1-1"/>
+<wire x1="10.2" y1="-22.98" x2="23.41" y2="-20.0101" width="0" layer="19" extent="1-1"/>
+<wire x1="18.44" y1="-21.74" x2="10.2" y2="-22.98" width="0" layer="19" extent="1-1"/>
+<wire x1="10.39" y1="-14.9" x2="10.2" y2="-22.98" width="0" layer="19" extent="1-1"/>
+<wire x1="25.08" y1="-9.8" x2="18.44" y2="-21.74" width="0" layer="19" extent="1-1"/>
+<wire x1="35.99" y1="-22.92" x2="25.08" y2="-9.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.21" y1="-16.55" x2="35.99" y2="-22.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="LED1" pad="C"/>
 <contactref element="R1" pad="1"/>
-<wire x1="21.52" y1="-9.74" x2="20.19" y2="-2.9" width="0" layer="19" extent="1-1"/>
+<wire x1="23.52" y1="-21.74" x2="22.19" y2="-14.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="2"/>
 <contactref element="U1" pad="1"/>
 <contactref element="R2" pad="2"/>
-<wire x1="20.46" y1="-8.0101" x2="22.09" y2="-2.9" width="0" layer="19" extent="1-1"/>
-<wire x1="14.74" y1="-1.9" x2="22.09" y2="-2.9" width="0" layer="19" extent="1-1"/>
+<wire x1="22.46" y1="-20.0101" x2="24.09" y2="-14.9" width="0" layer="19" extent="1-1"/>
+<wire x1="16.74" y1="-13.9" x2="24.09" y2="-14.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD">
 <contactref element="CN1" pad="VCC"/>
 <contactref element="U1" pad="4"/>
 <contactref element="C1" pad="1"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="6.3" y1="-10.98" x2="22.36" y2="-5.4099" width="0" layer="19" extent="1-1"/>
-<wire x1="21.52" y1="-11.84" x2="6.3" y2="-10.98" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.21" y1="-23.55" x2="21.52" y2="-11.84" width="0" layer="19" extent="1-1"/>
+<wire x1="8.3" y1="-22.98" x2="24.36" y2="-17.4099" width="0" layer="19" extent="1-1"/>
+<wire x1="23.52" y1="-23.84" x2="8.3" y2="-22.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.21" y1="-23.55" x2="23.52" y2="-23.84" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="U1" pad="3"/>
 <contactref element="C2" pad="1"/>
 <contactref element="J1" pad="4"/>
-<wire x1="22.36" y1="-8.0101" x2="7.54" y2="-7.9" width="0" layer="19" extent="1-1"/>
-<wire x1="35.99" y1="-20.38" x2="22.36" y2="-8.0101" width="0" layer="19" extent="1-1"/>
+<wire x1="24.36" y1="-20.0101" x2="9.54" y2="-19.9" width="0" layer="19" extent="1-1"/>
+<wire x1="35.99" y1="-20.38" x2="24.36" y2="-20.0101" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U1" pad="5"/>
 <contactref element="R3" pad="1"/>
 <contactref element="SJ1" pad="2"/>
-<wire x1="13.616" y1="-5.98" x2="20.46" y2="-5.4099" width="0" layer="19" extent="1-1"/>
-<wire x1="6.49" y1="-2.9" x2="13.616" y2="-5.98" width="0" layer="19" extent="1-1"/>
+<wire x1="15.616" y1="-17.98" x2="22.46" y2="-17.4099" width="0" layer="19" extent="1-1"/>
+<wire x1="8.49" y1="-14.9" x2="15.616" y2="-17.98" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R2" pad="1"/>
 <contactref element="LED2" pad="A"/>
-<wire x1="16.44" y1="-11.84" x2="12.84" y2="-1.9" width="0" layer="19" extent="1-1"/>
+<wire x1="18.44" y1="-23.84" x2="14.84" y2="-13.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R4" pad="1"/>
 <contactref element="SJ1" pad="1"/>
-<wire x1="11.584" y1="-5.98" x2="8.54" y2="-4.36" width="0" layer="19" extent="1-1"/>
+<wire x1="13.584" y1="-17.98" x2="10.54" y2="-16.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="J1" pad="1"/>
 <contactref element="J2" pad="P$4"/>
-<wire x1="18.14" y1="-29.14" x2="35.99" y2="-28" width="0" layer="19" extent="1-1"/>
+<wire x1="17.46" y1="-9.8" x2="35.99" y2="-28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="J1" pad="2"/>
 <contactref element="J2" pad="P$3"/>
-<wire x1="15.6" y1="-29.14" x2="35.99" y2="-25.46" width="0" layer="19" extent="1-1"/>
+<wire x1="20" y1="-9.8" x2="35.99" y2="-25.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO1(RX)">
 <contactref element="J1" pad="5"/>
 <contactref element="J2" pad="P$7"/>
-<wire x1="35.99" y1="-17.84" x2="25.76" y2="-29.14" width="0" layer="19" extent="1-1"/>
+<wire x1="35.99" y1="-17.84" x2="9.84" y2="-9.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO0(TX)">
 <contactref element="J1" pad="6"/>
 <contactref element="J2" pad="P$6"/>
-<wire x1="35.99" y1="-15.3" x2="23.22" y2="-29.14" width="0" layer="19" extent="1-1"/>
+<wire x1="35.99" y1="-15.3" x2="12.38" y2="-9.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NC">
 <contactref element="J2" pad="P$2"/>
@@ -826,7 +826,7 @@ design rules under a new name.</description>
 <signal name="FACTORY">
 <contactref element="J2" pad="P$5"/>
 <contactref element="J1" pad="7"/>
-<wire x1="35.99" y1="-12.76" x2="20.68" y2="-29.14" width="0" layer="19" extent="1-1"/>
+<wire x1="35.99" y1="-12.76" x2="14.92" y2="-9.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="J3" pad="P$1"/>

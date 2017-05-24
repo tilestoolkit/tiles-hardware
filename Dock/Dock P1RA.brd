@@ -989,7 +989,7 @@ MATE</text>
 <text x="28.937" y="-3.1562" size="1.5" layer="21" font="vector" align="center">--&gt;</text>
 <text x="18.8722" y="-36.957" size="1" layer="22" font="vector" rot="MR0" align="center">http://tilestoolkit.io
 Prototype 1 Rev. A
-Simone Mora (simonem@ntnu.no)</text>
+simone.mora@ntnu.no</text>
 <rectangle x1="12.98" y1="-30.02" x2="13.26" y2="-29.98" layer="22"/>
 <rectangle x1="12.9" y1="-29.98" x2="13.34" y2="-29.94" layer="22"/>
 <rectangle x1="12.82" y1="-29.94" x2="13.42" y2="-29.9" layer="22"/>

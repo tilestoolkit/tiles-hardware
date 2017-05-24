@@ -2162,7 +2162,7 @@ Silk outline shows header location.
 <circle x="0" y="0" radius="3.175" width="0.8128" layer="40"/>
 <circle x="0" y="0" radius="3.175" width="0.8128" layer="43"/>
 <circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
-<pad name="B2,8" x="0" y="0" drill="3" diameter="5.334"/>
+<pad name="B2,8" x="0" y="0" drill="6" diameter="8"/>
 </package>
 <package name="3,0-PAD">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.0 mm, round</description>
@@ -5839,6 +5839,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.16" y1="127" x2="-2.54" y2="127" width="0.1524" layer="91"/>
 <label x="-2.54" y="127" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="210.82" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<label x="210.82" y="149.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO0(TX)" class="0">
 <segment>
@@ -6086,11 +6091,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IO-2" gate="G$1" pin="MOUNT"/>
 <wire x1="157.48" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
 <label x="142.24" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="210.82" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
-<label x="210.82" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IO-3" class="0">
