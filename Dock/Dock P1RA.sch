@@ -1731,7 +1731,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="0" y="0" radius="3.175" width="0.8128" layer="40"/>
 <circle x="0" y="0" radius="3.175" width="0.8128" layer="43"/>
 <circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
-<pad name="B2,8" x="0" y="0" drill="2.5" diameter="5.334"/>
+<pad name="B2,8" x="0" y="0" drill="6" diameter="8"/>
 </package>
 <package name="3,0-PAD">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.0 mm, round</description>
