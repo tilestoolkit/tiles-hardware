@@ -157,8 +157,8 @@
 <wire x1="-9" y1="-26" x2="0" y2="-26" width="0" layer="20"/>
 <wire x1="0" y1="-26" x2="1" y2="-27" width="0" layer="20" curve="-90"/>
 <wire x1="1" y1="-27" x2="1" y2="-37.5" width="0" layer="20"/>
-<wire x1="1" y1="-37.5" x2="3.5" y2="-40" width="0" layer="20" curve="90"/>
-<wire x1="3.5" y1="-40" x2="37.5" y2="-40" width="0" layer="20"/>
+<wire x1="1" y1="-37.5" x2="2.5" y2="-40" width="0" layer="20" curve="90"/>
+<wire x1="2.5" y1="-40" x2="37.5" y2="-40" width="0" layer="20"/>
 <wire x1="37.5" y1="-40" x2="40" y2="-37.5" width="0" layer="20" curve="90"/>
 <wire x1="40" y1="-37.5" x2="40" y2="-2.5" width="0" layer="20"/>
 <wire x1="40" y1="-2.5" x2="37.5" y2="0" width="0" layer="20" curve="90"/>
@@ -2970,15 +2970,13 @@ simone.mora@ntnu.no</text>
 <vertex x="1" y="0"/>
 <vertex x="40" y="0"/>
 <vertex x="40" y="-40"/>
-<vertex x="3.5" y="-40" curve="-90"/>
-<vertex x="1" y="-37.5"/>
+<vertex x="1" y="-40"/>
 </polygon>
 <polygon width="0.1016" layer="16">
 <vertex x="1" y="0"/>
 <vertex x="40" y="0"/>
 <vertex x="40" y="-40"/>
-<vertex x="3.5" y="-40" curve="-90"/>
-<vertex x="1" y="-37.5"/>
+<vertex x="1" y="-40"/>
 </polygon>
 </signal>
 <signal name="N$1">

@@ -136,14 +136,6 @@ Views=" 1: -37.6754 -12.9358 254.845 181.846"
 Sheet="1"
 
 [Win_2]
-Type="CAM Processor"
-Loc="42 22 1241 621"
-State=2
-Number=3
-File="Tiles_Proto3_RevA.brd"
-Job="/Applications/EAGLE-8.2.0/cam/dirt_cheap_dirty_boards.v1.1.cam"
-
-[Win_3]
 Type="Control Panel"
 Loc="42 22 1241 621"
 State=2
@@ -153,4 +145,3 @@ Number=0
 Screen="640 480"
 Window="Win_1"
 Window="Win_2"
-Window="Win_3"

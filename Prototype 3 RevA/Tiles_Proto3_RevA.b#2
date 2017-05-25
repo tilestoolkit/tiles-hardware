@@ -3,7 +3,7 @@
 <eagle version="8.2.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -23,18 +23,18 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -180,12 +180,12 @@
 <text x="4.0258" y="-30.692" size="1" layer="22" font="vector" ratio="20" rot="MR0">T-B</text>
 <text x="38.3398" y="-10.7044" size="1" layer="22" font="vector" ratio="20" rot="MR0">IO-2</text>
 <text x="38.206" y="-30.6232" size="1" layer="22" font="vector" ratio="20" rot="MR0">IO-3</text>
-<text x="12.8092" y="-1.715" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">RST</text>
-<text x="15.5778" y="-1.715" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">VCC</text>
-<text x="18.1432" y="-1.715" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">GND</text>
-<text x="23.2486" y="-1.715" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">01</text>
-<text x="25.7378" y="-1.715" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">00</text>
-<text x="28.2778" y="-1.715" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">FAC</text>
+<text x="12.9792" y="-6.815" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">RST</text>
+<text x="15.7478" y="-6.815" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">VCC</text>
+<text x="18.3132" y="-6.815" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">GND</text>
+<text x="23.4186" y="-6.815" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">01</text>
+<text x="25.9078" y="-6.815" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">00</text>
+<text x="28.4478" y="-6.815" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">FAC</text>
 <text x="37.6934" y="-23.2008" size="0.8" layer="22" font="vector" ratio="12" rot="MR90">VCC</text>
 <text x="37.6934" y="-25.9478" size="0.8" layer="22" font="vector" ratio="12" rot="MR90">GND</text>
 <text x="37.6934" y="-20.3024" size="0.8" layer="22" font="vector" ratio="12" rot="MR90">IO3</text>
@@ -198,17 +198,17 @@
 <text x="19.8372" y="-33.6882" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">VCC</text>
 <text x="22.3264" y="-33.6882" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SDA</text>
 <text x="24.8918" y="-33.6882" size="0.8" layer="22" font="vector" ratio="12" rot="MR0">SCL</text>
-<text x="1.9" y="-10.0686" size="1" layer="21" font="vector" ratio="11">T-A</text>
-<text x="1.8076" y="-30.9458" size="1" layer="21" font="vector" ratio="11">T-B</text>
-<text x="35.1542" y="-9.9408" size="1" layer="21" font="vector" ratio="11">IO-2</text>
-<text x="38.957" y="-32.3652" size="1" layer="21" font="vector" ratio="11" rot="R90">IO-3</text>
-<text x="10.9648" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">RST</text>
-<text x="13.4794" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">VCC</text>
-<text x="16.0448" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">GND</text>
-<text x="18.6356" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">BAT</text>
-<text x="21.5566" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">01</text>
-<text x="23.8934" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">00</text>
-<text x="26.027" y="-6.9538" size="0.8" layer="21" font="vector" ratio="12">FAC</text>
+<text x="1.9" y="-10.0686" size="1" layer="21" font="vector" ratio="20">T-A</text>
+<text x="1.8076" y="-30.9458" size="1" layer="21" font="vector" ratio="20">T-B</text>
+<text x="35.1542" y="-9.9408" size="1" layer="21" font="vector" ratio="20">IO-2</text>
+<text x="38.957" y="-32.3652" size="1" layer="21" font="vector" ratio="20" rot="R90">IO-3</text>
+<text x="11.4248" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">RST</text>
+<text x="13.9394" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">VCC</text>
+<text x="16.5048" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">GND</text>
+<text x="19.0956" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">BAT</text>
+<text x="22.0166" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">01</text>
+<text x="24.3534" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">00</text>
+<text x="26.487" y="-6.1038" size="0.8" layer="21" font="vector" ratio="12">FAC</text>
 <text x="38.2218" y="-23.0456" size="0.8" layer="21" font="vector" ratio="12" rot="R90">VCC</text>
 <text x="38.2218" y="-25.6364" size="0.8" layer="21" font="vector" ratio="12" rot="R90">GND</text>
 <text x="38.2218" y="-20.277" size="0.8" layer="21" font="vector" ratio="12" rot="R90">IO3</text>
@@ -3024,11 +3024,11 @@
 <wire x1="36.5" y1="-0.5" x2="39.5" y2="-3.5" width="0.254" layer="21" curve="-90"/>
 <wire x1="39.5" y1="-3.5" x2="39.5" y2="-36.5" width="0.254" layer="21"/>
 <wire x1="39.5" y1="-36.5" x2="36.5" y2="-39.5" width="0.254" layer="21" curve="-90"/>
-<text x="19.81" y="-37.99" size="0.8" layer="22" rot="MR0" align="center">Make everyday things interactive
+<text x="20.2" y="-37.96" size="1" layer="22" rot="MR0" align="center">Make everyday things interactive
 http://tilestoolkit.io</text>
-<text x="20.01" y="-2.44" size="1.25" layer="21" ratio="16" align="center">DOCK</text>
-<text x="13.5" y="-2.44" size="1" layer="21" ratio="16" rot="SR270" align="center">&lt;-</text>
-<text x="27.28" y="-2.44" size="1" layer="21" ratio="16" rot="SR270" align="center">&lt;-</text>
+<text x="20.01" y="-2.44" size="1.25" layer="21" align="center">DOCK</text>
+<text x="13.5" y="-2.44" size="1.75" layer="21" rot="SR270" align="center">&lt;-</text>
+<text x="27.28" y="-2.44" size="1.75" layer="21" rot="SR270" align="center">&lt;-</text>
 </plain>
 <libraries>
 <library name="Seeed-OPL-Capacitor">
@@ -3982,44 +3982,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="C1" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="7.94" y="-19.34" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="7.94" y="-19.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="9.4386" y="-20.229" size="0.8" layer="25" ratio="11" rot="R180"/>
 <attribute name="NAME" x="9.21" y="-19.086" size="0.635" layer="33" ratio="10" rot="R180"/>
+<attribute name="NAME" x="9.4386" y="-20.229" size="0.8" layer="25" ratio="11" rot="R180"/>
 <attribute name="VALUE" x="9.21" y="-17.7525" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C2" library="Seeed-OPL-Capacitor" package="C0603" value="100nf" x="33.03" y="-26.37" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R9BB104" x="33.03" y="-26.37" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.76" y="-25.481" size="0.8" layer="25" ratio="11"/>
 <attribute name="NAME" x="31.76" y="-26.624" size="0.635" layer="33" ratio="10"/>
+<attribute name="NAME" x="31.76" y="-25.481" size="0.8" layer="25" ratio="11"/>
 <attribute name="VALUE" x="31.76" y="-27.9575" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C3" library="Seeed-OPL-Capacitor" package="C0603" value="10uf" x="33.04" y="-24.03" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="33.04" y="-24.03" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.77" y="-23.141" size="0.8" layer="25" ratio="11"/>
 <attribute name="NAME" x="31.77" y="-24.284" size="0.635" layer="33" ratio="10"/>
+<attribute name="NAME" x="31.77" y="-23.141" size="0.8" layer="25" ratio="11"/>
 <attribute name="VALUE" x="31.77" y="-25.6175" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C4" library="Seeed-OPL-Capacitor" package="C0603" value="220nf" x="32.97" y="-21.52" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R8BB224" x="32.97" y="-21.52" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.7" y="-20.631" size="0.8" layer="25" ratio="11"/>
 <attribute name="NAME" x="31.7" y="-21.774" size="0.635" layer="33" ratio="10"/>
+<attribute name="NAME" x="31.7" y="-20.631" size="0.8" layer="25" ratio="11"/>
 <attribute name="VALUE" x="31.7" y="-23.1075" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C5" library="Seeed-OPL-Capacitor" package="C0603" value="10uf" x="8.01" y="-22.36" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="8.01" y="-22.36" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="8.4672" y="-24.1126" size="0.8" layer="25" ratio="11"/>
 <attribute name="NAME" x="6.74" y="-22.614" size="0.635" layer="33" ratio="10"/>
+<attribute name="NAME" x="8.4672" y="-24.1126" size="0.8" layer="25" ratio="11"/>
 <attribute name="VALUE" x="6.74" y="-23.9475" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C6" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="33.23" y="-12.77" smashed="yes">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="33.23" y="-12.77" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="34.1952" y="-12.3382" size="0.8" layer="25" ratio="11" rot="R270"/>
 <attribute name="NAME" x="32.976" y="-11.5" size="0.635" layer="33" ratio="10" rot="R270"/>
+<attribute name="NAME" x="34.1952" y="-12.3382" size="0.8" layer="25" ratio="11" rot="R270"/>
 <attribute name="VALUE" x="31.6425" y="-11.5" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C7" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="32.048075" y="-16.88535625" smashed="yes" rot="R315">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="32.048075" y="-16.88535625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="32.685715625" y="-17.55575" size="0.8" layer="25" ratio="11" rot="R225"/>
 <attribute name="NAME" x="32.76649375" y="-15.807728125" size="0.635" layer="33" ratio="10" rot="R225"/>
+<attribute name="NAME" x="32.685715625" y="-17.55575" size="0.8" layer="25" ratio="11" rot="R225"/>
 <attribute name="VALUE" x="31.823565625" y="-14.8648" size="0.635" layer="27" ratio="10" rot="R225"/>
 </element>
 <element name="D1" library="Seeed-OPL-2017-01-Diode-james" package="SOD-123" value="40V-500MA" x="13.64" y="-19.33" smashed="yes" rot="R180">
@@ -4054,7 +4054,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="R3" library="Seeed-OPL-Resistor" package="R0603" value="10K 1/10W" x="12.6018" y="-29.3" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0603JR-0710KL" x="12.6018" y="-29.3" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="14.2528" y="-30.3668" size="0.8" layer="25" font="vector" ratio="11" rot="R180"/>
+<attribute name="NAME" x="14.2528" y="-30.3668" size="0.8" layer="25" ratio="11" rot="R180"/>
 <attribute name="VALUE" x="13.8718" y="-27.395" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R4" library="Seeed-OPL-Resistor" package="R0603" value="10K 1/10W" x="12.76" y="-23.14" smashed="yes" rot="R90">
@@ -4064,7 +4064,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="R5" library="Seeed-OPL-Resistor" package="R0603" value="100K 1/10W" x="12.6626" y="-27.21" smashed="yes" rot="R270">
 <attribute name="MPN" value="RC0603JR-07100KL" x="12.6626" y="-27.21" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="12.5102" y="-26.194" size="0.8" layer="25" font="vector" ratio="11"/>
+<attribute name="NAME" x="12.5102" y="-26.194" size="0.8" layer="25" ratio="11"/>
 <attribute name="VALUE" x="11.3926" y="-29.115" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="HAPTIC" library="SparkFun-IC-Special-Function" package="VSSOP-10" value="DRV2605L" x="27.0596" y="-19.945" smashed="yes">
@@ -4084,8 +4084,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="C8" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="19.9088" y="-26.6864" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="19.9088" y="-26.6864" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="20.6454" y="-25.0354" size="0.8" layer="25" ratio="11" rot="R180"/>
 <attribute name="NAME" x="21.1788" y="-26.4324" size="0.635" layer="33" ratio="10" rot="R180"/>
+<attribute name="NAME" x="20.6454" y="-25.0354" size="0.8" layer="25" ratio="11" rot="R180"/>
 <attribute name="VALUE" x="21.1788" y="-25.0989" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="J1" library="tiles" package="1X07_SQUAREPADS_BOTTOM" value="" x="12" y="-5" smashed="yes">
@@ -4118,14 +4118,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="STAT" library="MF_LEDs" package="LED0603" value="MF-LED-0603-RED" x="11.1" y="-36" smashed="yes" rot="R180">
 <attribute name="HOUSEPART" value="YES" x="11.1" y="-36" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MF-LED-0603-RED" x="11.1" y="-36" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="12.8" y="-37.1" size="0.85" layer="25" font="vector" ratio="11" rot="R180"/>
+<attribute name="NAME" x="12.8" y="-37.1" size="0.85" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="POPULATE" value="1" x="11.1" y="-36" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="11.1" y="-36" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R6" library="MF_Passives" package="R0603" value="330" x="11" y="-32.8" smashed="yes" rot="R180">
 <attribute name="HOUSEPART" value="" x="11" y="-32.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="11" y="-32.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="12.4" y="-33.9" size="0.8" layer="25" font="vector" ratio="11" rot="R180"/>
+<attribute name="NAME" x="12.4" y="-33.9" size="0.8" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="POPULATE" value="1" x="11" y="-32.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="" x="11" y="-32.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="URL" value="" x="11" y="-32.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4159,7 +4159,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="http://www.mouser.com/ds/2/238/bat-hld-001-220194.pdf" x="20.5604" y="-21.0894" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="BATT_CHG" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-SMT_2_NO_NO-SILK" x="19.7404" y="-6.1476" smashed="yes" rot="MR90">
-<attribute name="NAME" x="21.291" y="-8.6666" size="0.6096" layer="26" font="vector" ratio="11" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="20.731" y="-8.3066" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -4471,9 +4471,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="GPIO" pad="3"/>
 <contactref element="I2C" pad="2"/>
 <wire x1="14.54" y1="-5" x2="14.54" y2="-4.7476" width="0.3048" layer="1"/>
-<wire x1="14.54" y1="-4.7476" x2="13.7148" y2="-6.4428" width="0.3048" layer="1"/>
-<wire x1="13.7148" y1="-6.4428" x2="9.1764" y2="-6.4328" width="0.3048" layer="1"/>
-<wire x1="9.1764" y1="-6.4328" x2="9.1654" y2="-7.7038" width="0.3048" layer="1"/>
+<wire x1="14.54" y1="-4.7476" x2="13.9048" y2="-6.2828" width="0.3048" layer="1"/>
+<wire x1="13.9048" y1="-6.2828" x2="9.2764" y2="-6.2328" width="0.3048" layer="1"/>
+<wire x1="9.2764" y1="-6.2328" x2="9.1654" y2="-7.7038" width="0.3048" layer="1"/>
 <wire x1="9.1654" y1="-7.7038" x2="9.1436" y2="-9.4138" width="0.3048" layer="1"/>
 <wire x1="9.1436" y1="-9.4138" x2="5.4928" y2="-9.4946" width="0.3048" layer="1"/>
 <wire x1="5.4928" y1="-9.4946" x2="5.5828" y2="-16.9496" width="0.3048" layer="1"/>
