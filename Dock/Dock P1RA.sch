@@ -2242,9 +2242,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="0805" value="470"/>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="0805" value="470"/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
-<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10µF"/>
+<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10µF"/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
-<part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10µF"/>
+<part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10µF"/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="0805" value="10K\"/>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
