@@ -34,6 +34,8 @@ LSM9DS0 *IMU = NULL;
 Feedbacks_Handler feedback_handle;
 //Haptic *HapticMotor;
 //RGB_LED *LED;
+NEO_STRIP *STRIP;
+
 
 void setup(void)
 {
@@ -46,6 +48,11 @@ void setup(void)
     IMU = new LSM9DS0();
     sensor_handle.setAccelerometer(Accelerometer);
     sensor_handle.setInertialCentral(IMU);
+    
+    STRIP = new NEO_STRIP();
+    feedback_handle.setNEO_STRIP(STRIP);
+    delay(2000);
+    feedback_handle.setColor("green");
 
     // Intitialization of TokenFeedback Actuators
     // HapticMotor = new Haptic(VIBRATING_M_PIN);

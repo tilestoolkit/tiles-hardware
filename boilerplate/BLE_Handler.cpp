@@ -132,8 +132,9 @@ String Token::getEventString()
     String Payload;
     extern BLE_Handler BLE;
     
+    //Payload = BLE.AdvertiseName + "," + FirstValue;
     Payload = BLE.AdvertiseName + "," + FirstValue;
-
+    
     if(SecondValue.length() != 0)
     {
       Payload = Payload + "," + SecondValue;

@@ -1,7 +1,7 @@
 #ifndef CONFIG_h
 #define CONFIG_h
 
-#define SUFFIX "TestDevice_"
+#define SUFFIX "Tile_"
 #define RFDUINO 1
 #define SIMBLEE 2
 #define UC RFDUINO

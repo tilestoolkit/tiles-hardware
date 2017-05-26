@@ -35,10 +35,10 @@ String Sensors_Handler::pollEvent()    // If an event has occured returns the ev
         _Accelerometer->RefreshValues();
         
         if (_Accelerometer->isTapped())
-            AccEvent = String("tap");
+            AccEvent = String("tap,single");
         
         else if (_Accelerometer->isDoubleTapped())
-            AccEvent = String("doubletap");
+            AccEvent = String("tap,double");
         
        // else if (_Accelerometer->isShaked())
         //    AccEvent = String("shake");

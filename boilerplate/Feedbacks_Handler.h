@@ -3,6 +3,7 @@
 
 #include "Haptic.h"
 #include "RGB_LED.h"
+#include "NEO_STRIP.h"
 
 class Feedbacks_Handler
 {
@@ -18,7 +19,8 @@ class Feedbacks_Handler
       void Vibrate(String Type);
 
       // RGB Led
-     void setRGB_LED(RGB_LED *pLED);
+      void setRGB_LED(RGB_LED *pLED);
+      void setNEO_STRIP(NEO_STRIP *pSTRIP);
       void setColor(String color);
       
     private:
@@ -27,6 +29,9 @@ class Feedbacks_Handler
 
       RGB_LED *LED;
       bool RGB_LEDAvailable;
+
+      NEO_STRIP *STRIP;
+      bool NEO_STRIPAvailable;
  
       
 };
