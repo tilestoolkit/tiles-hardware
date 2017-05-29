@@ -2568,7 +2568,7 @@ simone.mora@ntnu.no</text>
 <vertex x="16.1798" y="2.9718"/>
 <vertex x="16.1798" y="0.7112"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="-1.016" y="0.762"/>
 <vertex x="-1.016" y="3.175"/>
 <vertex x="1.016" y="3.175"/>
@@ -2576,7 +2576,7 @@ simone.mora@ntnu.no</text>
 <vertex x="-1.016" y="0.635"/>
 <vertex x="-1.016" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="1.524" y="0.762"/>
 <vertex x="1.524" y="3.175"/>
 <vertex x="3.556" y="3.175"/>
@@ -2584,7 +2584,7 @@ simone.mora@ntnu.no</text>
 <vertex x="1.524" y="0.635"/>
 <vertex x="1.524" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="4.064" y="0.762"/>
 <vertex x="4.064" y="3.175"/>
 <vertex x="6.096" y="3.175"/>
@@ -2592,7 +2592,7 @@ simone.mora@ntnu.no</text>
 <vertex x="4.064" y="0.635"/>
 <vertex x="4.064" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="6.604" y="0.762"/>
 <vertex x="6.604" y="3.175"/>
 <vertex x="8.636" y="3.175"/>
@@ -2600,7 +2600,7 @@ simone.mora@ntnu.no</text>
 <vertex x="6.604" y="0.635"/>
 <vertex x="6.604" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="9.144" y="0.762"/>
 <vertex x="9.144" y="3.175"/>
 <vertex x="11.176" y="3.175"/>
@@ -2608,7 +2608,7 @@ simone.mora@ntnu.no</text>
 <vertex x="9.144" y="0.635"/>
 <vertex x="9.144" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="11.684" y="0.762"/>
 <vertex x="11.684" y="3.175"/>
 <vertex x="13.716" y="3.175"/>
@@ -2616,7 +2616,7 @@ simone.mora@ntnu.no</text>
 <vertex x="11.684" y="0.635"/>
 <vertex x="11.684" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="14.224" y="0.762"/>
 <vertex x="14.224" y="3.175"/>
 <vertex x="16.256" y="3.175"/>

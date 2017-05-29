@@ -1538,7 +1538,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="16.1798" y="2.9718"/>
 <vertex x="16.1798" y="0.7112"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="-1.016" y="0.762"/>
 <vertex x="-1.016" y="3.175"/>
 <vertex x="1.016" y="3.175"/>
@@ -1546,7 +1546,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.016" y="0.635"/>
 <vertex x="-1.016" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="1.524" y="0.762"/>
 <vertex x="1.524" y="3.175"/>
 <vertex x="3.556" y="3.175"/>
@@ -1554,7 +1554,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.524" y="0.635"/>
 <vertex x="1.524" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="4.064" y="0.762"/>
 <vertex x="4.064" y="3.175"/>
 <vertex x="6.096" y="3.175"/>
@@ -1562,7 +1562,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="4.064" y="0.635"/>
 <vertex x="4.064" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="6.604" y="0.762"/>
 <vertex x="6.604" y="3.175"/>
 <vertex x="8.636" y="3.175"/>
@@ -1570,7 +1570,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="6.604" y="0.635"/>
 <vertex x="6.604" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="9.144" y="0.762"/>
 <vertex x="9.144" y="3.175"/>
 <vertex x="11.176" y="3.175"/>
@@ -1578,7 +1578,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="9.144" y="0.635"/>
 <vertex x="9.144" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="11.684" y="0.762"/>
 <vertex x="11.684" y="3.175"/>
 <vertex x="13.716" y="3.175"/>
@@ -1586,137 +1586,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="11.684" y="0.635"/>
 <vertex x="11.684" y="0.889"/>
 </polygon>
-<polygon width="0" layer="29">
+<polygon width="0.0254" layer="29">
 <vertex x="14.224" y="0.762"/>
 <vertex x="14.224" y="3.175"/>
 <vertex x="16.256" y="3.175"/>
 <vertex x="16.256" y="0.635"/>
 <vertex x="14.224" y="0.635"/>
 <vertex x="14.224" y="0.889"/>
-</polygon>
-</package>
-<package name="1X07_SQUAREPADS_BOTTOM">
-<description>&lt;h3&gt;Plated Through Hole -7 Pin  No Silk&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:7&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_07&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
-<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
-<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<text x="2.921" y="-2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<polygon width="0.0254" layer="16">
-<vertex x="-0.9398" y="0.8382"/>
-<vertex x="-0.9398" y="3.0988"/>
-<vertex x="0.9398" y="3.0988"/>
-<vertex x="0.9398" y="0.8382"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="1.6002" y="0.8382"/>
-<vertex x="1.6002" y="3.0988"/>
-<vertex x="3.4798" y="3.0988"/>
-<vertex x="3.4798" y="0.8382"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="4.1402" y="0.8382"/>
-<vertex x="4.1402" y="3.0988"/>
-<vertex x="6.0198" y="3.0988"/>
-<vertex x="6.0198" y="0.8382"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="6.6802" y="0.8382"/>
-<vertex x="6.6802" y="3.0988"/>
-<vertex x="8.5598" y="3.0988"/>
-<vertex x="8.5598" y="0.8382"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="9.2202" y="0.8382"/>
-<vertex x="9.2202" y="3.0988"/>
-<vertex x="11.0998" y="3.0988"/>
-<vertex x="11.0998" y="0.8382"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="11.7602" y="0.8382"/>
-<vertex x="11.7602" y="3.0988"/>
-<vertex x="13.6398" y="3.0988"/>
-<vertex x="13.6398" y="0.8382"/>
-</polygon>
-<polygon width="0.0254" layer="16">
-<vertex x="14.3002" y="0.8382"/>
-<vertex x="14.3002" y="3.0988"/>
-<vertex x="16.1798" y="3.0988"/>
-<vertex x="16.1798" y="0.8382"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="-1.016" y="0.889"/>
-<vertex x="-1.016" y="3.302"/>
-<vertex x="1.016" y="3.302"/>
-<vertex x="1.016" y="0.762"/>
-<vertex x="-1.016" y="0.762"/>
-<vertex x="-1.016" y="1.016"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="1.524" y="0.889"/>
-<vertex x="1.524" y="3.302"/>
-<vertex x="3.556" y="3.302"/>
-<vertex x="3.556" y="0.762"/>
-<vertex x="1.524" y="0.762"/>
-<vertex x="1.524" y="1.016"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="4.064" y="0.889"/>
-<vertex x="4.064" y="3.302"/>
-<vertex x="6.096" y="3.302"/>
-<vertex x="6.096" y="0.762"/>
-<vertex x="4.064" y="0.762"/>
-<vertex x="4.064" y="1.016"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="6.604" y="0.889"/>
-<vertex x="6.604" y="3.302"/>
-<vertex x="8.636" y="3.302"/>
-<vertex x="8.636" y="0.762"/>
-<vertex x="6.604" y="0.762"/>
-<vertex x="6.604" y="1.016"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="9.144" y="0.889"/>
-<vertex x="9.144" y="3.302"/>
-<vertex x="11.176" y="3.302"/>
-<vertex x="11.176" y="0.762"/>
-<vertex x="9.144" y="0.762"/>
-<vertex x="9.144" y="1.016"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="11.684" y="0.889"/>
-<vertex x="11.684" y="3.302"/>
-<vertex x="13.716" y="3.302"/>
-<vertex x="13.716" y="0.762"/>
-<vertex x="11.684" y="0.762"/>
-<vertex x="11.684" y="1.016"/>
-</polygon>
-<polygon width="0" layer="30">
-<vertex x="14.224" y="0.889"/>
-<vertex x="14.224" y="3.302"/>
-<vertex x="16.256" y="3.302"/>
-<vertex x="16.256" y="0.762"/>
-<vertex x="14.224" y="0.762"/>
-<vertex x="14.224" y="1.016"/>
 </polygon>
 </package>
 <package name="2,5-PAD-SIM">
@@ -1840,6 +1716,130 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="0" y="0" radius="5.588" width="2" layer="40"/>
 <circle x="0" y="0" radius="2.85" width="0.1524" layer="21"/>
 <pad name="B5,5" x="0" y="0" drill="5.5" diameter="9"/>
+</package>
+<package name="1X07_SQUAREPADS_BOTTOM">
+<description>&lt;h3&gt;Plated Through Hole -7 Pin  No Silk&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:7&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_07&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="2.921" y="-2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<polygon width="0.0254" layer="16">
+<vertex x="-0.9398" y="0.8382"/>
+<vertex x="-0.9398" y="3.0988"/>
+<vertex x="0.9398" y="3.0988"/>
+<vertex x="0.9398" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="1.6002" y="0.8382"/>
+<vertex x="1.6002" y="3.0988"/>
+<vertex x="3.4798" y="3.0988"/>
+<vertex x="3.4798" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="4.1402" y="0.8382"/>
+<vertex x="4.1402" y="3.0988"/>
+<vertex x="6.0198" y="3.0988"/>
+<vertex x="6.0198" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="6.6802" y="0.8382"/>
+<vertex x="6.6802" y="3.0988"/>
+<vertex x="8.5598" y="3.0988"/>
+<vertex x="8.5598" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="9.2202" y="0.8382"/>
+<vertex x="9.2202" y="3.0988"/>
+<vertex x="11.0998" y="3.0988"/>
+<vertex x="11.0998" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="11.7602" y="0.8382"/>
+<vertex x="11.7602" y="3.0988"/>
+<vertex x="13.6398" y="3.0988"/>
+<vertex x="13.6398" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="14.3002" y="0.8382"/>
+<vertex x="14.3002" y="3.0988"/>
+<vertex x="16.1798" y="3.0988"/>
+<vertex x="16.1798" y="0.8382"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="-1.016" y="0.889"/>
+<vertex x="-1.016" y="3.302"/>
+<vertex x="1.016" y="3.302"/>
+<vertex x="1.016" y="0.762"/>
+<vertex x="-1.016" y="0.762"/>
+<vertex x="-1.016" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="1.524" y="0.889"/>
+<vertex x="1.524" y="3.302"/>
+<vertex x="3.556" y="3.302"/>
+<vertex x="3.556" y="0.762"/>
+<vertex x="1.524" y="0.762"/>
+<vertex x="1.524" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="4.064" y="0.889"/>
+<vertex x="4.064" y="3.302"/>
+<vertex x="6.096" y="3.302"/>
+<vertex x="6.096" y="0.762"/>
+<vertex x="4.064" y="0.762"/>
+<vertex x="4.064" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="6.604" y="0.889"/>
+<vertex x="6.604" y="3.302"/>
+<vertex x="8.636" y="3.302"/>
+<vertex x="8.636" y="0.762"/>
+<vertex x="6.604" y="0.762"/>
+<vertex x="6.604" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="9.144" y="0.889"/>
+<vertex x="9.144" y="3.302"/>
+<vertex x="11.176" y="3.302"/>
+<vertex x="11.176" y="0.762"/>
+<vertex x="9.144" y="0.762"/>
+<vertex x="9.144" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="11.684" y="0.889"/>
+<vertex x="11.684" y="3.302"/>
+<vertex x="13.716" y="3.302"/>
+<vertex x="13.716" y="0.762"/>
+<vertex x="11.684" y="0.762"/>
+<vertex x="11.684" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="30">
+<vertex x="14.224" y="0.889"/>
+<vertex x="14.224" y="3.302"/>
+<vertex x="16.256" y="3.302"/>
+<vertex x="16.256" y="0.762"/>
+<vertex x="14.224" y="0.762"/>
+<vertex x="14.224" y="1.016"/>
+</polygon>
 </package>
 </packages>
 <symbols>

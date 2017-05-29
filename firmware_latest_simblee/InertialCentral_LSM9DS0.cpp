@@ -63,7 +63,7 @@ InertialCentral_LSM9DS0::InertialCentral_LSM9DS0()
         // Also see STM AN2768 for further explanations on the settings
         Sensor.write8(XMTYPE, 0x1F, 0x04); // 0x1F : CTRL_REG0_XM / 0x04 --> High pass filter enabled for Click
         Sensor.write8(XMTYPE, 0x38, 0x10); // 0x10 : CLICK_CFG / 0x10 --> ZS = 1 If ZD = 1 not able to detect ZS !
-        Sensor.write8(XMTYPE, 0x3A, 0x10); // 0x3A : CLICK_THS --> Threshold (0x10 to 0x24)
+        Sensor.write8(XMTYPE, 0x3A, 0x11); // 0x3A : CLICK_THS --> Threshold (0x10 to 0x24)
         Sensor.write8(XMTYPE, 0x3D, 0x10); // 0x3D : TIME_WINDOW --> ms
         Sensor.write8(XMTYPE, 0x3C, 0x10); // 0x3C : TIME_LATENCY --> ms
         Sensor.write8(XMTYPE, 0x3B, 0x10); // 0x3A : TIME_LIMIT --> ms
