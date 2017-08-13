@@ -230,7 +230,7 @@ void ADXL345::RefreshValues() // This function has to be adapted to the current 
                 {
                     DoubleTapped = 1;
                     Tapped = 0;
-                    Serial.println("isDLUBLETAPPED");
+                    Serial.println("iDOUUBLETAPPED");
                 }
             
                 else

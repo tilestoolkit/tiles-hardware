@@ -21,15 +21,11 @@ class ADXL345
       int y;  /// Y acceleration instantaneous value
       int z;  /// Z acceleration instantaneous value
 
-      bool isShaked ();       // True if the sensor has been tapped once
-      
+      bool isShaked ();       // True if the sensor has been tapped once 
       bool isTapped ();       // True if the sensor has been tapped once
       bool isDoubleTapped (); // Returns true if the sensor has been double tapped
-    
       int isTilted ();        // Return the tilt axis according to enum Axis, else returns false
-
       bool isActive();        // Return the state of the sensor (true = active, false = inactive)
-    
       void RefreshValues ();  // Reads the accelerations components
 
       enum Axis{X_AXIS = 1, Y_AXIS = 2};
@@ -53,15 +49,11 @@ class ADXL345
       int d_z;          // d_z = x[n] - z[n-1]
 
       bool Shaked;        // True if sensor is shaked, Reset on read with isShaked()
-      
       bool Tapped;        // True if tapped once, Reset on read with isTapped()
       bool DoubleTapped;  // True if tapped twice, Reset on read with isDoubleTapped()
-      
       bool Tilted;        // True if the ADXL345 is tilted
       int TiltAxis;       // Axis on wich ADXL345 is tilted
-
       bool State;         // True if the sensor is active, else false
-      
       int InterruptPin;   // Interrupt pin (pretty clear no ?)
 
 };

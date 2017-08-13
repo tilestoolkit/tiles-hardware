@@ -5,7 +5,6 @@
   # LICENSE: Apache V2.0
 ********************************************************/
 
-
 #include <Wire.h>
 #include <WInterrupts.h>
 #include <RFduinoBLE.h>
@@ -15,26 +14,24 @@
 #include "Feedbacks_Handler.h"
 #include "Sensors_Handler.h"
 
-// BOARD CONSTANTS
-#define ACC_INT1_PIN        4 // Pin where the acceleromter interrupt1 is connected
-//#define VIBRATING_M_PIN     3 // Pin where the vibrating motor is connected
-
 //Variables for timing
 uint_fast16_t volatile number_of_ms = 10;     // ms
 
 // VARIABLES FOR BLUETOOTH
 BLE_Handler BLE;
 
-// Variables for Token Solo Event
+// Variables for Sensors
 Sensors_Handler sensor_handle(&BLE);
 ADXL345 *Accelerometer = NULL;
 LSM9DS0 *IMU = NULL;
+#define ACC_INT1_PIN        4 // Pin where the acceleromter interrupt1 is connected
 
-// TokenFeedback_Handler
+// Variables for Feedbacks 
 Feedbacks_Handler feedback_handle;
 //Haptic *HapticMotor;
 //RGB_LED *LED;
 NEO_STRIP *STRIP;
+//#define VIBRATING_M_PIN     3 // Pin where the vibrating motor is connected
 
 
 void setup(void)
@@ -43,7 +40,7 @@ void setup(void)
     Serial.begin(9600); // Commented just to try the LED (RX/TX = LED_R/LED_G)
     interrupts(); // Enable interrupts
     
-    // Initialization of the Sensors
+    // Initialization of Sensors
     Accelerometer = new ADXL345(ACC_INT1_PIN);
     IMU = new LSM9DS0();
     sensor_handle.setAccelerometer(Accelerometer);
@@ -54,7 +51,7 @@ void setup(void)
     delay(2000);
     feedback_handle.setColor("green");
 
-    // Intitialization of TokenFeedback Actuators
+    // Intitialization of Feedbacks
     // HapticMotor = new Haptic(VIBRATING_M_PIN);
     // LED = new RGB_LED(0, 1, 2);
     // TokenFeedback.setHapticMotor(HapticMotor);
