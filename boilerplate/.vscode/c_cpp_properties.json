@@ -10,9 +10,12 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": false,
                 "path": [
-                    "/Users/Simone/Library/Arduino15/packages/RFduino/hardware/RFduino/2.3.3/cores/arduino"
+                    "/Users/Simone/Library/Arduino15/packages/RFduino/hardware/RFduino/2.3.3/cores/arduino",
+                    "${workspaceRoot}"
                 ]
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         }
-    ]
+    ],
+    "version": 2
 }
