@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.0075" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -7248,11 +7249,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="dirt_cheap_dirty_boards.v1">
-<description language="en">&lt;b&gt;Dirty Cheap Dirty Board Design Rules&lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;Min width/Spacing: 5/5mil
-&lt;br&gt;Min diameter of finished hole 12mil</description>
+<designrules name="MF_4_mil_drill_2_Layer">
+<description language="en">&lt;b&gt;MacroFab, INC. EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;This DRC check is for 2-Layer PCBs with 4 mil diameter drills to be manufactured through the MacroFab, INC. service.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
@@ -7271,8 +7270,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="5mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msDrill" value="4mil"/>
+<param name="msMicroVia" value="4mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -7281,19 +7280,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="6mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="6mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="6mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="6mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMinMicroViaInner" value="6mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -7428,32 +7427,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="C1" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="7.94" y="-19.34" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="7.94" y="-19.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="9.21" y="-19.086" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="NAME" x="9.4386" y="-20.229" size="0.8" layer="25" ratio="11" rot="R180"/>
+<attribute name="NAME" x="9.21" y="-19.086" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="9.21" y="-17.7525" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C2" library="Seeed-OPL-Capacitor" package="C0603" value="100nf" x="32.83" y="-24.17" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R9BB104" x="32.83" y="-24.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.56" y="-24.424" size="0.635" layer="33" ratio="10"/>
 <attribute name="NAME" x="31.56" y="-23.281" size="0.8" layer="25" ratio="11"/>
+<attribute name="NAME" x="31.56" y="-24.424" size="0.635" layer="33" ratio="10"/>
 <attribute name="VALUE" x="31.56" y="-25.7575" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C5" library="Seeed-OPL-Capacitor" package="C0603" value="10uf" x="8.01" y="-22.36" smashed="yes" rot="R90">
 <attribute name="MPN" value="CC0603KRX5R6BB106" x="8.01" y="-22.36" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="6.74" y="-22.614" size="0.635" layer="33" ratio="10"/>
 <attribute name="NAME" x="8.4672" y="-24.1126" size="0.8" layer="25" ratio="11"/>
+<attribute name="NAME" x="6.74" y="-22.614" size="0.635" layer="33" ratio="10"/>
 <attribute name="VALUE" x="6.74" y="-23.9475" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C6" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="33.23" y="-12.77" smashed="yes">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="33.23" y="-12.77" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="32.976" y="-11.5" size="0.635" layer="33" ratio="10" rot="R270"/>
 <attribute name="NAME" x="34.1952" y="-12.3382" size="0.8" layer="25" ratio="11" rot="R270"/>
+<attribute name="NAME" x="32.976" y="-11.5" size="0.635" layer="33" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="31.6425" y="-11.5" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C7" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="32.048075" y="-16.88535625" smashed="yes" rot="R315">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="32.048075" y="-16.88535625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="32.76649375" y="-15.807728125" size="0.635" layer="33" ratio="10" rot="R225"/>
 <attribute name="NAME" x="32.685715625" y="-17.55575" size="0.8" layer="25" ratio="11" rot="R225"/>
+<attribute name="NAME" x="32.76649375" y="-15.807728125" size="0.635" layer="33" ratio="10" rot="R225"/>
 <attribute name="VALUE" x="31.823565625" y="-14.8648" size="0.635" layer="27" ratio="10" rot="R225"/>
 </element>
 <element name="D1" library="Seeed-OPL-2017-01-Diode-james" package="SOD-123" value="40V-500MA" x="13.64" y="-19.33" smashed="yes" rot="R180">
@@ -7515,8 +7514,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="C8" library="Seeed-OPL-Capacitor" package="C0603" value="1uf" x="19.9088" y="-26.6864" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="19.9088" y="-26.6864" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="21.1788" y="-26.4324" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="NAME" x="20.6454" y="-25.0354" size="0.8" layer="25" ratio="11" rot="R180"/>
+<attribute name="NAME" x="21.1788" y="-26.4324" size="0.635" layer="33" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="21.1788" y="-25.0989" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="J1" library="tiles" package="1X07_SQUAREPADS_BOTTOM" value="" x="12" y="-5" smashed="yes">
@@ -8525,7 +8524,7 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
