@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2413,13 +2414,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP2" library="SparkFun-Connectors" deviceset="M05" device="PTH"/>
 <part name="J2" library="MF_Connectors" deviceset="CON_01X07" device="_PTH_2.54MM" value="MF-CON-2.54mm-01x07"/>
 <part name="D3" library="MF_LEDs" deviceset="LED_RGB_CA" device="_PLCC4" value="MF-LED-3228-RGB"/>
-<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0603">
+<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27">
 <attribute name="HOUSEPART" value="MF-RES-0603-27"/>
 </part>
-<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0603">
+<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22">
 <attribute name="HOUSEPART" value="MF-RES-0603-22"/>
 </part>
-<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0603">
+<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22">
 <attribute name="HOUSEPART" value="MF-RES-0603-22"/>
 </part>
 <part name="VCC" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>

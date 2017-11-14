@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="mil"/>
@@ -777,10 +776,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
-<param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -988,7 +987,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="POPULATE" value="1" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-3228-RGB" x="24.765" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R4" library="MF_Passives" package="R0603" value="27" x="29.845" y="64.77" smashed="yes">
+<element name="R4" library="MF_Passives" package="R0603" value="" x="29.845" y="64.77" smashed="yes">
 <attribute name="HOUSEPART" value="MF-RES-0603-27" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="31.62" y="64.6" size="1.016" layer="25" font="vector" ratio="16"/>
@@ -998,7 +997,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="29.845" y="64.77" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R5" library="MF_Passives" package="R0603" value="22" x="29.845" y="66.675" smashed="yes">
+<element name="R5" library="MF_Passives" package="R0603" value="" x="29.845" y="66.675" smashed="yes">
 <attribute name="HOUSEPART" value="MF-RES-0603-22" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="31.62" y="66.505" size="1.016" layer="25" font="vector" ratio="16"/>
@@ -1008,7 +1007,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="29.845" y="66.675" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R6" library="MF_Passives" package="R0603" value="22" x="29.845" y="62.865" smashed="yes">
+<element name="R6" library="MF_Passives" package="R0603" value="" x="29.845" y="62.865" smashed="yes">
 <attribute name="HOUSEPART" value="MF-RES-0603-22" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="29.845" y="62.865" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="31.62" y="62.568" size="1.016" layer="25" font="vector" ratio="16"/>
