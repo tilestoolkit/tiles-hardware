@@ -26,7 +26,9 @@ UsedLibrary="/Users/simone/external_lbrs/Seeed-OPL-sensor.lbr"
 UsedLibrary="/Users/simone/external_lbrs/adafruit.lbr"
 UsedLibrary="/Users/simone/external_lbrs/cap1188-microbuilder.lbr"
 UsedLibrary="/Users/simone/external_lbrs/microbuilder.lbr"
+UsedLibrary="/Users/simone/external_lbrs/microbuilder2.lbr"
 UsedLibrary="/Users/simone/external_lbrs/tiles.lbr"
+UsedLibrary="/Users/simone/external_lbrs/wirepad.lbr"
 UsedLibrary="/Users/Simone/external_lbrs/sparkfun/GeekAmmo.lbr"
 UsedLibrary="/Users/Simone/external_lbrs/sparkfun/LilyPad-Wearables.lbr"
 UsedLibrary="/Users/Simone/external_lbrs/sparkfun/SparkFun-Aesthetics.lbr"
@@ -75,18 +77,12 @@ UsedLibrary="/Users/simone/external_lbrs/OPL-new/Seeed-Transistor.lbr"
 UsedLibrary="/Users/simone/external_lbrs/OPL-new/Seeed-OPL-Resistor.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="47 22 1246 661"
-State=2
-Number=0
-
-[Win_2]
 Type="Schematic Editor"
 Loc="47 22 1246 661"
 State=1
 Number=2
-File="Tiles_Proto3_RevB.sch"
-View="-16.8346 84.4929 129.426 181.884"
+File="/Users/simone/Desktop/Electronics design/Feather nRF52/eagle/Adafruit nRF52 Bluefruit Feather.sch"
+View="-5.73116 -4.49241 265.873 202.697"
 WireWidths=" 0.0762 0.1016 0.127 0.15 0.2 0.2032 0.254 0.3048 0.4064 0.508 0.6096 0.8128 1.016 1.27 2.54 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.65 0.7 0.75 0.8 0.85 0.9 1 0.6"
@@ -125,16 +121,15 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -16.8346 84.4929 129.426 181.884"
 Sheet="1"
 
-[Win_3]
+[Win_2]
 Type="Board Editor"
 Loc="47 22 1679 1027"
-State=2
+State=1
 Number=1
-File="Tiles_Proto3_RevB.brd"
-View="-28.6968 -41.2804 29.2244 16.1565"
+File="/Users/simone/Desktop/Electronics design/Feather nRF52/eagle/Adafruit nRF52 Bluefruit Feather.brd"
+View="-3.91406 -20.1128 32.4079 12.1933"
 WireWidths=" 0.0762 0.1016 0.127 0.15 0.2 0.2032 0.254 0.3048 0.4064 0.508 0.6096 0.8128 1.016 1.27 2.54 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.65 0.7 0.75 0.8 0.85 0.9 1 0.6"
@@ -174,8 +169,14 @@ AddLevel=2
 PadsSameType=0
 Layer=1
 
+[Win_3]
+Type="Control Panel"
+Loc="47 22 1246 661"
+State=2
+Number=0
+
 [Desktop]
-Screen="1680 1050"
+Screen="2560 1440"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"

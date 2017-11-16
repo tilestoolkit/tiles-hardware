@@ -7066,12 +7066,12 @@ P0.10=NFC2</text>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
-<part name="TP1" library="microbuilder2" deviceset="TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
-<part name="TP2" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="TP3" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="TP4" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="TP5" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="TP6" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
+<part name="FRST" library="microbuilder2" deviceset="TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
+<part name="SWDIO" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
+<part name="SWCLK" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
+<part name="RST" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
+<part name="DFU" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
+<part name="SWO" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
 <part name="U$10" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$11" library="microbuilder2" deviceset="VBAT" device=""/>
 <part name="U$12" library="microbuilder2" deviceset="VBUS" device=""/>
@@ -7187,12 +7187,12 @@ P0.10=NFC2</text>
 <instance part="U$6" gate="G$1" x="-2.54" y="15.24"/>
 <instance part="U$7" gate="G$1" x="-2.54" y="68.58"/>
 <instance part="U$8" gate="G$1" x="60.96" y="78.74" rot="R180"/>
-<instance part="TP1" gate="G$1" x="60.96" y="68.58" rot="R270"/>
-<instance part="TP2" gate="G$1" x="60.96" y="66.04" rot="R270"/>
-<instance part="TP3" gate="G$1" x="60.96" y="63.5" rot="R270"/>
-<instance part="TP4" gate="G$1" x="60.96" y="60.96" rot="R270"/>
-<instance part="TP5" gate="G$1" x="60.96" y="58.42" rot="R270"/>
-<instance part="TP6" gate="G$1" x="60.96" y="53.34" rot="R270"/>
+<instance part="FRST" gate="G$1" x="60.96" y="68.58" rot="R270"/>
+<instance part="SWDIO" gate="G$1" x="60.96" y="66.04" rot="R270"/>
+<instance part="SWCLK" gate="G$1" x="60.96" y="63.5" rot="R270"/>
+<instance part="RST" gate="G$1" x="60.96" y="60.96" rot="R270"/>
+<instance part="DFU" gate="G$1" x="60.96" y="58.42" rot="R270"/>
+<instance part="SWO" gate="G$1" x="60.96" y="53.34" rot="R270"/>
 <instance part="U$10" gate="G$1" x="43.18" y="162.56"/>
 <instance part="U$11" gate="G$1" x="2.54" y="162.56"/>
 <instance part="U$12" gate="G$1" x="-15.24" y="162.56"/>
@@ -7434,7 +7434,7 @@ P0.10=NFC2</text>
 <net name="RESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.21/RESET"/>
-<pinref part="TP4" gate="G$1" pin="P$1"/>
+<pinref part="RST" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <label x="48.26" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -7908,7 +7908,7 @@ P0.10=NFC2</text>
 <net name="FRST" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.22"/>
-<pinref part="TP1" gate="G$1" pin="P$1"/>
+<pinref part="FRST" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
 <label x="48.26" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -7916,7 +7916,7 @@ P0.10=NFC2</text>
 <net name="SWDIO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SWDIO"/>
-<pinref part="TP2" gate="G$1" pin="P$1"/>
+<pinref part="SWDIO" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <label x="48.26" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -7924,7 +7924,7 @@ P0.10=NFC2</text>
 <net name="SWCLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SWDCLK"/>
-<pinref part="TP3" gate="G$1" pin="P$1"/>
+<pinref part="SWCLK" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="48.26" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -7932,7 +7932,7 @@ P0.10=NFC2</text>
 <net name="DFU" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.20"/>
-<pinref part="TP5" gate="G$1" pin="P$1"/>
+<pinref part="DFU" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
 <label x="48.26" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -7940,7 +7940,7 @@ P0.10=NFC2</text>
 <net name="SWO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.18/SWO"/>
-<pinref part="TP6" gate="G$1" pin="P$1"/>
+<pinref part="SWO" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <label x="48.26" y="53.34" size="1.778" layer="95"/>
 </segment>
