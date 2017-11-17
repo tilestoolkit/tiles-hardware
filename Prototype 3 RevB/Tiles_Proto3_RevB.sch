@@ -7016,8 +7016,8 @@ P0.10=NFC2</text>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="CAP" library="cap1188-microbuilder" deviceset="CAP1188" device=""/>
-<part name="HAPTIC" library="SparkFun-IC-Special-Function" deviceset="DRV2605L" device=""/>
+<part name="U4" library="cap1188-microbuilder" deviceset="CAP1188" device="" value="CAP1188"/>
+<part name="U5" library="SparkFun-IC-Special-Function" deviceset="DRV2605L" device=""/>
 <part name="P+5" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$9" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+8" library="microbuilder2" deviceset="3.3V" device=""/>
@@ -7047,11 +7047,11 @@ P0.10=NFC2</text>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="BUZZER" library="tiles" deviceset="4MBUZ" device=""/>
-<part name="U2" library="MF_Discrete_Semiconductor" deviceset="NPN_BJT" device="_SOT-23-3" technology="MMBT3904" value="MF-DSC-SOT233-MMBT3904"/>
+<part name="T2" library="MF_Discrete_Semiconductor" deviceset="NPN_BJT" device="_SOT-23-3" technology="MMBT3904" value="MF-DSC-SOT233-MMBT3904"/>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+14" library="microbuilder2" deviceset="3.3V" device=""/>
-<part name="IMU" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345BCCZ-RL"/>
-<part name="U1" library="microbuilder2" deviceset="NRF52832_MODULE_MDBT42" device=""/>
+<part name="U3" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345"/>
+<part name="U1" library="microbuilder2" deviceset="NRF52832_MODULE_MDBT42" device="" value="MDBT42Q"/>
 <part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
 <part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
 <part name="C4" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
@@ -7075,7 +7075,7 @@ P0.10=NFC2</text>
 <part name="U$10" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$11" library="microbuilder2" deviceset="VBAT" device=""/>
 <part name="U$12" library="microbuilder2" deviceset="VBUS" device=""/>
-<part name="U3" library="microbuilder2" deviceset="VREG_SOT23-5" device=""/>
+<part name="U2" library="microbuilder2" deviceset="VREG_SOT23-5" device="" value="AP2112"/>
 <part name="Q1" library="microbuilder2" deviceset="MOSFET-P" device="" value="DMG3415U-7"/>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$28" library="microbuilder" deviceset="GND" device=""/>
@@ -7119,6 +7119,8 @@ P0.10=NFC2</text>
 <part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
 <part name="B+" library="wirepad" deviceset="SMD2" device=""/>
 <part name="B-" library="wirepad" deviceset="SMD2" device=""/>
+<part name="U$19" library="microbuilder" deviceset="GND" device=""/>
+<part name="EN" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -7126,8 +7128,8 @@ P0.10=NFC2</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-27.94" y="-5.08"/>
-<instance part="CAP" gate="G$1" x="121.92" y="33.02"/>
-<instance part="HAPTIC" gate="DRV2605" x="198.12" y="35.56"/>
+<instance part="U4" gate="G$1" x="121.92" y="33.02"/>
+<instance part="U5" gate="DRV2605" x="198.12" y="35.56"/>
 <instance part="P+5" gate="G$1" x="76.2" y="149.86"/>
 <instance part="U$9" gate="G$1" x="68.58" y="116.84" rot="R270"/>
 <instance part="P+8" gate="G$1" x="73.66" y="58.42"/>
@@ -7165,13 +7167,13 @@ P0.10=NFC2</text>
 <instance part="U$21" gate="G$1" x="210.82" y="106.68"/>
 <instance part="U$25" gate="G$1" x="236.22" y="96.52" rot="R90"/>
 <instance part="BUZZER" gate="G$1" x="233.68" y="63.5"/>
-<instance part="U2" gate="G$1" x="195.58" y="60.96" smashed="yes" rot="R270">
+<instance part="T2" gate="G$1" x="195.58" y="60.96" smashed="yes" rot="R270">
 <attribute name="NAME" x="195.58" y="55.88" size="1.016" layer="95" font="vector" rot="R180" align="bottom-right"/>
 <attribute name="VALUE" x="172.72" y="53.34" size="1.016" layer="96" font="vector"/>
 </instance>
 <instance part="U$26" gate="G$1" x="180.34" y="58.42" rot="R270"/>
 <instance part="P+14" gate="G$1" x="213.36" y="81.28"/>
-<instance part="IMU" gate="G$1" x="109.22" y="137.16"/>
+<instance part="U3" gate="G$1" x="109.22" y="137.16"/>
 <instance part="U1" gate="G$1" x="22.86" y="58.42"/>
 <instance part="C1" gate="G$1" x="-22.86" y="30.48"/>
 <instance part="C3" gate="G$1" x="-7.62" y="30.48"/>
@@ -7196,7 +7198,7 @@ P0.10=NFC2</text>
 <instance part="U$10" gate="G$1" x="43.18" y="162.56"/>
 <instance part="U$11" gate="G$1" x="2.54" y="162.56"/>
 <instance part="U$12" gate="G$1" x="-15.24" y="162.56"/>
-<instance part="U3" gate="G$1" x="27.94" y="142.24"/>
+<instance part="U2" gate="G$1" x="27.94" y="142.24"/>
 <instance part="Q1" gate="G$1" x="2.54" y="152.4" rot="MR180"/>
 <instance part="U$20" gate="G$1" x="-15.24" y="121.92"/>
 <instance part="U$28" gate="G$1" x="5.08" y="121.92"/>
@@ -7240,13 +7242,15 @@ P0.10=NFC2</text>
 <instance part="C11" gate="G$1" x="17.78" y="101.6" rot="R90"/>
 <instance part="B+" gate="1" x="53.34" y="165.1"/>
 <instance part="B-" gate="1" x="53.34" y="157.48"/>
+<instance part="U$19" gate="G$1" x="121.92" y="160.02" rot="R90"/>
+<instance part="EN" gate="G$1" x="104.14" y="167.64" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="THERMAL/GND"/>
+<pinref part="U4" gate="G$1" pin="THERMAL/GND"/>
 <pinref part="U$15" gate="G$1" pin="GND"/>
 <wire x1="96.52" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="12.7" x2="88.9" y2="7.62" width="0.1524" layer="91"/>
@@ -7259,7 +7263,7 @@ P0.10=NFC2</text>
 <wire x1="170.18" y1="26.67" x2="170.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="GND"/>
+<pinref part="U5" gate="DRV2605" pin="GND"/>
 <pinref part="U$17" gate="G$1" pin="GND"/>
 <wire x1="213.36" y1="35.56" x2="223.52" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="35.56" x2="223.52" y2="25.4" width="0.1524" layer="91"/>
@@ -7272,7 +7276,7 @@ P0.10=NFC2</text>
 <segment>
 <pinref part="U$22" gate="G$1" pin="GND"/>
 <wire x1="79.756" y1="48.514" x2="79.756" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="CAP" gate="G$1" pin="SPI_CS"/>
+<pinref part="U4" gate="G$1" pin="SPI_CS"/>
 <wire x1="79.756" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7293,7 +7297,7 @@ P0.10=NFC2</text>
 <wire x1="210.82" y1="114.3" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="EMITTER"/>
+<pinref part="T2" gate="G$1" pin="EMITTER"/>
 <pinref part="U$26" gate="G$1" pin="GND"/>
 <wire x1="187.96" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="58.42" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
@@ -7312,17 +7316,17 @@ P0.10=NFC2</text>
 <label x="170.18" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IMU" gate="G$1" pin="GND@1"/>
+<pinref part="U3" gate="G$1" pin="GND@1"/>
 <wire x1="87.63" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="142.24" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="GND"/>
 <wire x1="81.28" y1="137.16" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="134.62" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="IMU" gate="G$1" pin="GND@2"/>
+<pinref part="U3" gate="G$1" pin="GND@2"/>
 <wire x1="76.2" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="IMU" gate="G$1" pin="GND@3"/>
+<pinref part="U3" gate="G$1" pin="GND@3"/>
 <wire x1="87.63" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <junction x="81.28" y="134.62"/>
 <junction x="81.28" y="137.16"/>
@@ -7381,7 +7385,7 @@ P0.10=NFC2</text>
 <pinref part="C10" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="U$29" gate="G$1" pin="GND"/>
 <wire x1="17.78" y1="139.7" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
 </segment>
@@ -7430,6 +7434,11 @@ P0.10=NFC2</text>
 <pinref part="C5" gate="G$1" pin="P$2"/>
 <wire x1="81.28" y1="61.468" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$19" gate="G$1" pin="GND"/>
+<wire x1="106.68" y1="160.02" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="EN" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -7462,12 +7471,12 @@ P0.10=NFC2</text>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="SMCLK/BC_CLK/SPI_CLK"/>
+<pinref part="U4" gate="G$1" pin="SMCLK/BC_CLK/SPI_CLK"/>
 <wire x1="96.52" y1="43.18" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
 <label x="86.36" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="SCL"/>
+<pinref part="U5" gate="DRV2605" pin="SCL"/>
 <wire x1="182.88" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
 <label x="172.72" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -7477,7 +7486,7 @@ P0.10=NFC2</text>
 <label x="170.18" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IMU" gate="G$1" pin="SCL/SCLK"/>
+<pinref part="U3" gate="G$1" pin="SCL/SCLK"/>
 <wire x1="130.81" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
 <label x="137.16" y="144.78" size="1.778" layer="95"/>
 </segment>
@@ -7491,12 +7500,12 @@ P0.10=NFC2</text>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="SMDATA/BC_DATA/SPI_MISO"/>
+<pinref part="U4" gate="G$1" pin="SMDATA/BC_DATA/SPI_MISO"/>
 <wire x1="96.52" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
 <label x="86.36" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="SDA"/>
+<pinref part="U5" gate="DRV2605" pin="SDA"/>
 <wire x1="182.88" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 <label x="172.72" y="38.1" size="1.778" layer="95"/>
 </segment>
@@ -7506,7 +7515,7 @@ P0.10=NFC2</text>
 <label x="170.18" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IMU" gate="G$1" pin="SDA/SDI/SDIO"/>
+<pinref part="U3" gate="G$1" pin="SDA/SDI/SDIO"/>
 <wire x1="130.81" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
 <label x="137.16" y="142.24" size="1.778" layer="95"/>
 </segment>
@@ -7521,7 +7530,7 @@ P0.10=NFC2</text>
 <net name="CAP-INT" class="0">
 <segment>
 <wire x1="73.66" y1="43.18" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="CAP" gate="G$1" pin="ALERT#/BC_IRQ#"/>
+<pinref part="U4" gate="G$1" pin="ALERT#/BC_IRQ#"/>
 <wire x1="73.66" y1="35.56" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
 <label x="76.2" y="35.56" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="P$2"/>
@@ -7534,7 +7543,7 @@ P0.10=NFC2</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="ADDR_COMM"/>
+<pinref part="U4" gate="G$1" pin="ADDR_COMM"/>
 <wire x1="96.52" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="33.02" x2="73.66" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="P$1"/>
@@ -7542,7 +7551,7 @@ P0.10=NFC2</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="REG"/>
+<pinref part="U5" gate="DRV2605" pin="REG"/>
 <wire x1="182.88" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="40.64" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="P$1"/>
@@ -7552,14 +7561,14 @@ P0.10=NFC2</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="OUT-"/>
+<pinref part="U5" gate="DRV2605" pin="OUT-"/>
 <pinref part="M-" gate="P" pin="P"/>
 <wire x1="213.36" y1="38.1" x2="228.6" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="OUT+"/>
+<pinref part="U5" gate="DRV2605" pin="OUT+"/>
 <pinref part="M+" gate="P" pin="P"/>
 <wire x1="213.36" y1="33.02" x2="228.6" y2="33.02" width="0.1524" layer="91"/>
 </segment>
@@ -7578,7 +7587,7 @@ P0.10=NFC2</text>
 </net>
 <net name="BUZZER" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BASE"/>
+<pinref part="T2" gate="G$1" pin="BASE"/>
 <wire x1="195.58" y1="68.58" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
 <label x="195.58" y="86.36" size="1.778" layer="95" rot="R270"/>
 <pinref part="R7" gate="G$1" pin="P$2"/>
@@ -7614,7 +7623,7 @@ P0.10=NFC2</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="BUZZER" gate="G$1" pin="BUZGND"/>
-<pinref part="U2" gate="G$1" pin="COLLECTOR"/>
+<pinref part="T2" gate="G$1" pin="COLLECTOR"/>
 <wire x1="226.06" y1="58.42" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="P$2"/>
 <wire x1="220.98" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
@@ -7657,7 +7666,7 @@ P0.10=NFC2</text>
 </net>
 <net name="CAP-A" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="CS1"/>
+<pinref part="U4" gate="G$1" pin="CS1"/>
 <wire x1="147.32" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <label x="149.86" y="48.26" size="1.778" layer="95"/>
 </segment>
@@ -7674,7 +7683,7 @@ P0.10=NFC2</text>
 </net>
 <net name="CAP-B" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="CS2"/>
+<pinref part="U4" gate="G$1" pin="CS2"/>
 <wire x1="147.32" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
 <label x="149.86" y="43.18" size="1.778" layer="95"/>
 </segment>
@@ -7691,7 +7700,7 @@ P0.10=NFC2</text>
 </net>
 <net name="IMU-INT" class="0">
 <segment>
-<pinref part="IMU" gate="G$1" pin="INT1"/>
+<pinref part="U3" gate="G$1" pin="INT1"/>
 <wire x1="130.81" y1="129.54" x2="144.78" y2="129.54" width="0.1524" layer="91"/>
 <label x="137.16" y="129.54" size="1.778" layer="95"/>
 </segment>
@@ -7703,7 +7712,7 @@ P0.10=NFC2</text>
 </net>
 <net name="CAP-RES" class="0">
 <segment>
-<pinref part="CAP" gate="G$1" pin="RESET"/>
+<pinref part="U4" gate="G$1" pin="RESET"/>
 <wire x1="96.52" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="25.4" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
 <label x="81.28" y="25.4" size="1.778" layer="95"/>
@@ -7747,7 +7756,7 @@ P0.10=NFC2</text>
 <junction x="-5.08" y="38.1"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="OUT"/>
+<pinref part="U2" gate="G$1" pin="OUT"/>
 <wire x1="38.1" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="3.3V"/>
 <wire x1="43.18" y1="144.78" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
@@ -7756,15 +7765,15 @@ P0.10=NFC2</text>
 <pinref part="C9" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="IMU" gate="G$1" pin="VDDI/O"/>
+<pinref part="U3" gate="G$1" pin="VDDI/O"/>
 <wire x1="76.2" y1="144.78" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="132.08" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="129.54" x2="76.2" y2="128.27" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="IMU" gate="G$1" pin="VS"/>
+<pinref part="U3" gate="G$1" pin="VS"/>
 <wire x1="83.82" y1="144.78" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="IMU" gate="G$1" pin="!CS"/>
+<pinref part="U3" gate="G$1" pin="!CS"/>
 <wire x1="87.63" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="129.54" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <junction x="76.2" y="132.08"/>
@@ -7776,7 +7785,7 @@ P0.10=NFC2</text>
 <wire x1="76.2" y1="128.27" x2="76.2" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CAP" gate="G$1" pin="VDD"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
 <wire x1="91.44" y1="17.78" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="P+12" gate="G$1" pin="3.3V"/>
 <wire x1="91.44" y1="60.96" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
@@ -7798,14 +7807,14 @@ P0.10=NFC2</text>
 <junction x="220.98" y="68.58"/>
 </segment>
 <segment>
-<pinref part="HAPTIC" gate="DRV2605" pin="VDD"/>
+<pinref part="U5" gate="DRV2605" pin="VDD"/>
 <wire x1="220.98" y1="40.64" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="HAPTIC" gate="DRV2605" pin="VDD/NC"/>
+<pinref part="U5" gate="DRV2605" pin="VDD/NC"/>
 <wire x1="218.44" y1="40.64" x2="213.36" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="30.48" x2="215.9" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="30.48" x2="218.44" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="30.48" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="HAPTIC" gate="DRV2605" pin="EN"/>
+<pinref part="U5" gate="DRV2605" pin="EN"/>
 <wire x1="182.88" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="30.48" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="25.4" x2="215.9" y2="25.4" width="0.1524" layer="91"/>
@@ -7982,19 +7991,24 @@ P0.10=NFC2</text>
 <label x="210.82" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="EN" class="0">
 <segment>
 <wire x1="10.16" y1="129.54" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="124.46" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="EN"/>
+<pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="15.24" y1="142.24" x2="17.78" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="P$2"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="160.02" x2="91.44" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="EN" gate="G$1" pin="1"/>
+<label x="91.44" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="IN"/>
+<pinref part="U2" gate="G$1" pin="IN"/>
 <wire x1="10.16" y1="144.78" x2="17.78" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="144.78" x2="10.16" y2="139.7" width="0.1524" layer="91"/>
 <junction x="10.16" y="144.78"/>
