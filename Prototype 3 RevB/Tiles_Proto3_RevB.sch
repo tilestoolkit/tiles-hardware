@@ -7043,7 +7043,7 @@ P0.10=NFC2</text>
 <part name="TOUCH" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
 <part name="SW" library="MF_Switches" deviceset="TACT" device="_4.2MM" value="MF-SW-TACT-4.2MM"/>
 <part name="STAT" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="MF-LED-0603-RED"/>
-<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
+<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="330"/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="BUZZER" library="tiles" deviceset="4MBUZ" device=""/>
@@ -7052,11 +7052,11 @@ P0.10=NFC2</text>
 <part name="P+14" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U3" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345"/>
 <part name="U1" library="microbuilder2" deviceset="NRF52832_MODULE_MDBT42" device="" value="MDBT42Q"/>
-<part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
+<part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
 <part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="C4" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="C8" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="L1" library="MF_Passives" deviceset="INDUCTOR" device="_0603"/>
+<part name="C4" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF"/>
+<part name="C8" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF"/>
+<part name="L1" library="MF_Passives" deviceset="INDUCTOR" device="_0603" value="10uH"/>
 <part name="U$1" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
@@ -7093,30 +7093,30 @@ P0.10=NFC2</text>
 <part name="U$34" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$35" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+2" library="microbuilder2" deviceset="3.3V" device=""/>
-<part name="R12" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R13" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R14" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
+<part name="R12" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27"/>
+<part name="R13" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22"/>
+<part name="R14" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22"/>
 <part name="D3" library="MF_LEDs" deviceset="LED_RGB_CA" device="_PLCC4" value="MF-LED-3228-RGB"/>
 <part name="BTL" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="MF-LED-0603-RED"/>
-<part name="R15" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
+<part name="R15" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="330"/>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
-<part name="R9" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R10" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R1" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R2" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R3" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="R8" library="MF_Passives" deviceset="RESISTOR" device="_0603"/>
-<part name="C2" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="C5" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="C6" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="C7" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="C9" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0805"/>
-<part name="C10" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0805"/>
-<part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
+<part name="R9" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
+<part name="R10" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
+<part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R1" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R2" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R3" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
+<part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R8" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="1K"/>
+<part name="C2" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="100nF"/>
+<part name="C5" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="10uF"/>
+<part name="C6" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
+<part name="C7" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
+<part name="C9" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0805" value="10uF"/>
+<part name="C10" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0805" value="10uF"/>
+<part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="B+" library="wirepad" deviceset="SMD2" device=""/>
 <part name="B-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>

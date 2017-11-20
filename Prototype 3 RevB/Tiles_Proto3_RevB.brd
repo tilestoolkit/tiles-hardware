@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7472,7 +7472,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="POPULATE" value="1" x="15.5" y="-43.8" size="1.778" layer="27" display="off"/>
 <attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="15.5" y="-43.8" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R6" library="MF_Passives" package="R0603" value="" x="15.3" y="-40.5" smashed="yes">
+<element name="R6" library="MF_Passives" package="R0603" value="330" x="15.3" y="-40.5" smashed="yes">
 <attribute name="HOUSEPART" value="" x="15.3" y="-40.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="15.3" y="-40.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="13.9" y="-39.4" size="0.8" layer="25" font="vector" ratio="11"/>
@@ -7498,7 +7498,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="35.938" y="-30.1396" size="0.889" layer="27" ratio="11" rot="R180"/>
 </element>
 <element name="U1" library="microbuilder2" package="BLE_MODULE_RAYTAC_MDBT42" value="MDBT42Q" x="14.56" y="-17.7" rot="R90"/>
-<element name="C1" library="MF_Passives" package="C0603" value="" x="10.923" y="-25.6815" smashed="yes" rot="R180">
+<element name="C1" library="MF_Passives" package="C0603" value="1uF" x="10.923" y="-25.6815" smashed="yes" rot="R180">
 <attribute name="DIELECTRIC" value="" x="10.923" y="-25.6815" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HOUSEPART" value="" x="10.923" y="-25.6815" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="10.923" y="-25.6815" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7518,7 +7518,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="17.3749" y="-28.6458" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="" x="17.3749" y="-28.6458" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C4" library="MF_Passives" package="C0603" value="" x="27.737" y="-14.9095">
+<element name="C4" library="MF_Passives" package="C0603" value="22pF" x="27.737" y="-14.9095">
 <attribute name="DIELECTRIC" value="" x="27.737" y="-14.9095" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="27.737" y="-14.9095" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="27.737" y="-14.9095" size="1.778" layer="27" display="off"/>
@@ -7527,7 +7527,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="27.737" y="-14.9095" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="27.737" y="-14.9095" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C8" library="MF_Passives" package="C0603" value="" x="27.818" y="-22.196">
+<element name="C8" library="MF_Passives" package="C0603" value="22pF" x="27.818" y="-22.196">
 <attribute name="DIELECTRIC" value="" x="27.818" y="-22.196" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="27.818" y="-22.196" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="27.818" y="-22.196" size="1.778" layer="27" display="off"/>
@@ -7536,7 +7536,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="27.818" y="-22.196" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="27.818" y="-22.196" size="1.778" layer="27" display="off"/>
 </element>
-<element name="L1" library="MF_Passives" package="L0603" value="" x="16.3843" y="-25.6705">
+<element name="L1" library="MF_Passives" package="L0603" value="10uH" x="16.3843" y="-25.6705">
 <attribute name="HOUSEPART" value="" x="16.3843" y="-25.6705" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="16.3843" y="-25.6705" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="16.3843" y="-25.6705" size="1.778" layer="27" display="off"/>
@@ -7561,7 +7561,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="32.095" y="-12.3" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="28.395" y="-13.792" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="R12" library="MF_Passives" package="R0603" value="" x="23.1425" y="-31.2225">
+<element name="R12" library="MF_Passives" package="R0603" value="27" x="23.1425" y="-31.2225">
 <attribute name="HOUSEPART" value="" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
@@ -7570,7 +7570,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R13" library="MF_Passives" package="R0603" value="" x="28.1786" y="-30.4083" rot="R90">
+<element name="R13" library="MF_Passives" package="R0603" value="22" x="28.1786" y="-30.4083" rot="R90">
 <attribute name="HOUSEPART" value="" x="28.1786" y="-30.4083" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="28.1786" y="-30.4083" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULATE" value="1" x="28.1786" y="-30.4083" size="1.778" layer="27" rot="R90" display="off"/>
@@ -7579,7 +7579,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="28.1786" y="-30.4083" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="WATTAGE" value="" x="28.1786" y="-30.4083" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R14" library="MF_Passives" package="R0603" value="" x="29.2175" y="-26.1575" rot="R90">
+<element name="R14" library="MF_Passives" package="R0603" value="22" x="29.2175" y="-26.1575" rot="R90">
 <attribute name="HOUSEPART" value="" x="29.2175" y="-26.1575" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="29.2175" y="-26.1575" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULATE" value="1" x="29.2175" y="-26.1575" size="1.778" layer="27" rot="R90" display="off"/>
@@ -7601,7 +7601,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="POPULATE" value="1" x="11.9425" y="-39.775" size="1.778" layer="27" display="off"/>
 <attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="11.9425" y="-39.775" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R15" library="MF_Passives" package="R0603" value="" x="11.8425" y="-40.575">
+<element name="R15" library="MF_Passives" package="R0603" value="330" x="11.8425" y="-40.575">
 <attribute name="HOUSEPART" value="" x="11.8425" y="-44.085" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="11.8425" y="-44.085" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="11.8425" y="-44.085" size="1.778" layer="27" display="off"/>
@@ -7610,7 +7610,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="11.8425" y="-44.085" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="11.8425" y="-44.085" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R9" library="MF_Passives" package="R0603" value="" x="34.7" y="-8.4">
+<element name="R9" library="MF_Passives" package="R0603" value="100K" x="34.7" y="-8.4">
 <attribute name="HOUSEPART" value="" x="34.7" y="-8.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="34.7" y="-8.4" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="34.7" y="-8.4" size="1.778" layer="27" display="off"/>
@@ -7619,7 +7619,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="34.7" y="-8.4" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="34.7" y="-8.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R10" library="MF_Passives" package="R0603" value="" x="25.854" y="-3.743" rot="R180">
+<element name="R10" library="MF_Passives" package="R0603" value="100K" x="25.854" y="-3.743" rot="R180">
 <attribute name="HOUSEPART" value="" x="25.854" y="-3.743" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="25.854" y="-3.743" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULATE" value="1" x="25.854" y="-3.743" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7628,7 +7628,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="25.854" y="-3.743" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="WATTAGE" value="" x="25.854" y="-3.743" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R11" library="MF_Passives" package="R0603" value="" x="26.02" y="-11.97" smashed="yes">
+<element name="R11" library="MF_Passives" package="R0603" value="10K" x="26.02" y="-11.97" smashed="yes">
 <attribute name="HOUSEPART" value="" x="26.02" y="-11.97" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="26.02" y="-11.97" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="22.72" y="-12.27" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -7638,7 +7638,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="26.02" y="-11.97" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="26.02" y="-11.97" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1" library="MF_Passives" package="R0603" value="" x="33.16" y="-37.5094" rot="R90">
+<element name="R1" library="MF_Passives" package="R0603" value="10K" x="33.16" y="-37.5094" rot="R90">
 <attribute name="HOUSEPART" value="" x="33.16" y="-37.5094" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="33.16" y="-37.5094" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULATE" value="1" x="33.16" y="-37.5094" size="1.778" layer="27" rot="R90" display="off"/>
@@ -7647,7 +7647,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="33.16" y="-37.5094" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="WATTAGE" value="" x="33.16" y="-37.5094" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R2" library="MF_Passives" package="R0603" value="" x="30.4422" y="-37.4972" rot="R90">
+<element name="R2" library="MF_Passives" package="R0603" value="10K" x="30.4422" y="-37.4972" rot="R90">
 <attribute name="HOUSEPART" value="" x="30.4422" y="-37.4972" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="30.4422" y="-37.4972" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULATE" value="1" x="30.4422" y="-37.4972" size="1.778" layer="27" rot="R90" display="off"/>
@@ -7656,7 +7656,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="30.4422" y="-37.4972" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="WATTAGE" value="" x="30.4422" y="-37.4972" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R3" library="MF_Passives" package="R0603" value="" x="13.2344" y="-35.6858">
+<element name="R3" library="MF_Passives" package="R0603" value="10K" x="13.2344" y="-35.6858">
 <attribute name="HOUSEPART" value="" x="13.2344" y="-35.6858" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="13.2344" y="-35.6858" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="13.2344" y="-35.6858" size="1.778" layer="27" display="off"/>
@@ -7665,7 +7665,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="13.2344" y="-35.6858" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="13.2344" y="-35.6858" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R4" library="MF_Passives" package="R0603" value="" x="17.3749" y="-32.1778">
+<element name="R4" library="MF_Passives" package="R0603" value="10K" x="17.3749" y="-32.1778">
 <attribute name="HOUSEPART" value="" x="17.3749" y="-32.1778" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="17.3749" y="-32.1778" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="17.3749" y="-32.1778" size="1.778" layer="27" display="off"/>
@@ -7674,7 +7674,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="17.3749" y="-32.1778" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="17.3749" y="-32.1778" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R5" library="MF_Passives" package="R0603" value="" x="17.3749" y="-35.6858">
+<element name="R5" library="MF_Passives" package="R0603" value="100K" x="17.3749" y="-35.6858">
 <attribute name="HOUSEPART" value="" x="17.3749" y="-35.6858" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="17.3749" y="-35.6858" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="17.3749" y="-35.6858" size="1.778" layer="27" display="off"/>
@@ -7683,7 +7683,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="17.3749" y="-35.6858" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="17.3749" y="-35.6858" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R7" library="MF_Passives" package="R0603" value="" x="30" y="-44" smashed="yes">
+<element name="R7" library="MF_Passives" package="R0603" value="10K" x="30" y="-44" smashed="yes">
 <attribute name="HOUSEPART" value="" x="30" y="-44" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="30" y="-44" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.2" y="-43.2" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -7693,7 +7693,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="30" y="-44" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="30" y="-44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R8" library="MF_Passives" package="R0603" value="" x="30" y="-41.5">
+<element name="R8" library="MF_Passives" package="R0603" value="1K" x="30" y="-41.5">
 <attribute name="HOUSEPART" value="" x="30" y="-41.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="30" y="-41.5" size="1.778" layer="27" display="off"/>
 <attribute name="POPULATE" value="1" x="30" y="-41.5" size="1.778" layer="27" display="off"/>
@@ -7702,7 +7702,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="30" y="-41.5" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="30" y="-41.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C2" library="MF_Passives" package="C0603" value="" x="35.4068" y="-37.5476" rot="R270">
+<element name="C2" library="MF_Passives" package="C0603" value="100nF" x="35.4068" y="-37.5476" rot="R270">
 <attribute name="DIELECTRIC" value="" x="35.4068" y="-37.5476" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HOUSEPART" value="" x="35.4068" y="-37.5476" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="35.4068" y="-37.5476" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7711,7 +7711,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="35.4068" y="-37.5476" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="" x="35.4068" y="-37.5476" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C5" library="MF_Passives" package="C0603" value="" x="13.2344" y="-32.1778">
+<element name="C5" library="MF_Passives" package="C0603" value="10uF" x="13.2344" y="-32.1778">
 <attribute name="DIELECTRIC" value="" x="13.2344" y="-32.1778" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="13.2344" y="-32.1778" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="13.2344" y="-32.1778" size="1.778" layer="27" display="off"/>
@@ -7720,7 +7720,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="13.2344" y="-32.1778" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="13.2344" y="-32.1778" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C6" library="MF_Passives" package="C0603" value="" x="32.8476" y="-24.698">
+<element name="C6" library="MF_Passives" package="C0603" value="1uF" x="32.8476" y="-24.698">
 <attribute name="DIELECTRIC" value="" x="32.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="32.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="32.8476" y="-24.698" size="1.778" layer="27" display="off"/>
@@ -7729,7 +7729,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="32.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="32.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C7" library="MF_Passives" package="C0603" value="" x="36.8476" y="-24.698">
+<element name="C7" library="MF_Passives" package="C0603" value="1uF" x="36.8476" y="-24.698">
 <attribute name="DIELECTRIC" value="" x="36.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="36.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="36.8476" y="-24.698" size="1.778" layer="27" display="off"/>
@@ -7738,7 +7738,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="36.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="36.8476" y="-24.698" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C9" library="MF_Passives" package="C0805" value="" x="32.908" y="-3.627" rot="R90">
+<element name="C9" library="MF_Passives" package="C0805" value="10uF" x="32.908" y="-3.627" rot="R90">
 <attribute name="DIELECTRIC" value="" x="32.908" y="-3.627" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HOUSEPART" value="" x="32.908" y="-3.627" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="32.908" y="-3.627" size="1.778" layer="27" rot="R90" display="off"/>
@@ -7747,7 +7747,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="32.908" y="-3.627" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE" value="" x="32.908" y="-3.627" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C10" library="MF_Passives" package="C0805" value="" x="29.081" y="-3.754" rot="R270">
+<element name="C10" library="MF_Passives" package="C0805" value="10uF" x="29.081" y="-3.754" rot="R270">
 <attribute name="DIELECTRIC" value="" x="29.081" y="-3.754" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HOUSEPART" value="" x="29.081" y="-3.754" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="29.081" y="-3.754" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7756,7 +7756,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="URL" value="" x="29.081" y="-3.754" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="" x="29.081" y="-3.754" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C11" library="MF_Passives" package="C0603" value="" x="13.2344" y="-28.6238">
+<element name="C11" library="MF_Passives" package="C0603" value="0.1uF" x="13.2344" y="-28.6238">
 <attribute name="DIELECTRIC" value="" x="13.2344" y="-28.6238" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="13.2344" y="-28.6238" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="13.2344" y="-28.6238" size="1.778" layer="27" display="off"/>
