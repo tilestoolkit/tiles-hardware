@@ -7458,8 +7458,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="12.3" y="-35.5" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="12.3" y="-35.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="BUZZER" library="tiles" package="BUZPKG" value="4MBUZ" x="49.17" y="-31.66" smashed="yes">
-<attribute name="NAME" x="47.9908" y="-28.8658" size="0.8" layer="25"/>
+<element name="BUZZER" library="tiles" package="BUZPKG" value="4MBUZ" x="38.77" y="-28.46" smashed="yes">
+<attribute name="NAME" x="37.5908" y="-25.6658" size="0.8" layer="25"/>
 </element>
 <element name="U2" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-MMBT3904" x="30.76" y="-37.62" smashed="yes" rot="R270">
 <attribute name="HOUSEPART" value="YES" x="30.76" y="-37.62" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7468,10 +7468,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="POPULATE" value="1" x="30.76" y="-37.62" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-MMBT3904" x="30.76" y="-37.62" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IMU" library="Seeed-OPL-sensor" package="LGA14-0.8-5.0X3.0MM" value="ADXL345BCCZ-RL" x="31.622" y="-31.294" smashed="yes" rot="R90">
-<attribute name="MPN" value="ADXL345BCCZ-RL" x="31.622" y="-31.294" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.468" y="-29.681" size="0.889" layer="25" ratio="11" rot="R180"/>
-<attribute name="VALUE" x="33.495" y="-28.367" size="0.889" layer="27" ratio="11" rot="R180"/>
+<element name="IMU" library="Seeed-OPL-sensor" package="LGA14-0.8-5.0X3.0MM" value="ADXL345BCCZ-RL" x="29.922" y="-31.394" smashed="yes" rot="R90">
+<attribute name="MPN" value="ADXL345BCCZ-RL" x="29.922" y="-31.394" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.768" y="-29.781" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="31.795" y="-28.467" size="0.889" layer="27" ratio="11" rot="R180"/>
 </element>
 <element name="U1" library="microbuilder2" package="BLE_MODULE_RAYTAC_MDBT42" value="" x="11.56" y="-12.065" rot="R90"/>
 <element name="C1" library="MF_Passives" package="C0603" value="" x="7.825" y="-19.7925" rot="R180">
@@ -7667,14 +7667,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VOLTAGE" value="" x="27" y="-36.5" size="1.778" layer="27" display="off"/>
 <attribute name="WATTAGE" value="" x="27" y="-36.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C2" library="MF_Passives" package="C0603" value="" x="38" y="-28" rot="R90">
-<attribute name="DIELECTRIC" value="" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HOUSEPART" value="" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POPULATE" value="1" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TOLERANCE" value="" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="URL" value="" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE" value="" x="38" y="-28" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C2" library="MF_Passives" package="C0603" value="" x="34.7" y="-30.8" rot="R90">
+<attribute name="DIELECTRIC" value="" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HOUSEPART" value="" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POPULATE" value="1" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="URL" value="" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="" x="34.7" y="-30.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C5" library="MF_Passives" package="C0603" value="" x="8" y="-27">
 <attribute name="DIELECTRIC" value="" x="8" y="-27" size="1.778" layer="27" display="off"/>
@@ -7775,8 +7775,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="17.925" y1="-30.325" x2="16.2254" y2="-36.6872" width="0" layer="19" extent="1-1"/>
 <wire x1="12.75" y1="-30" x2="17.925" y2="-30.325" width="0" layer="19" extent="1-1"/>
 <wire x1="12.75" y1="-27" x2="12.75" y2="-30" width="0" layer="19" extent="1-1"/>
+<wire x1="10.975" y1="-23.595" x2="12.75" y2="-27" width="0" layer="19" extent="1-1"/>
 <wire x1="8.75" y1="-27" x2="12.75" y2="-27" width="0" layer="19" extent="1-1"/>
-<wire x1="10.975" y1="-23.595" x2="8.75" y2="-27" width="0" layer="19" extent="1-1"/>
 <wire x1="7.075" y1="-19.7925" x2="10.975" y2="-23.595" width="0" layer="19" extent="1-1"/>
 <wire x1="7.76" y1="-16.665" x2="7.075" y2="-19.7925" width="0" layer="19" extent="1-1"/>
 <wire x1="1.6442" y1="-28.852" x2="8.75" y2="-27" width="0" layer="19" extent="1-1"/>
@@ -7794,11 +7794,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="34.75" y1="-23" x2="30.75" y2="-23" width="0" layer="19" extent="1-1"/>
 <wire x1="38.024" y1="-23.4248" x2="34.75" y2="-23" width="0" layer="19" extent="1-1"/>
 <wire x1="33.6546" y1="-26.485" x2="34.75" y2="-23" width="0" layer="19" extent="1-1"/>
-<wire x1="38" y1="-27.25" x2="38.024" y2="-23.4248" width="0" layer="19" extent="1-1"/>
-<wire x1="32.822" y1="-32.494" x2="33.6546" y2="-26.485" width="0" layer="19" extent="1-1"/>
-<wire x1="32.022" y1="-32.494" x2="32.822" y2="-32.494" width="0" layer="19" extent="1-1"/>
-<wire x1="30.422" y1="-32.494" x2="32.022" y2="-32.494" width="0" layer="19" extent="1-1"/>
-<wire x1="29.81" y1="-36.62" x2="30.422" y2="-32.494" width="0" layer="19" extent="1-1"/>
+<wire x1="34.7" y1="-30.05" x2="33.6546" y2="-26.485" width="0" layer="19" extent="1-1"/>
+<wire x1="31.122" y1="-32.594" x2="34.7" y2="-30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="30.322" y1="-32.594" x2="31.122" y2="-32.594" width="0" layer="19" extent="1-1"/>
+<wire x1="28.722" y1="-32.594" x2="30.322" y2="-32.594" width="0" layer="19" extent="1-1"/>
+<wire x1="29.81" y1="-36.62" x2="30.322" y2="-32.594" width="0" layer="19" extent="1-1"/>
 <wire x1="26.25" y1="-39" x2="29.81" y2="-36.62" width="0" layer="19" extent="1-1"/>
 <wire x1="26.7" y1="0.55" x2="18.685" y2="2.6426" width="0" layer="19" extent="1-1"/>
 <wire x1="31.4" y1="2.45" x2="26.7" y2="0.55" width="0" layer="19" extent="1-1"/>
@@ -7830,8 +7830,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="11.46" y1="-16.665" x2="-0.3558" y2="-29.102" width="0" layer="19" extent="1-1"/>
 <wire x1="30.75" y1="-20" x2="11.46" y2="-16.665" width="0" layer="19" extent="1-1"/>
 <wire x1="29.2546" y1="-25.985" x2="30.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="29.422" y1="-31.294" x2="29.2546" y2="-25.985" width="0" layer="19" extent="1-1"/>
-<wire x1="23.8454" y1="-36.6872" x2="29.422" y2="-31.294" width="0" layer="19" extent="1-1"/>
+<wire x1="27.722" y1="-31.394" x2="29.2546" y2="-25.985" width="0" layer="19" extent="1-1"/>
+<wire x1="23.8454" y1="-36.6872" x2="27.722" y2="-31.394" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="CAP" pad="3"/>
@@ -7842,9 +7842,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R2" pad="P$2"/>
 <wire x1="10.76" y1="-16.665" x2="-0.3558" y2="-28.602" width="0" layer="19" extent="1-1"/>
 <wire x1="29.2546" y1="-26.485" x2="10.76" y2="-16.665" width="0" layer="19" extent="1-1"/>
-<wire x1="29.622" y1="-30.094" x2="29.2546" y2="-26.485" width="0" layer="19" extent="1-1"/>
+<wire x1="27.922" y1="-30.194" x2="29.2546" y2="-26.485" width="0" layer="19" extent="1-1"/>
 <wire x1="34.75" y1="-20" x2="29.2546" y2="-26.485" width="0" layer="19" extent="1-1"/>
-<wire x1="21.3054" y1="-36.6872" x2="29.622" y2="-30.094" width="0" layer="19" extent="1-1"/>
+<wire x1="21.3054" y1="-36.6872" x2="27.922" y2="-30.194" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAP-INT">
 <contactref element="CAP" pad="13"/>
@@ -7899,8 +7899,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="BUZZER" pad="BZ-"/>
 <contactref element="U2" pad="P$3"/>
 <contactref element="R8" pad="P$2"/>
-<wire x1="30.76" y1="-38.62" x2="47.033" y2="-31.438" width="0" layer="19" extent="1-1"/>
-<wire x1="27.75" y1="-36.5" x2="30.76" y2="-38.62" width="0" layer="19" extent="1-1"/>
+<wire x1="30.76" y1="-38.62" x2="27.75" y2="-36.5" width="0" layer="19" extent="1-1"/>
+<wire x1="36.633" y1="-28.238" x2="30.76" y2="-38.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IO-2">
 <contactref element="GPIO" pad="1"/>
@@ -7933,7 +7933,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="IMU-INT">
 <contactref element="IMU" pad="8"/>
 <contactref element="U1" pad="20"/>
-<wire x1="33.622" y1="-30.094" x2="19.21" y2="-10.665" width="0" layer="19" extent="1-1"/>
+<wire x1="31.922" y1="-30.194" x2="19.21" y2="-10.665" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAP-RES">
 <contactref element="CAP" pad="24"/>
@@ -7995,21 +7995,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="33.25" y1="-23" x2="33.25" y2="-20" width="0" layer="19" extent="1-1"/>
 <wire x1="33.6546" y1="-25.485" x2="33.25" y2="-23" width="0" layer="19" extent="1-1"/>
 <wire x1="33.6546" y1="-27.485" x2="33.6546" y2="-25.485" width="0" layer="19" extent="1-1"/>
-<wire x1="33.822" y1="-31.294" x2="33.6546" y2="-27.485" width="0" layer="19" extent="1-1"/>
-<wire x1="33.622" y1="-32.494" x2="33.822" y2="-31.294" width="0" layer="19" extent="1-1"/>
-<wire x1="29.622" y1="-32.494" x2="33.622" y2="-32.494" width="0" layer="19" extent="1-1"/>
+<wire x1="34.7" y1="-31.55" x2="33.6546" y2="-27.485" width="0" layer="19" extent="1-1"/>
+<wire x1="32.122" y1="-31.394" x2="34.7" y2="-31.55" width="0" layer="19" extent="1-1"/>
+<wire x1="31.922" y1="-32.594" x2="32.122" y2="-31.394" width="0" layer="19" extent="1-1"/>
+<wire x1="27.922" y1="-32.594" x2="31.922" y2="-32.594" width="0" layer="19" extent="1-1"/>
+<wire x1="26.25" y1="-36.5" x2="27.922" y2="-32.594" width="0" layer="19" extent="1-1"/>
 <wire x1="29.2546" y1="-27.485" x2="33.6546" y2="-27.485" width="0" layer="19" extent="1-1"/>
-<wire x1="38" y1="-28.75" x2="33.6546" y2="-27.485" width="0" layer="19" extent="1-1"/>
 <wire x1="38.024" y1="-20.8848" x2="33.25" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="26.25" y1="-36.5" x2="29.622" y2="-32.494" width="0" layer="19" extent="1-1"/>
+<wire x1="40.633" y1="-28.238" x2="34.7" y2="-31.55" width="0" layer="19" extent="1-1"/>
 <wire x1="18.7654" y1="-36.6872" x2="26.25" y2="-36.5" width="0" layer="19" extent="1-1"/>
-<wire x1="51.033" y1="-31.438" x2="38" y2="-28.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U1" pad="13"/>
 <contactref element="C4" pad="P$1"/>
 <contactref element="X1" pad="P$1"/>
-<wire x1="23.225" y1="-17.4025" x2="22.725" y2="-14.13" width="0" layer="19" extent="1-1"/>
+<wire x1="22.725" y1="-14.13" x2="23.225" y2="-17.4025" width="0" layer="19" extent="1-1"/>
 <wire x1="19.21" y1="-15.565" x2="22.725" y2="-14.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
@@ -8085,12 +8085,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="DTR">
 <contactref element="J1" pad="5"/>
 <contactref element="C11" pad="P$1"/>
-<wire x1="22.16" y1="-3" x2="7.35" y2="-23.7" width="0" layer="19" extent="1-1"/>
+<wire x1="7.35" y1="-23.7" x2="22.16" y2="-3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="SJ1" pad="2"/>
 <contactref element="C11" pad="P$2"/>
-<wire x1="-7.052" y1="-10.9475" x2="8.85" y2="-23.7" width="0" layer="19" extent="1-1"/>
+<wire x1="8.85" y1="-23.7" x2="-7.052" y2="-10.9475" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXD">
 <contactref element="U1" pad="19"/>

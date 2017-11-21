@@ -7053,7 +7053,7 @@ P0.10=NFC2</text>
 <part name="U3" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345"/>
 <part name="U1" library="microbuilder2" deviceset="NRF52832_MODULE_MDBT42" device="" value="MDBT42Q"/>
 <part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
-<part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
+<part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="10uF"/>
 <part name="C4" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF"/>
 <part name="C8" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF"/>
 <part name="L1" library="MF_Passives" deviceset="INDUCTOR" device="_0603" value="10uH"/>
@@ -8188,6 +8188,45 @@ P0.10=NFC2</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,87.63,144.78,VDDI/O,3.3V,,,,"/>
+<approved hash="102,1,38.1,144.78,OUT,3.3V,,,,"/>
+<approved hash="104,1,96.52,12.7,U4,THERMAL/GND,GND,,,"/>
+<approved hash="104,1,96.52,17.78,U4,VDD,3.3V,,,"/>
+<approved hash="104,1,223.52,96.52,STAT,ANODE,N$9,,,"/>
+<approved hash="104,1,228.6,96.52,STAT,CATHODE,GND,,,"/>
+<approved hash="104,1,17.78,144.78,U2,IN,N$13,,,"/>
+<approved hash="104,1,91.44,101.6,D3,ANODE,3.3V,,,"/>
+<approved hash="104,1,104.14,109.22,D3,CATHODE_RED,N$14,,,"/>
+<approved hash="104,1,104.14,101.6,D3,CATHODE_GREEN,N$16,,,"/>
+<approved hash="104,1,104.14,93.98,D3,CATHODE_BLUE,N$17,,,"/>
+<approved hash="104,1,172.72,96.52,BTL,ANODE,N$18,,,"/>
+<approved hash="104,1,177.8,96.52,BTL,CATHODE,GND,,,"/>
+<approved hash="106,1,45.72,43.18,MISO,,,,,"/>
+<approved hash="106,1,45.72,40.64,MOSI,,,,,"/>
+<approved hash="106,1,0,55.88,N$15,,,,,"/>
+<approved hash="106,1,0,45.72,N$19,,,,,"/>
+<approved hash="106,1,45.72,50.8,N$26,,,,,"/>
+<approved hash="106,1,33.02,22.86,NFC1,,,,,"/>
+<approved hash="106,1,35.56,22.86,NFC2,,,,,"/>
+<approved hash="106,1,45.72,38.1,SCK,,,,,"/>
+<approved hash="113,1,228.879,31.7525,M+,,,,,"/>
+<approved hash="113,1,228.879,36.8325,M-,,,,,"/>
+<approved hash="113,1,231.817,156.142,J1,,,,,"/>
+<approved hash="113,1,158.157,159.952,GPIO,,,,,"/>
+<approved hash="113,1,186.097,159.952,I2C,,,,,"/>
+<approved hash="113,1,168.317,142.172,TOUCH,,,,,"/>
+<approved hash="113,1,64.1854,68.58,FRST,,,,,"/>
+<approved hash="113,1,64.8906,66.04,SWDIO,,,,,"/>
+<approved hash="113,1,65.0423,63.5,SWCLK,,,,,"/>
+<approved hash="113,1,63.6275,60.96,RST,,,,,"/>
+<approved hash="113,1,63.6766,58.42,DFU,,,,,"/>
+<approved hash="113,1,63.9801,53.34,SWO,,,,,"/>
+<approved hash="113,1,-12.7,108.56,SW1,,,,,"/>
+<approved hash="113,1,55.6006,166.367,B+,,,,,"/>
+<approved hash="113,1,55.6006,158.747,B-,,,,,"/>
+<approved hash="113,1,106.748,163.237,EN,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
