@@ -3,11 +3,11 @@ Qty;Value;MPN;HOUSEPART;Device;Package;Parts;Description;DIELECTRIC;;MPN;POPULAT
 3;100K;MF-RES-0603-100K;x;RESISTOR_0603;R0603;R5, R9, R10;Library:  MF_Passives;;;;1;;;;;;
 1;100nF;MF-CAP-0603-0.1uF;x;CAPACITOR_NP_0603;C0603;C2;Library:  MF_Passives;;;;1;;;;;;
 6;10K;MF-RES-0603-10K;x;RESISTOR_0603;R0603;R1, R2, R3, R4, R7, R11;Library:  MF_Passives;;;;1;;;;;;
-2;10uF;MF-CAP-1206-10uF;ni;CAPACITOR_NP_0603;C0603;C3, C5;Library:  MF_Passives;;;;1;;;;;;
-2;10uF;MF-CAP-1206-10uF;ni;CAPACITOR_NP_0805;C0805;C9, C10;Library:  MF_Passives;;;;1;;;;;;
-1;10uH;LQM18FN100M00D;ni;INDUCTOR_0603;L0603;L1;Library:  MF_Passives;;;;1;;;;;;
+2;10uF;MF-CAP-1206-10uF;fixed;CAPACITOR_NP_0603;C0603;C3, C5;Library:  MF_Passives;;;;1;;;;;;
+2;10uF;MF-CAP-1206-10uF;fixed;CAPACITOR_NP_0805;C0805;C9, C10;Library:  MF_Passives;;;;1;;;;;;
+1;10uH;MF-IND-1210-10uH;fixed;INDUCTOR_0603;L0603;L1;Library:  MF_Passives;;;;1;;;;;;
 1;1K;MF-RES-0603-1K;x;RESISTOR_0603;R0603;R8;Library:  MF_Passives;;;;1;;;;;;
-1;1N4148;1N4148WS-FDICT-ND;ni;DIODESOD-323;SOD-323;D2;Diode;;;;;;;;;;
+1;1N4148;MF-DIO-SOD123-1N4148;fixed;DIODESOD-323;SOD-323;D2;Diode;;;;;;;;;;
 3;1uF;MF-CAP-0603-1uF;x;CAPACITOR_NP_0603;C0603;C1, C6, C7;Library:  MF_Passives;;;;1;;;;;;
 2;22;MF-RES-0603-22;x;RESISTOR_0603;R0603;R13, R14;Library:  MF_Passives;;;;1;;;;;;
 2;22pF;MF-CAP-0603-22pF;x;CAPACITOR_NP_0603;C0603;C4, C8;Library:  MF_Passives;;;;1;;;;;;
