@@ -7558,14 +7558,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="D1" library="microbuilder2" package="SOD-123" value="MBR120" x="11.31" y="-3.6585" rot="R270"/>
 <element name="SW1" library="microbuilder2" package="BTN_KMR2_4.6X2.8" value="" x="10.7925" y="-9.3335" rot="R180"/>
 <element name="SJ1" library="microbuilder2" package="SOLDERJUMPER_CLOSEDWIRE" value="AT" x="4.8795" y="-26.9802" rot="MR270"/>
-<element name="D2" library="MF_Discrete_Semiconductor" package="SOD-123" value="MF-DIO-SOD123-1N4148" x="29.495" y="-12" smashed="yes">
-<attribute name="HOUSEPART" value="YES" x="29.495" y="-12" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MF-DIO-SOD123-1N4148" x="29.495" y="-12" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="32.095" y="-12.3" size="0.8128" layer="25" ratio="18"/>
-<attribute name="POPULATE" value="1" x="29.495" y="-12" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SOD123-1N4148" x="29.495" y="-12" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="MF-DIO-SOD123-1N4148" x="28.395" y="-13.792" size="0.4064" layer="27" ratio="10"/>
-</element>
 <element name="R12" library="MF_Passives" package="R0603" value="27" x="23.1425" y="-31.2225">
 <attribute name="HOUSEPART" value="" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="23.1425" y="-31.2225" size="1.778" layer="27" display="off"/>
@@ -7781,6 +7773,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="24.3518" y="-11.0439" size="0.0254" layer="28" rot="MR270"/>
 </element>
 <element name="EN" library="SparkFun-Connectors" package="1X02_NO_SILK" value="" x="35.5" y="-4.7" rot="R90"/>
+<element name="D2" library="MF_Discrete_Semiconductor" package="SOD-123" value="MF-DIO-SOD123-1N4148" x="30.988" y="-12.1158" smashed="yes">
+<attribute name="HOUSEPART" value="YES" x="30.988" y="-12.1158" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MF-DIO-SOD123-1N4148" x="30.988" y="-12.1158" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.5982" y="-12.2196" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="POPULATE" value="1" x="30.988" y="-12.1158" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SOD123-1N4148" x="30.988" y="-12.1158" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -7964,9 +7963,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="SW1" pad="A'"/>
 <contactref element="SW1" pad="A"/>
 <contactref element="SJ1" pad="1"/>
-<contactref element="D2" pad="ANODE"/>
 <contactref element="R11" pad="P$1"/>
-<wire x1="23.7864" y1="-10.4864" x2="25.27" y2="-11.97" width="0.254" layer="1"/>
+<wire x1="25.27" y1="-11.97" x2="23.7864" y2="-10.4864" width="0.254" layer="1"/>
 <wire x1="19.3416625" y1="-10.4864" x2="23.7864" y2="-10.4864" width="0.254" layer="1"/>
 <wire x1="12.8425" y1="-10.1335" x2="18.9887625" y2="-10.1335" width="0.254" layer="1"/>
 <wire x1="18.9887625" y1="-10.1335" x2="19.3416625" y2="-10.4864" width="0.254" layer="1"/>
@@ -7994,10 +7992,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="9.642675" y1="-10.1335" x2="10.633175" y2="-9.143" width="0.254" layer="1"/>
 <wire x1="12.105325" y1="-10.1335" x2="12.8425" y2="-10.1335" width="0.254" layer="1"/>
 <wire x1="11.114825" y1="-9.143" x2="12.105325" y2="-10.1335" width="0.254" layer="1"/>
-<wire x1="29.6592125" y1="-12" x2="31.17" y2="-12" width="0.254" layer="1"/>
-<wire x1="25.27" y1="-11.97" x2="25.974" y2="-12.674" width="0.254" layer="1"/>
-<wire x1="25.974" y1="-12.674" x2="28.9852125" y2="-12.674" width="0.254" layer="1"/>
-<wire x1="28.9852125" y1="-12.674" x2="29.6592125" y2="-12" width="0.254" layer="1"/>
+<contactref element="D2" pad="ANODE"/>
+<wire x1="32.663" y1="-12.1158" x2="32.663" y2="-13.0062" width="0.254" layer="1"/>
+<wire x1="32.663" y1="-13.0062" x2="32.1564" y2="-13.5128" width="0.254" layer="1"/>
+<wire x1="32.1564" y1="-13.5128" x2="25.8318" y2="-13.5128" width="0.254" layer="1"/>
+<wire x1="25.8318" y1="-13.5128" x2="25.3492" y2="-13.0302" width="0.254" layer="1"/>
+<wire x1="25.3492" y1="-13.0302" x2="25.3492" y2="-12.0492" width="0.254" layer="1"/>
+<wire x1="25.3492" y1="-12.0492" x2="25.27" y2="-11.97" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U4" pad="4"/>
@@ -8392,7 +8393,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="U5" pad="P$10"/>
 <contactref element="U5" pad="P$6"/>
 <contactref element="U5" pad="P$5"/>
-<contactref element="D2" pad="CATHODE"/>
 <contactref element="GPIO" pad="3"/>
 <contactref element="I2C" pad="2"/>
 <contactref element="D3" pad="P$1"/>
@@ -8418,11 +8418,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="19.51" y1="-10.08" x2="25.86" y2="-10.08" width="0.3048" layer="1"/>
 <wire x1="25.86" y1="-10.08" x2="26.77" y2="-10.99" width="0.3048" layer="1"/>
 <wire x1="26.77" y1="-10.99" x2="26.77" y2="-11.97" width="0.3048" layer="1"/>
-<wire x1="26.77" y1="-11.97" x2="26.8" y2="-12" width="0.3048" layer="1"/>
-<wire x1="27.82" y1="-12" x2="26.8" y2="-12" width="0.3048" layer="1"/>
-<wire x1="28.3835" y1="-11.8415" x2="27.82" y2="-12" width="0.3048" layer="1"/>
-<wire x1="28.3835" y1="-11.8415" x2="32.21" y2="-8.015" width="0.3048" layer="1"/>
-<wire x1="32.21" y1="-8.015" x2="32.21" y2="-6.27" width="0.3048" layer="1"/>
+<wire x1="26.77" y1="-11.97" x2="27.6382" y2="-10.8062" width="0.3048" layer="1"/>
+<wire x1="32.2697" y1="-10.2413" x2="32.27113125" y2="-10.170528125" width="0.3048" layer="1"/>
+<wire x1="32.27113125" y1="-10.170528125" x2="32.3116" y2="-8.1674" width="0.3048" layer="1"/>
+<wire x1="32.3116" y1="-8.1674" x2="32.21" y2="-6.27" width="0.3048" layer="1"/>
 <wire x1="32.21" y1="-6.27" x2="32.8776" y2="-5.085" width="0.3048" layer="1"/>
 <wire x1="32.8776" y1="-5.085" x2="32.8318" y2="-5.3818" width="0.3048" layer="1"/>
 <wire x1="11.886" y1="-32.7112" x2="9.731" y2="-29.272" width="0.254" layer="1"/>
@@ -8492,12 +8491,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="21.2107875" y1="-22.3" x2="22.5797875" y2="-23.669" width="0.254" layer="1"/>
 <wire x1="22.5797875" y1="-23.669" x2="29.82781875" y2="-23.669" width="0.254" layer="1"/>
 <wire x1="30.051" y1="-23.44581875" x2="30.051" y2="-14.7324125" width="0.254" layer="1"/>
-<wire x1="31.694" y1="-12.5052125" x2="31.694" y2="-11.4947875" width="0.254" layer="1"/>
-<wire x1="31.694" y1="-11.4947875" x2="31.5452125" y2="-11.346" width="0.254" layer="1"/>
-<wire x1="29.27889375" y1="-11.8415" x2="28.3835" y2="-11.8415" width="0.254" layer="1"/>
-<wire x1="31.5452125" y1="-11.346" x2="29.77439375" y2="-11.346" width="0.254" layer="1"/>
-<wire x1="29.77439375" y1="-11.346" x2="29.27889375" y2="-11.8415" width="0.254" layer="1"/>
-<wire x1="30.051" y1="-14.7324125" x2="31.694" y2="-12.5052125" width="0.254" layer="1"/>
+<wire x1="34.4372" y1="-14.7150125" x2="34.2086" y2="-10.3517875" width="0.254" layer="1"/>
+<wire x1="34.1106125" y1="-10.1522" x2="34.2086" y2="-10.3517875" width="0.254" layer="1"/>
+<wire x1="32.28164375" y1="-10.2463125" x2="32.3139" y2="-10.01490625" width="0.254" layer="1"/>
+<wire x1="32.28164375" y1="-10.2463125" x2="32.2697" y2="-10.2413" width="0.254" layer="1"/>
+<wire x1="30.051" y1="-14.7324125" x2="34.4372" y2="-14.7150125" width="0.254" layer="1"/>
+<wire x1="27.6382" y1="-10.8062" x2="27.751" y2="-10.6934" width="0.3048" layer="1"/>
+<wire x1="27.751" y1="-10.6934" x2="28.2956" y2="-10.6934" width="0.3048" layer="1"/>
+<wire x1="28.4804" y1="-10.8782" x2="28.2956" y2="-10.6934" width="0.3048" layer="1"/>
+<wire x1="28.4804" y1="-10.8782" x2="29.1122875" y2="-10.2463125" width="0.3048" layer="1"/>
+<wire x1="29.1122875" y1="-10.2463125" x2="32.28164375" y2="-10.2463125" width="0.3048" layer="1"/>
+<wire x1="32.27113125" y1="-10.170528125" x2="32.528740625" y2="-10.170528125" width="0.3048" layer="1"/>
+<wire x1="32.528740625" y1="-10.170528125" x2="34.1106125" y2="-10.1522" width="0.3048" layer="1"/>
+<contactref element="D2" pad="CATHODE"/>
+<wire x1="26.77" y1="-11.97" x2="29.1672" y2="-11.97" width="0.3048" layer="1"/>
+<wire x1="29.1672" y1="-11.97" x2="29.313" y2="-12.1158" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U1" pad="13"/>
