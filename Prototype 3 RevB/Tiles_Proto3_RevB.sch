@@ -4678,6 +4678,48 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <vertex x="-1.4" y="2" curve="-90"/>
 </polygon>
 </package>
+<package name="SMA">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint for Diodes in SMA Standard.&lt;br/&gt;</description>
+<smd name="CATHODE" x="-2" y="0" dx="2.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="ANODE" x="2" y="0" dx="2.5" dy="1.7" layer="1" rot="R180"/>
+<text x="-4.2" y="1.89" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-0.35" y="0"/>
+<vertex x="0.35" y="0.5"/>
+<vertex x="0.35" y="-0.5"/>
+</polygon>
+<wire x1="-3.6" y1="1.6" x2="3.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="1.6" x2="3.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-1.6" x2="-3.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-1.6" x2="-3.6" y2="1.6" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-4.2" y="1.6"/>
+<vertex x="-3.6" y="1.6"/>
+<vertex x="-3.6" y="-1.6"/>
+<vertex x="-4.2" y="-1.6"/>
+</polygon>
+</package>
+<package name="SOD-123">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint for Diodes in SOD-123 Standard.&lt;br/&gt;</description>
+<smd name="CATHODE" x="-1.675" y="0" dx="0.85" dy="1.2" layer="1" rot="R180"/>
+<smd name="ANODE" x="1.675" y="0" dx="0.85" dy="1.2" layer="1" rot="R180"/>
+<text x="-2.8" y="1.09" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-0.35" y="0"/>
+<vertex x="0.15" y="0.3"/>
+<vertex x="0.15" y="-0.3"/>
+</polygon>
+<wire x1="-2.4" y1="0.85" x2="2.4" y2="0.85" width="0.127" layer="21"/>
+<wire x1="2.4" y1="0.85" x2="2.4" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-0.85" x2="-2.4" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-0.85" x2="-2.4" y2="0.85" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-2.8" y="0.85"/>
+<vertex x="-2.4" y="0.85"/>
+<vertex x="-2.4" y="-0.85"/>
+<vertex x="-2.8" y="-0.85"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="NPN_BJT">
@@ -4705,6 +4747,22 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <text x="2.794" y="-4.826" size="1.016" layer="94" font="vector">E</text>
 <text x="5.08" y="5.08" size="1.016" layer="95" font="vector" rot="R180" align="bottom-right">&gt;NAME</text>
 <text x="5.08" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="DIODE">
+<description>&lt;b&gt;Description:&lt;/b&gt; Symbol for Single Diodes.&lt;br/&gt;</description>
+<wire x1="1.016" y1="1.524" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="-0.762" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="-0.762" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.524" x2="0.762" y2="0" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="-0.762" y="-1.524"/>
+<vertex x="-0.762" y="1.524"/>
+<vertex x="0.762" y="0"/>
+</polygon>
+<text x="-2.54" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+<pin name="ANODE" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="CATHODE" x="2.54" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4735,6 +4793,66 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="POPULATE" value="1" constant="no"/>
 <attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-MMBT3904" constant="no"/>
 <attribute name="VALUE" value="MF-DSC-SOT233-MMBT3904" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODES" prefix="D">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Discrete_Semiconductor&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Device for Single Packaged Diodes.&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SMA" package="SMA">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="NO" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_B140">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-DIO-SMA-B140" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SMA-B140" constant="no"/>
+<attribute name="VALUE" value="MF-DIO-SMA-B140" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SOD-123" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="NO" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_1N4148">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-DIO-SOD123-1N4148" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SOD123-1N4148" constant="no"/>
+<attribute name="VALUE" value="MF-DIO-SOD123-1N4148" constant="no"/>
+</technology>
+<technology name="_BAT42">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-DIO-SOD123-BAT42" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DIO-SOD123-BAT42" constant="no"/>
+<attribute name="VALUE" value="MF-DIO-SOD123-BAT42" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5769,17 +5887,6 @@ P0.10=NFC2</text>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="DIODE">
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="0" y="2.54" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-2.5" size="1.27" layer="96" align="center">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NRF52832_MODULE_MDBT42" prefix="U" uservalue="yes">
@@ -6547,300 +6654,6 @@ P0.10=NFC2</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE" prefix="D" uservalue="yes">
-<description>&lt;b&gt;Diode&lt;/b&gt;
-&lt;p&gt;
-&lt;h3&gt;SMA&lt;/h3&gt;
-&lt;table cellpadding="5" width="600"&gt;
-&lt;tr bgcolor="#DDDDDD"&gt;
-  &lt;td&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Volts&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Amps&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Vf&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Ir&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Digikey #&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;SSA34-E3&lt;/td&gt;
-  &lt;td&gt;40V&lt;/td&gt;
-  &lt;td&gt;3A&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;480mV @ 3A&lt;/td&gt;
-  &lt;td&gt;200uA @ 40V&lt;/td&gt;
-  &lt;td&gt;SSA34-E3/61TGITR-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;CDBA120-G&lt;/td&gt;
-  &lt;td&gt;20V&lt;/td&gt;
-  &lt;td&gt;1A&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;500mV @ 1A&lt;/td&gt;
-  &lt;td&gt;500uA @ 20V&lt;/td&gt;
-  &lt;td&gt;641-1014-6-ND&lt;/td&gt;
-  &lt;td&gt;REEL&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;MBRA210&lt;/td&gt;
-  &lt;td&gt;10V&lt;/td&gt;
-  &lt;td&gt;2A&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;350mV @ 2A&lt;/td&gt;
-  &lt;td&gt;700uA @ 10V&lt;/td&gt;
-  &lt;td&gt;MBRA210LT3&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;h3&gt;SOD-123&lt;/h3&gt;
-&lt;table cellpadding="5" width="600"&gt;
-&lt;tr bgcolor="#DDDDDD"&gt;
-  &lt;td&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Volts&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Amps&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Vf&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Ir&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Order #&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;BAT54T1G&lt;/td&gt;
-  &lt;td&gt;30V&lt;/td&gt;
-  &lt;td&gt;200mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;800mV @ 200mA&lt;/td&gt;
-  &lt;td&gt;2uA @ 25V&lt;/td&gt;
-  &lt;td&gt;BAT54T1GOSTR-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;B0530W&lt;/td&gt;
-  &lt;td&gt;30V&lt;/td&gt;
-  &lt;td&gt;500mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;430mV @ 500mA&lt;/td&gt;
-  &lt;td&gt;130uA @ 30V&lt;/td&gt;
-  &lt;td&gt;B0530W-FDICT-ND&lt;/td&gt;
-  &lt;td&gt;REEL&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;MBR120&lt;/td&gt;
-  &lt;td&gt;20V&lt;/td&gt;
-  &lt;td&gt;1A&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;340mV @ 1A&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;MBR120VLSFT1GOSCT-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;h3&gt;SOD-323&lt;/h3&gt;
-&lt;table cellpadding="5" width="600"&gt;
-&lt;tr bgcolor="#DDDDDD"&gt;
-  &lt;td&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Volts&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Amps&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Vf&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Ir&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Order #&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;PMEG2005EJ&lt;/td&gt;
-  &lt;td&gt;20V&lt;/td&gt;
-  &lt;td&gt;500mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;355mV @ 500mA&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;568-4110-1-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;ZLLS410&lt;/td&gt;
-  &lt;td&gt;10V&lt;/td&gt;
-  &lt;td&gt;570mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;380mV @ 570mA&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;ZLLS410CT-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1N4148WS&lt;/td&gt;
-  &lt;td&gt;75V&lt;/td&gt;
-  &lt;td&gt;150mA&lt;/td&gt;
-  &lt;td&gt;Silicon/Simple&lt;/td&gt;
-  &lt;td&gt;1V&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;1N4148WSFSCT-ND&lt;/td&gt;
-  &lt;td&gt;REEL&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;h3&gt;SOD-523&lt;/h3&gt;
-&lt;table cellpadding="5" width="600"&gt;
-&lt;tr bgcolor="#DDDDDD"&gt;
-  &lt;td&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Volts&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Amps&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Vf&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Ir&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Order #&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;BAT54XV2&lt;/td&gt;
-  &lt;td&gt;30V&lt;/td&gt;
-  &lt;td&gt;200mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;0.8V @ 100mA&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;BAT54XV2CT-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;TB751S&lt;/td&gt;
-  &lt;td&gt;30V&lt;/td&gt;
-  &lt;td&gt;30mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;RB751S-40TE61CT-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;h3&gt;SOT23-R/W&lt;/h3&gt;(R = Solder Paste/Reflow Ovens, W = Hand-Soldering)
-&lt;br/&gt;
-&lt;table cellpadding="5" width="600"&gt;
-&lt;tr bgcolor="#DDDDDD"&gt;
-  &lt;td&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Volts&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Amps&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Vf&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Ir&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Order #&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;BAT54FILM&lt;/td&gt;
-  &lt;td&gt;40V&lt;/td&gt;
-  &lt;td&gt;300mA&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-  &lt;td&gt;497-7162-1-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h3&gt;POWERDI-5&lt;/h3&gt;
-&lt;br/&gt;
-&lt;table cellpadding="5" width="600"&gt;
-&lt;tr bgcolor="#DDDDDD"&gt;
-  &lt;td&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Volts&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Amps&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Vf&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Ir&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Order #&lt;/b&gt;&lt;/td&gt;
-  &lt;td&gt;&lt;b&gt;Notes&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;PDS560&lt;/td&gt;
-  &lt;td&gt;60V&lt;/td&gt;
-  &lt;td&gt;5A&lt;/td&gt;
-  &lt;td&gt;Schottky&lt;/td&gt;
-  &lt;td&gt;670mV @ 5A&lt;/td&gt;
-  &lt;td&gt;150uA @ 60V&lt;/td&gt;
-  &lt;td&gt;PDS560DICT-ND&lt;/td&gt;
-  &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DO-1N4148" package="DO-1N4148">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POWERDI" package="POWERDI-5">
-<connects>
-<connect gate="G$1" pin="A" pad="A1 A2"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMA" package="SMADIODE">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOD-123" package="SOD-123">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOD-323" package="SOD-323">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOD-523" package="SOD-523">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT23_REFLOW" package="SOT23-R">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT23_WIDE" package="SOT23-WIDE">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="adafruit2">
@@ -7016,8 +6829,16 @@ P0.10=NFC2</text>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="U4" library="cap1188-microbuilder" deviceset="CAP1188" device="" value="CAP1188"/>
-<part name="U5" library="SparkFun-IC-Special-Function" deviceset="DRV2605L" device=""/>
+<part name="U4" library="cap1188-microbuilder" deviceset="CAP1188" device="" value="CAP1188">
+<attribute name="HOUSEPART" value="NO"/>
+<attribute name="MPN" value="CAP1188-1-CP-TR"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="U5" library="SparkFun-IC-Special-Function" deviceset="DRV2605L" device="">
+<attribute name="HOUSEPART" value="NO"/>
+<attribute name="MPN" value="DRV2605LDGST"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="P+5" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$9" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+8" library="microbuilder2" deviceset="3.3V" device=""/>
@@ -7030,97 +6851,239 @@ P0.10=NFC2</text>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_07" device=""/>
-<part name="IO-2" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5"/>
-<part name="IO-3" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5"/>
-<part name="CAP-A" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5"/>
-<part name="CAP-B" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5"/>
-<part name="GPIO" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK"/>
-<part name="I2C" library="tiles" deviceset="CONN_04_SIM" device="1X04_NO_SILK"/>
+<part name="IO-2" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="IO-3" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="CAP-A" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="CAP-B" library="tiles" deviceset="MOUNT-PAD-ROUND" device="2.5">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="GPIO" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="I2C" library="tiles" deviceset="CONN_04_SIM" device="1X04_NO_SILK">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$23" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+12" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
-<part name="TOUCH" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
-<part name="SW" library="MF_Switches" deviceset="TACT" device="_4.2MM" value="MF-SW-TACT-4.2MM"/>
-<part name="STAT" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="MF-LED-0603-RED"/>
-<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="330"/>
+<part name="TOUCH" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="SW" library="MF_Switches" deviceset="TACT" device="_4.2MM" value="SW"/>
+<part name="STAT" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="WHITE">
+<attribute name="HOUSEPART" value="NO"/>
+<attribute name="MPN" value="LNJ037X8ARA"/>
+</part>
+<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="330">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-330"/>
+</part>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
-<part name="BUZZER" library="tiles" deviceset="4MBUZ" device=""/>
-<part name="T2" library="MF_Discrete_Semiconductor" deviceset="NPN_BJT" device="_SOT-23-3" technology="MMBT3904" value="MF-DSC-SOT233-MMBT3904"/>
+<part name="BUZZER" library="tiles" deviceset="4MBUZ" device="">
+<attribute name="HOUSEPART" value="no"/>
+<attribute name="MPN" value="490-CMT-4023S-SMT-TR"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="T2" library="MF_Discrete_Semiconductor" deviceset="NPN_BJT" device="_SOT-23-3" technology="MMBT3904" value="MMBT3904"/>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+14" library="microbuilder2" deviceset="3.3V" device=""/>
-<part name="U3" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345"/>
-<part name="U1" library="microbuilder2" deviceset="NRF52832_MODULE_MDBT42" device="" value="MDBT42Q"/>
-<part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
-<part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="10uF"/>
-<part name="C4" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF"/>
-<part name="C8" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF"/>
-<part name="L1" library="MF_Passives" deviceset="INDUCTOR" device="_0603" value="10uH"/>
+<part name="U3" library="Seeed-OPL-sensor" deviceset="MOTION/POSITION-ADXL345BCCZ-RL(14P-5.0X3.0MM)" device="" value="ADXL345">
+<attribute name="HOUSEPART" value="no"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="U1" library="microbuilder2" deviceset="NRF52832_MODULE_MDBT42" device="" value="MDBT42Q">
+<attribute name="HOUSEPART" value="NO"/>
+<attribute name="MPN" value="317030213"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-1uF"/>
+</part>
+<part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206" value="10uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-1206-10uF"/>
+</part>
+<part name="C4" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-22pF"/>
+</part>
+<part name="C8" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="22pF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-22pF"/>
+</part>
+<part name="L1" library="MF_Passives" deviceset="INDUCTOR" device="_1210" value="10uH">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-IND-1210-10uH"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="U$1" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
-<part name="X1" library="adafruit2" deviceset="XTAL" device="-3.2X1.5" value="32.768"/>
+<part name="X1" library="adafruit2" deviceset="XTAL" device="-3.2X1.5" value="32.768">
+<attribute name="HOUSEPART" value="no"/>
+<attribute name="MPN" value="ABS07-120-32.768KHZ-T"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
-<part name="FRST" library="microbuilder2" deviceset="TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
-<part name="SWDIO" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="SWCLK" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="RST" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="DFU" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
-<part name="SWO" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM"/>
+<part name="FRST" library="microbuilder2" deviceset="TESTPOINT" device="1.5X2.0MM_NOCREAM">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="SWDIO" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="SWCLK" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="RST" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="DFU" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="SWO" library="microbuilder2" deviceset="TESTPOINT" device="ROUND2MM">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="U$10" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$11" library="microbuilder2" deviceset="VBAT" device=""/>
 <part name="U$12" library="microbuilder2" deviceset="VBUS" device=""/>
-<part name="U2" library="microbuilder2" deviceset="VREG_SOT23-5" device="" value="AP2112"/>
-<part name="Q1" library="microbuilder2" deviceset="MOSFET-P" device="" value="DMG3415U-7"/>
+<part name="U2" library="microbuilder2" deviceset="VREG_SOT23-5" device="" value="AP2112">
+<attribute name="HOUSEPART" value="NO"/>
+<attribute name="MPN" value="AP2112K-3.3TRG1"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="Q1" library="microbuilder2" deviceset="MOSFET-P" device="" value="DMG3415U-7">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-DSC-SOT233-BSS84"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$28" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$30" library="microbuilder" deviceset="GND" device=""/>
-<part name="D1" library="microbuilder2" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120"/>
+<part name="D1" library="microbuilder2" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120">
+<attribute name="HOUSEPART" value="NO"/>
+<attribute name="MPN" value="MBR120LSFT1G"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="U$32" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$31" library="microbuilder2" deviceset="VBAT" device=""/>
 <part name="U$27" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$33" library="microbuilder2" deviceset="3.3V" device=""/>
-<part name="SW1" library="microbuilder2" deviceset="SWITCH_TACT_SMT" device="4.6X2.8"/>
+<part name="RESW" library="microbuilder2" deviceset="SWITCH_TACT_SMT" device="4.6X2.8">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="SJ1" library="microbuilder2" deviceset="SOLDERJUMPER" device="CLOSED" value="AT"/>
-<part name="D2" library="microbuilder2" deviceset="DIODE" device="SOD-323" value="1N4148"/>
 <part name="P+1" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$34" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$35" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+2" library="microbuilder2" deviceset="3.3V" device=""/>
-<part name="R12" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27"/>
-<part name="R13" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22"/>
-<part name="R14" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22"/>
-<part name="D3" library="MF_LEDs" deviceset="LED_RGB_CA" device="_PLCC4" value="MF-LED-3228-RGB"/>
-<part name="BTL" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="MF-LED-0603-RED"/>
-<part name="R15" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="330"/>
+<part name="R12" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-27"/>
+</part>
+<part name="R13" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-22"/>
+</part>
+<part name="R14" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="22">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-22"/>
+</part>
+<part name="D3" library="MF_LEDs" deviceset="LED_RGB_CA" device="_PLCC4" value="RGBLED"/>
+<part name="BTL" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="RED"/>
+<part name="R15" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="330">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-330"/>
+</part>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
-<part name="R9" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
-<part name="R10" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
-<part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="R1" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="R2" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="R3" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K"/>
-<part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="R8" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="1K"/>
-<part name="C2" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="100nF"/>
-<part name="C5" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="10uF"/>
-<part name="C6" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
-<part name="C7" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF"/>
-<part name="C9" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0805" value="10uF"/>
-<part name="C10" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0805" value="10uF"/>
-<part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
+<part name="R9" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-100K"/>
+</part>
+<part name="R10" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-100K"/>
+</part>
+<part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-10K"/>
+</part>
+<part name="R1" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-10K"/>
+</part>
+<part name="R2" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-10K"/>
+</part>
+<part name="R3" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-10K"/>
+</part>
+<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-10K"/>
+</part>
+<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="100K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-100K"/>
+</part>
+<part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-10K"/>
+</part>
+<part name="R8" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="1K">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-RES-0603-1K"/>
+</part>
+<part name="C2" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-0.1uF"/>
+</part>
+<part name="C5" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206" value="10uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-1206-10uF"/>
+</part>
+<part name="C6" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-1uF"/>
+</part>
+<part name="C7" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="1uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-1uF"/>
+</part>
+<part name="C9" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206" value="10uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-1206-10uF"/>
+</part>
+<part name="C10" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206" value="10uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-1206-10uF"/>
+</part>
+<part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MPN" value="MF-CAP-0603-0.1uF"/>
+</part>
 <part name="B+" library="wirepad" deviceset="SMD2" device=""/>
 <part name="B-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
-<part name="EN" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
+<part name="EN" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="D2" library="MF_Discrete_Semiconductor" deviceset="DIODES" device="_SOD-123" technology="_1N4148" value="1N4148"/>
 </parts>
 <sheets>
 <sheet>
@@ -7128,8 +7091,16 @@ P0.10=NFC2</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-27.94" y="-5.08"/>
-<instance part="U4" gate="G$1" x="121.92" y="33.02"/>
-<instance part="U5" gate="DRV2605" x="198.12" y="35.56"/>
+<instance part="U4" gate="G$1" x="121.92" y="33.02">
+<attribute name="HOUSEPART" x="121.92" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="121.92" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="121.92" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U5" gate="DRV2605" x="198.12" y="35.56">
+<attribute name="HOUSEPART" x="198.12" y="35.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="198.12" y="35.56" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="198.12" y="35.56" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+5" gate="G$1" x="76.2" y="149.86"/>
 <instance part="U$9" gate="G$1" x="68.58" y="116.84" rot="R270"/>
 <instance part="P+8" gate="G$1" x="73.66" y="58.42"/>
@@ -7144,37 +7115,58 @@ P0.10=NFC2</text>
 <instance part="J1" gate="G$1" x="233.68" y="160.02" rot="R180"/>
 <instance part="IO-2" gate="G$1" x="233.68" y="139.7" smashed="yes">
 <attribute name="NAME" x="236.474" y="140.2842" size="1.778" layer="95"/>
+<attribute name="POPULATE" x="233.68" y="139.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IO-3" gate="G$1" x="233.68" y="132.08" smashed="yes">
 <attribute name="NAME" x="236.474" y="132.6642" size="1.778" layer="95"/>
+<attribute name="POPULATE" x="233.68" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="CAP-A" gate="G$1" x="200.66" y="139.7" smashed="yes">
 <attribute name="NAME" x="203.454" y="140.2842" size="1.778" layer="95"/>
+<attribute name="POPULATE" x="200.66" y="139.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="CAP-B" gate="G$1" x="200.66" y="132.08" smashed="yes">
 <attribute name="NAME" x="203.454" y="132.6642" size="1.778" layer="95"/>
+<attribute name="POPULATE" x="200.66" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GPIO" gate="G$1" x="160.02" y="162.56" rot="R180"/>
-<instance part="I2C" gate="G$1" x="187.96" y="162.56" rot="R180"/>
+<instance part="GPIO" gate="G$1" x="160.02" y="162.56" rot="R180">
+<attribute name="POPULATE" x="160.02" y="162.56" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="I2C" gate="G$1" x="187.96" y="162.56" rot="R180">
+<attribute name="POPULATE" x="187.96" y="162.56" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="U$22" gate="G$1" x="79.756" y="45.974"/>
 <instance part="U$23" gate="G$1" x="81.28" y="58.928"/>
 <instance part="P+12" gate="G$1" x="91.44" y="63.5"/>
 <instance part="U$24" gate="G$1" x="238.76" y="22.86"/>
-<instance part="TOUCH" gate="G$1" x="172.72" y="144.78" rot="R180"/>
+<instance part="TOUCH" gate="G$1" x="172.72" y="144.78" rot="R180">
+<attribute name="POPULATE" x="172.72" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SW" gate="G$1" x="213.36" y="116.84" rot="R90"/>
 <instance part="STAT" gate="G$1" x="226.06" y="96.52"/>
 <instance part="R6" gate="G$1" x="215.9" y="96.52" rot="R90"/>
 <instance part="U$21" gate="G$1" x="210.82" y="106.68"/>
 <instance part="U$25" gate="G$1" x="236.22" y="96.52" rot="R90"/>
-<instance part="BUZZER" gate="G$1" x="233.68" y="63.5"/>
+<instance part="BUZZER" gate="G$1" x="233.68" y="63.5">
+<attribute name="HOUSEPART" x="233.68" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="233.68" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="233.68" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="T2" gate="G$1" x="195.58" y="60.96" smashed="yes" rot="R270">
 <attribute name="NAME" x="195.58" y="55.88" size="1.016" layer="95" font="vector" rot="R180" align="bottom-right"/>
-<attribute name="VALUE" x="172.72" y="53.34" size="1.016" layer="96" font="vector"/>
+<attribute name="VALUE" x="193.04" y="53.34" size="1.016" layer="96" font="vector"/>
 </instance>
 <instance part="U$26" gate="G$1" x="180.34" y="58.42" rot="R270"/>
 <instance part="P+14" gate="G$1" x="213.36" y="81.28"/>
-<instance part="U3" gate="G$1" x="109.22" y="137.16"/>
-<instance part="U1" gate="G$1" x="22.86" y="58.42"/>
+<instance part="U3" gate="G$1" x="109.22" y="137.16">
+<attribute name="HOUSEPART" x="109.22" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="109.22" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U1" gate="G$1" x="22.86" y="58.42">
+<attribute name="HOUSEPART" x="22.86" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="22.86" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C1" gate="G$1" x="-22.86" y="30.48"/>
 <instance part="C3" gate="G$1" x="-7.62" y="30.48"/>
 <instance part="C4" gate="G$1" x="2.54" y="5.08"/>
@@ -7185,41 +7177,70 @@ P0.10=NFC2</text>
 <instance part="U$3" gate="G$1" x="-7.62" y="15.24"/>
 <instance part="U$4" gate="G$1" x="2.54" y="-2.54"/>
 <instance part="U$5" gate="G$1" x="17.78" y="-2.54"/>
-<instance part="X1" gate="G$1" x="10.16" y="10.16"/>
+<instance part="X1" gate="G$1" x="10.16" y="10.16">
+<attribute name="HOUSEPART" x="10.16" y="10.16" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="10.16" y="10.16" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="10.16" y="10.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$6" gate="G$1" x="-2.54" y="15.24"/>
 <instance part="U$7" gate="G$1" x="-2.54" y="68.58"/>
 <instance part="U$8" gate="G$1" x="60.96" y="78.74" rot="R180"/>
-<instance part="FRST" gate="G$1" x="60.96" y="68.58" rot="R270"/>
-<instance part="SWDIO" gate="G$1" x="60.96" y="66.04" rot="R270"/>
-<instance part="SWCLK" gate="G$1" x="60.96" y="63.5" rot="R270"/>
-<instance part="RST" gate="G$1" x="60.96" y="60.96" rot="R270"/>
-<instance part="DFU" gate="G$1" x="60.96" y="58.42" rot="R270"/>
-<instance part="SWO" gate="G$1" x="60.96" y="53.34" rot="R270"/>
+<instance part="FRST" gate="G$1" x="60.96" y="68.58" rot="R270">
+<attribute name="POPULATE" x="60.96" y="68.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="SWDIO" gate="G$1" x="60.96" y="66.04" rot="R270">
+<attribute name="POPULATE" x="60.96" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="SWCLK" gate="G$1" x="60.96" y="63.5" rot="R270">
+<attribute name="POPULATE" x="60.96" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RST" gate="G$1" x="60.96" y="60.96" rot="R270">
+<attribute name="POPULATE" x="60.96" y="60.96" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="DFU" gate="G$1" x="60.96" y="58.42" rot="R270">
+<attribute name="POPULATE" x="60.96" y="58.42" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="SWO" gate="G$1" x="60.96" y="53.34" rot="R270">
+<attribute name="POPULATE" x="60.96" y="53.34" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="U$10" gate="G$1" x="43.18" y="162.56"/>
 <instance part="U$11" gate="G$1" x="2.54" y="162.56"/>
 <instance part="U$12" gate="G$1" x="-15.24" y="162.56"/>
-<instance part="U2" gate="G$1" x="27.94" y="142.24"/>
-<instance part="Q1" gate="G$1" x="2.54" y="152.4" rot="MR180"/>
+<instance part="U2" gate="G$1" x="27.94" y="142.24">
+<attribute name="HOUSEPART" x="27.94" y="142.24" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="142.24" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="27.94" y="142.24" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="Q1" gate="G$1" x="2.54" y="152.4" rot="MR180">
+<attribute name="HOUSEPART" x="2.54" y="152.4" size="1.778" layer="96" rot="MR180" display="off"/>
+<attribute name="MPN" x="2.54" y="152.4" size="1.778" layer="96" rot="MR180" display="off"/>
+<attribute name="POPULATE" x="2.54" y="152.4" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
 <instance part="U$20" gate="G$1" x="-15.24" y="121.92"/>
 <instance part="U$28" gate="G$1" x="5.08" y="121.92"/>
 <instance part="U$29" gate="G$1" x="17.78" y="121.92"/>
 <instance part="U$30" gate="G$1" x="43.18" y="121.92"/>
-<instance part="D1" gate="G$1" x="-7.62" y="144.78"/>
+<instance part="D1" gate="G$1" x="-7.62" y="144.78">
+<attribute name="HOUSEPART" x="-7.62" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-7.62" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="-7.62" y="144.78" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$32" gate="G$1" x="68.58" y="157.48" rot="R90"/>
 <instance part="U$31" gate="G$1" x="68.58" y="165.1" rot="R270"/>
 <instance part="U$27" gate="G$1" x="-20.32" y="83.82"/>
 <instance part="U$33" gate="G$1" x="-15.24" y="83.82"/>
-<instance part="SW1" gate="G$1" x="-12.7" y="106.68"/>
+<instance part="RESW" gate="G$1" x="-12.7" y="106.68">
+<attribute name="POPULATE" x="-12.7" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SJ1" gate="1" x="30.48" y="101.6" rot="R180"/>
-<instance part="D2" gate="G$1" x="53.34" y="106.68" rot="R90"/>
 <instance part="P+1" gate="G$1" x="53.34" y="119.38"/>
 <instance part="U$34" gate="G$1" x="-2.54" y="99.06"/>
 <instance part="U$35" gate="G$1" x="38.1" y="5.08"/>
-<instance part="P+2" gate="G$1" x="78.74" y="101.6" rot="R90"/>
-<instance part="R12" gate="G$1" x="114.3" y="109.22" rot="R90"/>
-<instance part="R13" gate="G$1" x="114.3" y="101.6" rot="R90"/>
-<instance part="R14" gate="G$1" x="114.3" y="93.98" rot="R90"/>
-<instance part="D3" gate="G$1" x="99.06" y="101.6"/>
+<instance part="P+2" gate="G$1" x="81.28" y="93.98" rot="R90"/>
+<instance part="R12" gate="G$1" x="116.84" y="101.6" rot="R90"/>
+<instance part="R13" gate="G$1" x="116.84" y="93.98" rot="R90"/>
+<instance part="R14" gate="G$1" x="116.84" y="86.36" rot="R90"/>
+<instance part="D3" gate="G$1" x="101.6" y="93.98"/>
 <instance part="BTL" gate="G$1" x="175.26" y="96.52"/>
 <instance part="R15" gate="G$1" x="165.1" y="96.52" rot="R90"/>
 <instance part="U$18" gate="G$1" x="185.42" y="96.52" rot="R90"/>
@@ -7243,7 +7264,10 @@ P0.10=NFC2</text>
 <instance part="B+" gate="1" x="53.34" y="165.1"/>
 <instance part="B-" gate="1" x="53.34" y="157.48"/>
 <instance part="U$19" gate="G$1" x="121.92" y="160.02" rot="R90"/>
-<instance part="EN" gate="G$1" x="104.14" y="167.64" rot="R270"/>
+<instance part="EN" gate="G$1" x="104.14" y="167.64" rot="R270">
+<attribute name="POPULATE" x="104.14" y="167.64" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="D2" gate="G$1" x="53.34" y="106.68" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7400,11 +7424,11 @@ P0.10=NFC2</text>
 <pinref part="B-" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="S1"/>
+<pinref part="RESW" gate="G$1" pin="S1"/>
 <wire x1="-7.62" y1="104.14" x2="-2.54" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$34" gate="G$1" pin="GND"/>
 <wire x1="-2.54" y1="104.14" x2="-2.54" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="S"/>
+<pinref part="RESW" gate="G$1" pin="S"/>
 <wire x1="-7.62" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="106.68" x2="-2.54" y2="104.14" width="0.1524" layer="91"/>
 <junction x="-2.54" y="104.14"/>
@@ -7448,9 +7472,9 @@ P0.10=NFC2</text>
 <label x="48.26" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="P1"/>
+<pinref part="RESW" gate="G$1" pin="P1"/>
 <wire x1="-17.78" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="P"/>
+<pinref part="RESW" gate="G$1" pin="P"/>
 <wire x1="-20.32" y1="104.14" x2="-25.4" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="106.68" x2="-20.32" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="106.68" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
@@ -7461,12 +7485,12 @@ P0.10=NFC2</text>
 <pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="35.56" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="101.6" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="53.34" y1="104.14" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 <junction x="38.1" y="101.6"/>
 <label x="43.18" y="101.6" size="1.778" layer="95"/>
 <pinref part="R11" gate="G$1" pin="P$1"/>
+<pinref part="D2" gate="G$1" pin="ANODE"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -7833,12 +7857,12 @@ P0.10=NFC2</text>
 </segment>
 <segment>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
-<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="53.34" y1="116.84" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="111.76" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
 <junction x="53.34" y="111.76"/>
 <pinref part="R11" gate="G$1" pin="P$2"/>
+<pinref part="D2" gate="G$1" pin="CATHODE"/>
 </segment>
 <segment>
 <pinref part="GPIO" gate="G$1" pin="3"/>
@@ -7853,7 +7877,7 @@ P0.10=NFC2</text>
 <segment>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
 <pinref part="D3" gate="G$1" pin="ANODE"/>
-<wire x1="81.28" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -8086,28 +8110,28 @@ P0.10=NFC2</text>
 <segment>
 <pinref part="D3" gate="G$1" pin="CATHODE_RED"/>
 <pinref part="R12" gate="G$1" pin="P$1"/>
-<wire x1="104.14" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="CATHODE_GREEN"/>
 <pinref part="R13" gate="G$1" pin="P$1"/>
-<wire x1="104.14" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="CATHODE_BLUE"/>
 <pinref part="R14" gate="G$1" pin="P$1"/>
-<wire x1="104.14" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_R" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="P$2"/>
-<wire x1="119.38" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
-<label x="124.46" y="109.22" size="1.778" layer="95"/>
+<wire x1="121.92" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
+<label x="127" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.16"/>
@@ -8118,8 +8142,8 @@ P0.10=NFC2</text>
 <net name="LED_G" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="P$2"/>
-<wire x1="119.38" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
-<label x="124.46" y="101.6" size="1.778" layer="95"/>
+<wire x1="121.92" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
+<label x="127" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.15"/>
@@ -8130,8 +8154,8 @@ P0.10=NFC2</text>
 <net name="LED_B" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="P$2"/>
-<wire x1="119.38" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
-<label x="124.46" y="93.98" size="1.778" layer="95"/>
+<wire x1="121.92" y1="86.36" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
+<label x="127" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.11"/>
