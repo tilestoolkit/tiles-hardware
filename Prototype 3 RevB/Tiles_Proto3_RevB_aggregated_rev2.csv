@@ -26,3 +26,7 @@ STAT;;;LNJ037X8ARA;;;;STAT;;;;;;;;;;;
 D3;1;MF-LED-3228-RGB;MF-LED-3228-RGB;yes;LED_RGB_CA_PLCC4;PLCC4;D3;Library:  MF_LEDs;;YES;MF-LED-3228-RGB;1;;;https://factory.macrofab.com/part/MF-LED-3228-RGB;MF-LED-3228-RGB;;
 SW;1;MF-SW-TACT-4.2MM;MF-SW-TACT-4.2MM;yes;TACT_4.2MM;TACT4.2MM;SW;Library:  MF_Switches;;YES;MF-SW-TACT-4.2MM;1;;;https://factory.macrofab.com/part/MF-SW-TACT-4.2MM;MF-SW-TACT-4.2MM;;
 ;;;;;;;;;;;;;;;;;;
+Vibration motor;;;;;;;;;;;;;;;;;;
+Battery;;;;;;;;;;;;;;;;;;
+Header;;;;;;;;;;;;;;;;;;
+magnets;;;;;;;;;;;;;;;;;;

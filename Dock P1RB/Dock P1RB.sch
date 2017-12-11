@@ -1943,7 +1943,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="U$4" library="microbuilder2" deviceset="VBUS" device=""/>
 <part name="U$8" library="microbuilder2" deviceset="VBAT" device=""/>
 <part name="U$9" library="microbuilder2" deviceset="VBUS" device=""/>
-<part name="U2" library="microbuilder2" deviceset="CP2104" device=""/>
+<part name="U2" library="microbuilder2" deviceset="CP2104" device="" value="CP2104">
+<attribute name="HOUSEPART" value="no"/>
+<attribute name="MPN" value="CP2104"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="U$10" library="microbuilder2" deviceset="3.3V" device=""/>
 <part name="U$11" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$12" library="microbuilder" deviceset="GND" device=""/>
@@ -2012,7 +2016,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="U$4" gate="G$1" x="33.02" y="149.86"/>
 <instance part="U$8" gate="G$1" x="43.18" y="167.64"/>
 <instance part="U$9" gate="G$1" x="60.96" y="154.94"/>
-<instance part="U2" gate="G$1" x="53.34" y="60.96"/>
+<instance part="U2" gate="G$1" x="53.34" y="60.96">
+<attribute name="HOUSEPART" x="53.34" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="53.34" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="53.34" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$10" gate="G$1" x="25.4" y="91.44"/>
 <instance part="U$11" gate="G$1" x="12.7" y="66.04"/>
 <instance part="U$12" gate="G$1" x="25.4" y="60.96"/>

@@ -2837,7 +2837,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="H1" library="tiles" package="2,5-PAD-SIM" value="MOUNT-PAD-ROUND2.5" x="25" y="-5"/>
 <element name="H2" library="tiles" package="2,5-PAD-SIM" value="MOUNT-PAD-ROUND2.5" x="25" y="-41"/>
-<element name="U2" library="microbuilder2" package="QFN24_4MM_SMSC" value="" x="7" y="-17"/>
+<element name="U2" library="microbuilder2" package="QFN24_4MM_SMSC" value="CP2104" x="7" y="-17">
+<attribute name="HOUSEPART" value="no" x="7" y="-17" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CP2104" x="7" y="-17" size="1.778" layer="27" display="off"/>
+<attribute name="POPULATE" value="1" x="7" y="-17" size="1.778" layer="27" display="off"/>
+</element>
 <element name="C3" library="MF_Passives" package="C0603" value="0.1uF" x="6" y="-11" rot="R90">
 <attribute name="DIELECTRIC" value="" x="6" y="-11" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="6" y="-11" size="1.778" layer="27" rot="R90" display="off"/>
